@@ -1,0 +1,24 @@
+.quiz-wrapper {
+  border-top: 20px solid #0d6efd;
+  .dot-line {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: #0d6efd;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(29, 3.55%);
+    div {
+      width: 15px;
+      height: 15px;
+      border: 4px solid #0d6efd;
+      background-color: #0d6efd;
+      border-radius: 45pc;
+      transform: translateY(-30%);
+      &.current {
+        background-color: #fff;
+      }
+    }
+  }
+}

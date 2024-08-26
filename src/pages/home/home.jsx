@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { CircularProgressbar } from "react-circular-progressbar";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import banner from "../../../public/banner-theory.png";
@@ -6,8 +7,10 @@ import bgEllipses from "../../../public/bg-ellipse.png";
 import userPic from "../../../public/profile.png";
 import setting from "../../../public/setting.png";
 import { changeActivePage } from "../../slice/ui";
+import { infoTests } from "../../service/db";
 import "./home.scss";
-
+import "react-circular-progressbar/dist/styles.css";
+import UserService from "../../service/user.service";
 const Home = () => {
   const dispatch = useDispatch();
   const { showSide } = useSelector((state) => state.ui);
@@ -16,10 +19,19 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(changeActivePage("Bosh sahifa"));
+    UserService.getUser(dispatch, navigate);
     if (user == null) {
       navigate("/login");
     }
   }, []);
+
+  const totalBall =
+    infoTests.map((item) => item.totalTest).reduce((a, b) => a + b) * 5;
+  const usersBall = infoTests
+    .map((item) => user.userScore[item.keyValue].score)
+    .reduce((a, b) => a + b);
+  const percentage = ((usersBall * 100) / totalBall).toFixed();
+
   return (
     <div className="p-3">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
@@ -79,7 +91,28 @@ const Home = () => {
         >
           <div className="score-level-box w-100 h-100">
             <h5 className="font-montserrat">Natijangizning o'rtacha foizi</h5>
-            <div className="score-percent"></div>
+            <div className="score-percent flex justify-center pt-3">
+              <CircularProgressbar
+                className="z-[1] montserrat-font size-3/4"
+                value={percentage}
+                text={`${percentage}%`}
+                styles={{
+                  path: {
+                    stroke: "#fff",
+                    strokeWidth: "4px",
+                  },
+                  trail: {
+                    stroke: "#012970CC",
+                    strokeWidth: "2px",
+                  },
+                  text: {
+                    fill: "#012970CC",
+                    fontSize: "30px",
+                    fontWeight: 700,
+                  },
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -156,28 +189,38 @@ const Home = () => {
                 <div
                   className={`${
                     showSide
-                      ? "col-lg-7 col-md-7 col-sm-7"
-                      : "col-lg-8 col-md-8 col-sm-8"
+                      ? "col-lg-8 col-md-7 col-sm-7"
+                      : "col-lg-9 col-md-8 col-sm-8"
                   }`}
                 >
                   <div className="user-info">
-                    <h5 className="font-poppins primary">Resurslar:</h5>
-                    <div className="row">
-                      <div className="col-12">
+                    <h5 className="font-poppins primary font-[600] text-[20px]">
+                      Resurslar:
+                    </h5>
+                    <div className="row mt-3 px-3">
+                      <div className="col-12 mt-2">
                         <p className="font-nunito">Ism va sharifi:</p>
-                        <h4 className="font-poppins">{user.fullName}</h4>
+                        <h4 className="font-poppins text-[24px] font-[500] ">
+                          {user.fullName}
+                        </h4>
                       </div>
-                      <div className="col">
+                      <div className="col mt-2">
                         <p className="font-nunito">Kasb:</p>
-                        <h4 className="font-poppins">{user.job}</h4>
+                        <h4 className="font-poppins text-[24px] font-[500] ">
+                          {user.job}
+                        </h4>
                       </div>
-                      <div className="col">
+                      <div className="col mt-2">
                         <p className="font-nunito">Yoshi:</p>
-                        <h4 className="font-poppins">{user.age}</h4>
+                        <h4 className="font-poppins text-[24px] font-[500] ">
+                          {user.age}
+                        </h4>
                       </div>
-                      <div className="col-12">
+                      <div className="col-12 mt-2">
                         <p className="font-nunito">Ta'lim joyi:</p>
-                        <h4 className="font-poppins">{user.school}</h4>
+                        <h4 className="font-poppins text-[24px] font-[500] ">
+                          {user.school}
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -185,8 +228,8 @@ const Home = () => {
                 <div
                   className={`${
                     showSide
-                      ? "col-lg-5 col-md-5 col-sm-5"
-                      : "col-lg-4 col-md-4 col-sm-4"
+                      ? "col-lg-4 col-md-5 col-sm-5"
+                      : "col-lg-3 col-md-4 col-sm-4"
                   }`}
                 >
                   <div className="img-box">

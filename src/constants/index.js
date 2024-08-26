@@ -7,7 +7,7 @@ export const navItems = [
   {
     label: "Bosh sahifa",
     icon: cubes,
-    path: "/",
+    path: "/home",
   },
   {
     label: "Tayyorlanish",

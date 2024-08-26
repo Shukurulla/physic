@@ -617,6 +617,37 @@ export const matchingPairWordsQuiz = {
 export const infoTests = [
   {
     id: 1,
-    title: "Fizika",
+    title: quiz.topic,
+    totalTest: quiz.questions.length,
+    path: "/test/quiz",
+    keyValue: "quiz",
+  },
+  {
+    id: 2,
+    title: trueFalseQuiz.topic,
+    totalTest: trueFalseQuiz.questions.length,
+    path: "/test/true-false",
+    keyValue: "truFalseQuiz",
+  },
+  {
+    id: 3,
+    title: moreButtonsQuiz.topic,
+    totalTest: moreButtonsQuiz.questions.length,
+    path: "/test/more-buttons",
+    keyValue: "moreButtons",
+  },
+  {
+    id: 4,
+    title: imageQuiz.topic,
+    totalTest: imageQuiz.questions.length,
+    path: "/test/image-quiz",
+    keyValue: "imageQuiz",
+  },
+  {
+    id: 4,
+    title: matchingPairWordsQuiz.topic,
+    totalTest: matchingPairWordsQuiz.questions.length,
+    path: "/test/matching-pair-words-quiz",
+    keyValue: "matchingPairWordsQuiz",
   },
 ];

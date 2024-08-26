@@ -5,10 +5,10 @@ import {
 } from "../slice/user.slice";
 import axios from "./api";
 
+const token = localStorage.getItem("jwt");
 const UserService = {
   async getUser(dispatch, navigate) {
     dispatch(getUserStart());
-    const token = await localStorage.getItem("jwt");
     try {
       const { data } = await axios.get("/profile", {
         headers: {
@@ -50,6 +50,37 @@ const UserService = {
     } catch (error) {
       dispatch(getUserFailure());
       console.log(error);
+    }
+  },
+  async test(dispatch, val) {
+    dispatch(getUserStart());
+    try {
+      const { data } = await axios.post("/test", val, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      dispatch(getUserSuccess(data.user));
+    } catch (error) {
+      console.log(error);
+      dispatch(getUserFailure());
+    }
+  },
+  async setting(dispatch, option, navigate) {
+    dispatch(getUserStart());
+    try {
+      const { data } = await axios.post("/setting", option, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      dispatch(getUserSuccess(data.user));
+      if (data) {
+        navigate("/home");
+      }
+    } catch (error) {
+      console.log(error);
+      dispatch(getUserFailure());
     }
   },
 };
