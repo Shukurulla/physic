@@ -28,9 +28,9 @@ const Home = () => {
   const totalBall =
     infoTests.map((item) => item.totalTest).reduce((a, b) => a + b) * 5;
   const usersBall = infoTests
-    .map((item) => user.userScore[item.keyValue].score)
+    .map((item) => (user.userScore ? user.userScore[item.keyValue]?.score : 0))
     .reduce((a, b) => a + b);
-  const percentage = ((usersBall * 100) / totalBall).toFixed();
+  const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
     <div className="p-3">
@@ -91,7 +91,7 @@ const Home = () => {
         >
           <div className="score-level-box w-100 h-100">
             <h5 className="font-montserrat">Natijangizning o'rtacha foizi</h5>
-            <div className="score-percent flex justify-center pt-3">
+            <div className="score-percent  flex justify-center pt-3">
               <CircularProgressbar
                 className="z-[1] montserrat-font size-3/4"
                 value={percentage}
@@ -106,7 +106,7 @@ const Home = () => {
                     strokeWidth: "2px",
                   },
                   text: {
-                    fill: "#012970CC",
+                    fill: "#fff",
                     fontSize: "30px",
                     fontWeight: 700,
                   },
