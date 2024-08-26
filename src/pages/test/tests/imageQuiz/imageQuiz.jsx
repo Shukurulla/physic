@@ -5,6 +5,7 @@ import UserService from "../../../../service/user.service";
 import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
+import "../quiz/quiz.scss";
 
 const ImageQuiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -90,7 +91,7 @@ const ImageQuiz = () => {
           <>
             <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
               <div
-                className="bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300"
+                className="bg-[#EE1D23] h-full rounded-full transition-all ease-in-out duration-300"
                 style={{
                   width: `${Math.round(
                     ((activeQuestion + 1) / questions.length) * 100
@@ -98,7 +99,7 @@ const ImageQuiz = () => {
                 }}
               ></div>
             </div>
-            <div className="bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029] rounded-[8px] h-96 mb-10 lg:w-1/2 mx-auto">
+            <div className="bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#EE1D23] rounded-[8px] h-96 mb-10 lg:w-1/2 mx-auto">
               <img
                 src={`./quiz-images/${image}`}
                 alt="Quiz image"
@@ -107,14 +108,14 @@ const ImageQuiz = () => {
             </div>
           </>
         )}
-        <div className="shadow-[0_0_16px_0_#00000029] rounded-[8px] bg-white p-8">
+        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#EE1D23] rounded-[8px] bg-white p-8">
           {!showResult ? (
             <>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-blue-500 font-semibold text-3xl">
+                <span className="text-[#EE1D23] font-semibold text-3xl">
                   Test
                 </span>
-                <span className="bg-blue-500 text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#EE1D23] text-white text-sm py-2 px-4 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
@@ -164,14 +165,14 @@ const ImageQuiz = () => {
                   </div>
                 ))}
               </div>
-              <div className="bg-blue-500 h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+              <div className="bg-[#EE1D23] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (
                     <div
                       key={index}
-                      className={`border-[3px] border-blue-500 rounded-full size-4 ${
-                        index === activeQuestion ? "bg-white" : "bg-blue-500"
+                      className={`border-[3px] border-[#EE1D23] rounded-full size-4 ${
+                        index === activeQuestion ? "bg-white" : "bg-[#EE1D23]"
                       }`}
                     ></div>
                   ))}

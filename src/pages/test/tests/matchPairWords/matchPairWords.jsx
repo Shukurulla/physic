@@ -154,7 +154,7 @@ const MatchingPairWordsQuiz = () => {
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
-              className="bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300"
+              className="bg-[#F47921] h-full rounded-full transition-all ease-in-out duration-300"
               style={{
                 width: `${Math.round(
                   ((activeQuestion + 1) / questions.length) * 100
@@ -167,10 +167,10 @@ const MatchingPairWordsQuiz = () => {
           {!showResult ? (
             <>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-blue-500 font-semibold text-3xl">
+                <span className="text-[#F47921] font-semibold text-3xl">
                   Test
                 </span>
-                <span className="bg-blue-500 text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#F47921] text-white text-sm py-2 px-4 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
@@ -183,12 +183,12 @@ const MatchingPairWordsQuiz = () => {
                     <button
                       key={item}
                       onClick={(e) => handleClick("left", e, index, item)}
-                      className={`w-28 h-12 md:w-40 md:h-16 text-white font-bold md:text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${
+                      className={`w-28 h-12 md:w-40 md:h-16 text-white font-bold md:text-lg bg-[#F47921CC] cursor-pointer select-none transition-all duration-150 rounded-full border border-[#F47921] ${
                         leftClick === index
                           ? "clicked translate-y-2"
                           : foundedWords.includes(item)
                           ? "translate-y-2"
-                          : "[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]"
+                          : "[box-shadow:0_10px_0_0_#F47921,0_15px_0_0_#F47921]"
                       } disabled:clicked disabled:opacity-50`}
                     >
                       {item}
@@ -200,12 +200,12 @@ const MatchingPairWordsQuiz = () => {
                     <button
                       key={item}
                       onClick={(e) => handleClick("right", e, index, item)}
-                      className={`w-28 h-12 md:w-40 md:h-16 text-white font-bold md:text-lg bg-blue-500 cursor-pointer select-none transition-all duration-150 rounded-full border border-blue-400 ${
+                      className={`w-28 h-12 md:w-40 md:h-16 text-white font-bold md:text-lg bg-[#F47921CC] cursor-pointer select-none transition-all duration-150 rounded-full border border-[#F47921] ${
                         rightClick === index
                           ? "clicked translate-y-2"
                           : foundedWords.includes(item)
                           ? "translate-y-2"
-                          : "[box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]"
+                          : "[box-shadow:0_10px_0_0_#F47921,0_15px_0_0_#F47921]"
                       } disabled:clicked disabled:opacity-50`}
                     >
                       {item}
@@ -213,14 +213,14 @@ const MatchingPairWordsQuiz = () => {
                   ))}
                 </div>
               </div>
-              <div className="bg-blue-500 h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+              <div className="bg-[#F47921CC] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (
                     <div
                       key={index}
-                      className={`border-[3px] border-blue-500 rounded-full size-4 ${
-                        index === activeQuestion ? "bg-white" : "bg-blue-500"
+                      className={`border-[3px] border-[#F47921CC] rounded-full size-4 ${
+                        index === activeQuestion ? "bg-white" : "bg-[#F47921CC]"
                       }`}
                     ></div>
                   ))}

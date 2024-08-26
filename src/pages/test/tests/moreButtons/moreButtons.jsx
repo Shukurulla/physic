@@ -5,6 +5,7 @@ import UserService from "../../../../service/user.service";
 import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
+import "../quiz/quiz.scss";
 
 const MoreButtonsQuiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -89,7 +90,7 @@ const MoreButtonsQuiz = () => {
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
-              className="bg-blue-500 h-full rounded-full transition-all ease-in-out duration-300"
+              className="bg-[#FFE500] h-full rounded-full transition-all ease-in-out duration-300"
               style={{
                 width: `${Math.round(
                   ((activeQuestion + 1) / questions.length) * 100
@@ -98,14 +99,14 @@ const MoreButtonsQuiz = () => {
             ></div>
           </div>
         )}
-        <div className="shadow-[0_0_16px_0_#00000029] rounded-[8px] bg-white p-8">
+        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#FFE500] rounded-[8px] bg-white p-8">
           {!showResult ? (
             <>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-blue-500 font-semibold text-3xl">
+                <span className="text-[#FFE500] font-semibold text-3xl">
                   Test
                 </span>
-                <span className="bg-blue-500 text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#FFE500] text-white text-sm py-2 px-4 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
@@ -139,14 +140,14 @@ const MoreButtonsQuiz = () => {
                   </button>
                 ))}
               </div>
-              <div className="bg-blue-500 h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+              <div className="bg-[#FFE500] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (
                     <div
                       key={index}
-                      className={`border-[3px] border-blue-500 rounded-full size-4 ${
-                        index === activeQuestion ? "bg-white" : "bg-blue-500"
+                      className={`border-[3px] border-[#FFE500] rounded-full size-4 ${
+                        index === activeQuestion ? "bg-white" : "bg-[#FFE500]"
                       }`}
                     ></div>
                   ))}
