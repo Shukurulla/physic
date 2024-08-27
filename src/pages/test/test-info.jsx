@@ -11,7 +11,6 @@ const TestInfo = () => {
 
   useEffect(() => {
     dispatch(changeActivePage("Test"));
-    console.log(user.userScore["quiz"]);
   }, []);
 
   return (
@@ -23,15 +22,18 @@ const TestInfo = () => {
           <div className="test-info">
             <h5 className="font-poppins primary">{item.title}</h5>
             <p className="font-montserrat">Jami test: {item.totalTest}</p>
-            {user.userScore[item.keyValue] ? (
+            {user.userScore && user.userScore[item.keyValue] ? (
               <ul className="mt-[20px]">
                 <li>
-                  Jami yig'gan balingiz: {user.userScore[item.keyValue].score}
+                  Jami yig'gan balingiz:{" "}
+                  {user.userScore && user.userScore[item.keyValue].score}
                   ball
                 </li>
                 <li>
                   Tog'ri javoblar soni:{" "}
-                  {user.userScore[item.keyValue].correctAnswer}ta
+                  {user.userScore &&
+                    user.userScore[item.keyValue].correctAnswer}
+                  ta
                 </li>
               </ul>
             ) : (
@@ -41,12 +43,14 @@ const TestInfo = () => {
           <Link to={item.path}>
             <button
               className={
-                user.userScore[item.keyValue]
+                user.userScore && user.userScore[item.keyValue]
                   ? "btn btn-success block w-100 p-[10px]"
                   : "primary-button"
               }
             >
-              {user.userScore[item.keyValue] ? "Qayta Urinish" : "Boshlash"}
+              {user.userScore && user.userScore[item.keyValue]
+                ? "Qayta Urinish"
+                : "Boshlash"}
             </button>
           </Link>
         </div>

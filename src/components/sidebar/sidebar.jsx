@@ -21,7 +21,11 @@ const Sidebar = () => {
             className={`${activePage == item.label ? "active" : ""}`}
           >
             <Link to={item.path}>
-              <img src={item.icon} alt={item.label} />
+              <img
+                src={item.icon}
+                className={showSide ? "" : "w-[30px]"}
+                alt={item.label}
+              />
               {showSide ? (
                 <span className="font-nunito">{item.label}</span>
               ) : (

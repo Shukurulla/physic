@@ -27,16 +27,20 @@ const Home = () => {
 
   const totalBall =
     infoTests.map((item) => item.totalTest).reduce((a, b) => a + b) * 5;
+
   const usersBall = infoTests
-    .map((item) => (user.userScore ? user.userScore[item.keyValue]?.score : 0))
+    .map((item) =>
+      user.userScore[item.keyValue] ? user.userScore[item.keyValue]?.score : 0
+    )
     .reduce((a, b) => a + b);
+
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
     <div className="p-3">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
       <p className="font-nunito page-path">Bosh shifa /</p>
-      <div className="row">
+      <div className="row items-center">
         <div
           className={`${
             showSide
@@ -55,10 +59,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat primary">
+                <h6 className="font-montserrat primary md:text-[20px] sm:text-[16px] text-[15px]  md:text-[20px] sm:text-[16px] text-[15px]">
                   Teoriya o’zlashtirish
                 </h6>
-                <p className="font-montserrat">
+                <p className="font-montserrat md:text-[17px] sm:text-[14px] text-[14px]">
                   mutaxassislarning maqolalarini o'qish {showSide && <br />}
                   ~o'qish vaqti: 15 daqiqa
                 </p>
@@ -72,10 +76,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat">
+                <h6 className="font-montserrat md:text-[20px] sm:text-[16px] text-[15px]">
                   Test (<span className="coral">Matching</span>)
                 </h6>
-                <p className="font-montserrat">
+                <p className="font-montserrat md:text-[17px] sm:text-[14px] text-[14px]">
                   Matching shaklida testdan o'ting
                 </p>
               </div>
@@ -85,15 +89,17 @@ const Home = () => {
         <div
           className={`${
             showSide
-              ? "col-lg-4 col-md-3 col-sm-12"
-              : "col-lg-3 col-md-3 col-sm-12"
+              ? "col-lg-4 col-md-3 col-sm-8"
+              : "col-lg-3 col-md-3 col-sm-8 mx-auto "
           }`}
         >
           <div className="score-level-box w-100 h-100">
-            <h5 className="font-montserrat">Natijangizning o'rtacha foizi</h5>
+            <h5 className="font-montserrat md:text-[20px] sm:text-[16px] text-[15px]">
+              Natijangizning o'rtacha foizi
+            </h5>
             <div className="score-percent  flex justify-center pt-3">
               <CircularProgressbar
-                className="z-[1] montserrat-font size-3/4"
+                className="z-[1] montserrat-font size-3/4 md:size-3/4"
                 value={percentage}
                 text={`${percentage}%`}
                 styles={{
@@ -116,17 +122,19 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-4">
+      <div className="py-4 size-3/4 mx-auto">
         <Link to={"/learning "} className="col-12">
           <img src={banner} className="w-100" alt="" />
         </Link>
       </div>
       <div className="resource">
-        <h5 className="font-poppins primary">Resurslar:</h5>
+        <h5 className="font-poppins primary md:text-[20px] sm:text-[16px] text-[15px]">
+          Resurslar:
+        </h5>
         <p className="font-montserrat">
           Nazariyani o'rganish uchun elektron kitoblar
         </p>
-        <div className="row">
+        <div className="row size-3/4 mx-auto mt-[20px]">
           <div className="col-lg-4 col-md-4 col-sm-6 col-12">
             <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
               <img
@@ -190,11 +198,11 @@ const Home = () => {
                   className={`${
                     showSide
                       ? "col-lg-8 col-md-7 col-sm-7"
-                      : "col-lg-9 col-md-8 col-sm-8"
+                      : "col-lg-8 col-md-8 col-sm-8"
                   }`}
                 >
                   <div className="user-info">
-                    <h5 className="font-poppins primary font-[600] text-[20px]">
+                    <h5 className="font-poppins primary md:text-[20px] sm:text-[16px] text-[15px] font-[600] text-[20px]">
                       Resurslar:
                     </h5>
                     <div className="row mt-3 px-3">
@@ -229,7 +237,7 @@ const Home = () => {
                   className={`${
                     showSide
                       ? "col-lg-4 col-md-5 col-sm-5"
-                      : "col-lg-3 col-md-4 col-sm-4"
+                      : "col-lg-4 col-md-5 col-sm-4"
                   }`}
                 >
                   <div className="img-box">

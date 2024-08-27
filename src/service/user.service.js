@@ -7,7 +7,7 @@ import axios from "./api";
 
 const token = localStorage.getItem("jwt");
 const UserService = {
-  async getUser(dispatch, navigate) {
+  async getUser(dispatch) {
     dispatch(getUserStart());
     try {
       const { data } = await axios.get("/profile", {
@@ -16,9 +16,7 @@ const UserService = {
         },
       });
       dispatch(getUserSuccess(data));
-      if (data._id) {
-        navigate("/home");
-      }
+      return data;
     } catch (error) {
       console.log(error);
       dispatch(getUserFailure());

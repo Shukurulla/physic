@@ -19,8 +19,11 @@ const App = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
-    if (localStorage.getItem("jwt")) {
-      UserService.getUser(dispatch, navigate);
+    if (localStorage.getItem("jwt") && user == null) {
+      const data = UserService.getUser(dispatch);
+      if (data._id) {
+        navigate("/home");
+      }
     } else {
       navigate("/login");
     }

@@ -55,22 +55,25 @@
 .side-bar.hide {
   li {
     margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &.active {
-      transform: translateX(10px);
-      a {
-        font-size: 17px;
-        font-weight: 700;
+      transform: translateX(0px);
+      img {
+        transform: scale(1.3);
       }
     }
     &:hover {
-      transform: translateX(10px);
-      a {
-        font-size: 17px;
-        font-weight: 700;
+      transform: translateX(0px);
+      img {
+        transform: scale(1.3);
       }
     }
   }
   img {
-    width: 20px;
+    width: 15px;
+    transition: 0.4s linear;
   }
 }
