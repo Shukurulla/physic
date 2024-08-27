@@ -28,11 +28,11 @@ const Home = () => {
   const totalBall =
     infoTests.map((item) => item.totalTest).reduce((a, b) => a + b) * 5;
 
-  const usersBall = infoTests
-    .map((item) =>
-      user.userScore[item.keyValue] ? user.userScore[item.keyValue]?.score : 0
-    )
-    .reduce((a, b) => a + b);
+  const usersBall = user?.userScore
+    ? infoTests
+        .map((item) => user?.userScore[item.keyValue]?.score)
+        .reduce((a, b) => a + b)
+    : 0;
 
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
