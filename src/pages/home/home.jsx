@@ -59,7 +59,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat primary md:text-[20px] sm:text-[16px] text-[15px]  md:text-[20px] sm:text-[16px] text-[15px]">
+                <h6 className="font-montserrat primary">
                   Teoriya o’zlashtirish
                 </h6>
                 <p className="font-montserrat md:text-[17px] sm:text-[14px] text-[14px]">
@@ -202,7 +202,7 @@ const Home = () => {
                   }`}
                 >
                   <div className="user-info">
-                    <h5 className="font-poppins primary md:text-[20px] sm:text-[16px] text-[15px] font-[600] text-[20px]">
+                    <h5 className="font-poppins primary md:text-[20px] sm:text-[16px]  font-[600] text-[20px]">
                       Resurslar:
                     </h5>
                     <div className="row mt-3 px-3">
