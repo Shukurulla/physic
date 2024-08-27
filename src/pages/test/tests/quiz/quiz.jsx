@@ -157,10 +157,17 @@ const Quiz = () => {
                 ))}
               </div>
 
-              <div className="dot-line mb-[20px]">
-                {quiz.questions.map((item, idx) => (
-                  <div className={activeQuestion == idx ? "current" : ""}></div>
-                ))}
+              <div className="bg-blue-500 h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+                {Array(questions.length)
+                  .fill(0)
+                  .map((_, index) => (
+                    <div
+                      key={index}
+                      className={`border-[3px] border-blue-500 rounded-full size-4 ${
+                        index === activeQuestion ? "bg-white" : "bg-blue-500"
+                      }`}
+                    ></div>
+                  ))}
               </div>
               <div className="flex justify-end">
                 {activeQuestion === questions.length - 1 ? (

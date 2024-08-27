@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { imageQuiz } from "../../../../service/db";
 import UserService from "../../../../service/user.service";
@@ -67,22 +67,29 @@ const ImageQuiz = () => {
 
   const quizPostScore = () => {
     win.play();
-    const val = {
-      userId: user._id,
-      ...user,
-      userScore: {
-        ...user.userScore,
-        imageQuiz: {
-          quizName: imageQuiz.topic,
-          score: result.score,
-          correctAnswer: result.correctAnswers,
-          wrong: result.wrongAnswers + 1,
+    if (showResult) {
+      const val = {
+        userId: user._id,
+        ...user,
+        userScore: {
+          ...user.userScore,
+          imageQuiz: {
+            quizName: imageQuiz.topic,
+            score: result.score,
+            correctAnswer: result.correctAnswers,
+            wrong: result.wrongAnswers,
+          },
         },
-      },
-    };
-    UserService.test(dispatch, val);
-    onClickNext();
+      };
+      UserService.test(dispatch, val);
+    }
   };
+
+  useEffect(() => {
+    if (showResult == true) {
+      quizPostScore();
+    }
+  }, [showResult]);
 
   return (
     <div className="bg-[#F6F9FF] overflow-scroll h-[90vh] w-screen min-h-screen flex justify-center items-center">
@@ -182,7 +189,7 @@ const ImageQuiz = () => {
                   <button
                     className="bg-gray-300 px-4 py-2 rounded-full disabled:opacity-60 disabled:cursor-not-allowed"
                     disabled={selectedAnswerIndex === null}
-                    onClick={quizPostScore}
+                    onClick={onClickNext}
                   >
                     Jumaqlaw
                   </button>

@@ -84,174 +84,174 @@ export const quiz = {
       choices: ["1903", "1911", "1920", "1932"],
       correctAnswer: "1911",
     },
-    {
-      question: "Rezerford modeli qaysi tamoyilga zid bo'lib chiqdi?",
-      choices: [
-        "Klassik mexanika va elektrodinamika tamoyillariga",
-        "Nyuton mexanikasiga",
-        "Atomning massasiga",
-        "Elektronlarning spektral chiziqlariga",
-      ],
-      correctAnswer: "Klassik mexanika va elektrodinamika tamoyillariga",
-    },
-    {
-      question:
-        "O'zbekiston Yadro Tadqiqotlari Instituti qachon tashkil etilgan?",
-      choices: ["1956-yilda", "1960-yilda", "1970-yilda", "1980-yilda"],
-      correctAnswer: "1956-yilda",
-    },
-    {
-      question: "O'zbekiston Yadro Tadqiqotlari Instituti qayerda joylashgan?",
-      choices: ["Samarqand", "Toshkent", "Nukus", "Buxoro"],
-      correctAnswer: "Toshkent",
-    },
-    {
-      question:
-        "O'zbekiston Yadro Tadqiqotlari Instituti qanday sohalarda ishlaydi?",
-      choices: [
-        "Energetika va texnologiya",
-        "Tibbiyot va qishloq xo'jaligi",
-        "Biologiya va ekologiya",
-        "Yuqoridagilarning barchasi",
-      ],
-      correctAnswer: "Yuqoridagilarning barchasi",
-    },
-    {
-      question: "Bohr postulatlaridan biri qaysi?",
-      choices: [
-        "Atomning ichki tuzilishi haqida",
-        "Elektronlarning spektral chiziqlari haqida",
-        "Elektronlarning stasionar orbitalari haqida",
-        "Atomning massasi haqida",
-      ],
-      correctAnswer: "Elektronlarning stasionar orbitalari haqida",
-    },
-    {
-      question: "Radioaktivlik kim tomonidan kashf etilgan?",
-      choices: ["Rezerford", "Bekkerel", "Kyuri", "Dalton"],
-      correctAnswer: "Bekkerel",
-    },
-    {
-      question:
-        "Radioaktiv elementlardan qaysi biri uran rudasi ichidan ajratib olingan?",
-      choices: ["Poloniy", "Uran", "Toriy", "Karbon"],
-      correctAnswer: "Poloniy",
-    },
-    {
-      question: "Atom yadrosi nimadan iborat?",
-      choices: [
-        "Elektron va proton",
-        "Proton va neytron",
-        "Proton va elektron",
-        "Neytron va elektron",
-      ],
-      correctAnswer: "Proton va neytron",
-    },
-    {
-      question: "Rezerfordning tadqiqotlariga ko'ra, atomning o'lchami qanday?",
-      choices: ["10^-10 m", "10^-15 m", "10^-20 m", "10^-25 m"],
-      correctAnswer: "10^-10 m",
-    },
-    {
-      question: "Massa defekti deganda nimani tushunamiz?",
-      choices: [
-        "Atomning massasini",
-        "Nuklonlarning massasini",
-        "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
-        "Elektronlarning massasini",
-      ],
-      correctAnswer:
-        "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
-    },
-    {
-      question: "Bohr postulatlarining ikkinchisi nima haqida?",
-      choices: [
-        "Elektronlarning stasionar orbitalari",
-        "Elektronlarning energetik holatlari",
-        "Elektronlarning nur chiqarishi va yutishi",
-        "Atomning massasi",
-      ],
-      correctAnswer: "Elektronlarning nur chiqarishi va yutishi",
-    },
-    {
-      question: "Atom yadrosining zaryad sanisi nimani ifodalaydi?",
-      choices: [
-        "Yadrodagi protonlar sonini",
-        "Yadrodagi neytronlar sonini",
-        "Elektronlar sonini",
-        "Atomning umumiy massasini",
-      ],
-      correctAnswer: "Yadrodagi protonlar sonini",
-    },
-    {
-      question: "Izotoplar deganda nimani tushunamiz?",
-      choices: [
-        "Protonlar soni bir xil, massa soni turli elementlar",
-        "Protonlar va neytronlar soni bir xil elementlar",
-        "Elektronlar soni bir xil, protonlar soni turli elementlar",
-        "Neytronlar soni bir xil, protonlar soni turli elementlar",
-      ],
-      correctAnswer: "Protonlar soni bir xil, massa soni turli elementlar",
-    },
-    {
-      question:
-        "O'zbekistonning qaysi viloyatida yadro chiqindilari saqlanadi?",
-      choices: ["Toshkent", "Samarqand", "Navoi", "Qashqadaryo"],
-      correctAnswer: "Navoi",
-    },
-    {
-      question: "Alfa nurlanishi nima?",
-      choices: [
-        "Elektronlar oqimi",
-        "Geliy yadrolari oqimi",
-        "Fotokvantlar oqimi",
-        "Neytronlar oqimi",
-      ],
-      correctAnswer: "Geliy yadrolari oqimi",
-    },
-    {
-      question:
-        "O'zbekistonda qaysi radioaktiv izotoplar tibbiyotda keng qo'llaniladi?",
-      choices: [
-        "Poloniy va Radon",
-        "Yod va Teknesiy",
-        "Uran va Toriy",
-        "Kaliy va Karbon",
-      ],
-      correctAnswer: "Yod va Teknesiy",
-    },
-    {
-      question:
-        "O'zbekiston Respublikasida yadroviy xavfsizlikni ta'minlash uchun qanday choralar ko'riladi?",
-      choices: [
-        "Xodimlar maxsus kiyimlarda ishlaydi",
-        "Reaktorlarda suv va beton bilan himoyalanadi",
-        "Har kuni nazorat o'tkaziladi",
-        "Yadro chiqindilari ko'miladi",
-      ],
-      correctAnswer: "Reaktorlarda suv va beton bilan himoyalanadi",
-    },
-    {
-      question: "Scintillyatsion hisoblagich qanday printsipda ishlaydi?",
-      choices: [
-        "Gaz ionlanishi",
-        "Fotonlarning fotokimyoviy ta'siri",
-        "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
-        "Elektronlarning magnit maydoni",
-      ],
-      correctAnswer:
-        "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
-    },
-    {
-      question: "Bor radiusi nima?",
-      choices: [
-        "Atom yadrosi radiusi",
-        "Elektron orbitasi radiusi",
-        "Proton radiusi",
-        "Elektronning erkin holatda radiusi",
-      ],
-      correctAnswer: "Elektron orbitasi radiusi",
-    },
+    // {
+    //   question: "Rezerford modeli qaysi tamoyilga zid bo'lib chiqdi?",
+    //   choices: [
+    //     "Klassik mexanika va elektrodinamika tamoyillariga",
+    //     "Nyuton mexanikasiga",
+    //     "Atomning massasiga",
+    //     "Elektronlarning spektral chiziqlariga",
+    //   ],
+    //   correctAnswer: "Klassik mexanika va elektrodinamika tamoyillariga",
+    // },
+    // {
+    //   question:
+    //     "O'zbekiston Yadro Tadqiqotlari Instituti qachon tashkil etilgan?",
+    //   choices: ["1956-yilda", "1960-yilda", "1970-yilda", "1980-yilda"],
+    //   correctAnswer: "1956-yilda",
+    // },
+    // {
+    //   question: "O'zbekiston Yadro Tadqiqotlari Instituti qayerda joylashgan?",
+    //   choices: ["Samarqand", "Toshkent", "Nukus", "Buxoro"],
+    //   correctAnswer: "Toshkent",
+    // },
+    // {
+    //   question:
+    //     "O'zbekiston Yadro Tadqiqotlari Instituti qanday sohalarda ishlaydi?",
+    //   choices: [
+    //     "Energetika va texnologiya",
+    //     "Tibbiyot va qishloq xo'jaligi",
+    //     "Biologiya va ekologiya",
+    //     "Yuqoridagilarning barchasi",
+    //   ],
+    //   correctAnswer: "Yuqoridagilarning barchasi",
+    // },
+    // {
+    //   question: "Bohr postulatlaridan biri qaysi?",
+    //   choices: [
+    //     "Atomning ichki tuzilishi haqida",
+    //     "Elektronlarning spektral chiziqlari haqida",
+    //     "Elektronlarning stasionar orbitalari haqida",
+    //     "Atomning massasi haqida",
+    //   ],
+    //   correctAnswer: "Elektronlarning stasionar orbitalari haqida",
+    // },
+    // {
+    //   question: "Radioaktivlik kim tomonidan kashf etilgan?",
+    //   choices: ["Rezerford", "Bekkerel", "Kyuri", "Dalton"],
+    //   correctAnswer: "Bekkerel",
+    // },
+    // {
+    //   question:
+    //     "Radioaktiv elementlardan qaysi biri uran rudasi ichidan ajratib olingan?",
+    //   choices: ["Poloniy", "Uran", "Toriy", "Karbon"],
+    //   correctAnswer: "Poloniy",
+    // },
+    // {
+    //   question: "Atom yadrosi nimadan iborat?",
+    //   choices: [
+    //     "Elektron va proton",
+    //     "Proton va neytron",
+    //     "Proton va elektron",
+    //     "Neytron va elektron",
+    //   ],
+    //   correctAnswer: "Proton va neytron",
+    // },
+    // {
+    //   question: "Rezerfordning tadqiqotlariga ko'ra, atomning o'lchami qanday?",
+    //   choices: ["10^-10 m", "10^-15 m", "10^-20 m", "10^-25 m"],
+    //   correctAnswer: "10^-10 m",
+    // },
+    // {
+    //   question: "Massa defekti deganda nimani tushunamiz?",
+    //   choices: [
+    //     "Atomning massasini",
+    //     "Nuklonlarning massasini",
+    //     "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
+    //     "Elektronlarning massasini",
+    //   ],
+    //   correctAnswer:
+    //     "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
+    // },
+    // {
+    //   question: "Bohr postulatlarining ikkinchisi nima haqida?",
+    //   choices: [
+    //     "Elektronlarning stasionar orbitalari",
+    //     "Elektronlarning energetik holatlari",
+    //     "Elektronlarning nur chiqarishi va yutishi",
+    //     "Atomning massasi",
+    //   ],
+    //   correctAnswer: "Elektronlarning nur chiqarishi va yutishi",
+    // },
+    // {
+    //   question: "Atom yadrosining zaryad sanisi nimani ifodalaydi?",
+    //   choices: [
+    //     "Yadrodagi protonlar sonini",
+    //     "Yadrodagi neytronlar sonini",
+    //     "Elektronlar sonini",
+    //     "Atomning umumiy massasini",
+    //   ],
+    //   correctAnswer: "Yadrodagi protonlar sonini",
+    // },
+    // {
+    //   question: "Izotoplar deganda nimani tushunamiz?",
+    //   choices: [
+    //     "Protonlar soni bir xil, massa soni turli elementlar",
+    //     "Protonlar va neytronlar soni bir xil elementlar",
+    //     "Elektronlar soni bir xil, protonlar soni turli elementlar",
+    //     "Neytronlar soni bir xil, protonlar soni turli elementlar",
+    //   ],
+    //   correctAnswer: "Protonlar soni bir xil, massa soni turli elementlar",
+    // },
+    // {
+    //   question:
+    //     "O'zbekistonning qaysi viloyatida yadro chiqindilari saqlanadi?",
+    //   choices: ["Toshkent", "Samarqand", "Navoi", "Qashqadaryo"],
+    //   correctAnswer: "Navoi",
+    // },
+    // {
+    //   question: "Alfa nurlanishi nima?",
+    //   choices: [
+    //     "Elektronlar oqimi",
+    //     "Geliy yadrolari oqimi",
+    //     "Fotokvantlar oqimi",
+    //     "Neytronlar oqimi",
+    //   ],
+    //   correctAnswer: "Geliy yadrolari oqimi",
+    // },
+    // {
+    //   question:
+    //     "O'zbekistonda qaysi radioaktiv izotoplar tibbiyotda keng qo'llaniladi?",
+    //   choices: [
+    //     "Poloniy va Radon",
+    //     "Yod va Teknesiy",
+    //     "Uran va Toriy",
+    //     "Kaliy va Karbon",
+    //   ],
+    //   correctAnswer: "Yod va Teknesiy",
+    // },
+    // {
+    //   question:
+    //     "O'zbekiston Respublikasida yadroviy xavfsizlikni ta'minlash uchun qanday choralar ko'riladi?",
+    //   choices: [
+    //     "Xodimlar maxsus kiyimlarda ishlaydi",
+    //     "Reaktorlarda suv va beton bilan himoyalanadi",
+    //     "Har kuni nazorat o'tkaziladi",
+    //     "Yadro chiqindilari ko'miladi",
+    //   ],
+    //   correctAnswer: "Reaktorlarda suv va beton bilan himoyalanadi",
+    // },
+    // {
+    //   question: "Scintillyatsion hisoblagich qanday printsipda ishlaydi?",
+    //   choices: [
+    //     "Gaz ionlanishi",
+    //     "Fotonlarning fotokimyoviy ta'siri",
+    //     "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
+    //     "Elektronlarning magnit maydoni",
+    //   ],
+    //   correctAnswer:
+    //     "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
+    // },
+    // {
+    //   question: "Bor radiusi nima?",
+    //   choices: [
+    //     "Atom yadrosi radiusi",
+    //     "Elektron orbitasi radiusi",
+    //     "Proton radiusi",
+    //     "Elektronning erkin holatda radiusi",
+    //   ],
+    //   correctAnswer: "Elektron orbitasi radiusi",
+    // },
   ],
 };
 
@@ -315,90 +315,90 @@ export const trueFalseQuiz = {
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
-    {
-      question: "Alfa nurlanishi elektronlar oqimi hisoblanadi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Noto'g'ri",
-    },
-    {
-      question: "Yadro fizikasi bo'yicha tadqiqotlar Toshkentda olib boriladi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question: "Atom massasining 95 foizi yadroda joylashgan.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question: "Geyger – Myuller hisoblagichi gaz ionlanishiga asoslangan.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Vilson kamerasida zaryadlangan zarrachalar izlarini kuzatish mumkin.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Scintillyatsion hisoblagich zaryadlangan zarrachalarning elektromagnit to'lqinlarini kuzatishga asoslangan.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Noto'g'ri",
-    },
-    {
-      question: "Yadro kuchlari yadrodagi nuklonlarni birga saqlab turadi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Massa defekti yadroning umumiy massasidan kichik bo'lgan massa farqidir.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Borning birinchi postulati elektronlarning stacionar orbitada nur chiqarmasdan harakatlanishini ifodalaydi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Elektronlar nur chiqarib, bir energetik holatdan ikkinchisiga o'tadi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Vodorod atomining asosiy holatidagi energiyasi -13,6 eV ga teng.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Elektron orbitasining radiusi R = R0A^(2/3) formula yordamida aniqlanadi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Noto'g'ri",
-    },
-    {
-      question: "Yadrodagi protonlar soni atomning zaryad sonini ifodalaydi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Yadro fizikasi fanidan izlanishlar O'zbekiston Fanlar Akademiyasi tomonidan muvofiqlashtiriladi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Radioaktivlik izotopning qanday agregat holatda bo'lishiga bog'liq.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Noto'g'ri",
-    },
+    // {
+    //   question: "Alfa nurlanishi elektronlar oqimi hisoblanadi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Noto'g'ri",
+    // },
+    // {
+    //   question: "Yadro fizikasi bo'yicha tadqiqotlar Toshkentda olib boriladi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question: "Atom massasining 95 foizi yadroda joylashgan.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question: "Geyger – Myuller hisoblagichi gaz ionlanishiga asoslangan.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Vilson kamerasida zaryadlangan zarrachalar izlarini kuzatish mumkin.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Scintillyatsion hisoblagich zaryadlangan zarrachalarning elektromagnit to'lqinlarini kuzatishga asoslangan.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Noto'g'ri",
+    // },
+    // {
+    //   question: "Yadro kuchlari yadrodagi nuklonlarni birga saqlab turadi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Massa defekti yadroning umumiy massasidan kichik bo'lgan massa farqidir.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Borning birinchi postulati elektronlarning stacionar orbitada nur chiqarmasdan harakatlanishini ifodalaydi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Elektronlar nur chiqarib, bir energetik holatdan ikkinchisiga o'tadi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Vodorod atomining asosiy holatidagi energiyasi -13,6 eV ga teng.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Elektron orbitasining radiusi R = R0A^(2/3) formula yordamida aniqlanadi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Noto'g'ri",
+    // },
+    // {
+    //   question: "Yadrodagi protonlar soni atomning zaryad sonini ifodalaydi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Yadro fizikasi fanidan izlanishlar O'zbekiston Fanlar Akademiyasi tomonidan muvofiqlashtiriladi.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Haqiqat",
+    // },
+    // {
+    //   question:
+    //     "Radioaktivlik izotopning qanday agregat holatda bo'lishiga bog'liq.",
+    //   choices: ["Haqiqat", "Noto'g'ri"],
+    //   correctAnswer: "Noto'g'ri",
+    // },
   ],
 };
 
@@ -478,84 +478,84 @@ export const moreButtonsQuiz = {
       choices: ["geliy", "vodorod", "karbon", "neon", "azot"],
       correctAnswer: "geliy",
     },
-    {
-      question:
-        "Elektronlar energiyani yutganda, ular yuqori energiyali __________ orbitaga o'tadi.",
-      choices: ["stacionar", "past", "elliptik", "yuqori", "izchil"],
-      correctAnswer: "stacionar",
-    },
-    {
-      question: "Massa defekti yadroning __________ natijasida yuzaga keladi.",
-      choices: [
-        "parchalanishi",
-        "yutilishi",
-        "energiyasi",
-        "birikishi",
-        "o'zgarishi",
-      ],
-      correctAnswer: "energiyasi",
-    },
-    {
-      question: "Elektronlarning zaryadi __________.",
-      choices: ["musbat", "manfiy", "neytral", "nol", "o'zgaruvchan"],
-      correctAnswer: "manfiy",
-    },
-    {
-      question: "Yadro kuchlari faqat __________ ichida ta'sir qiladi.",
-      choices: [
-        "atom orbitasi",
-        "yadroning tashqarisida",
-        "yadro ichida",
-        "elektron buluti",
-        "atomning markazida",
-      ],
-      correctAnswer: "yadro ichida",
-    },
-    {
-      question: "Yadrodagi nuklonlar soni __________ bilan ifodalanadi.",
-      choices: [
-        "atom soni",
-        "massa soni",
-        "zaryad soni",
-        "kvant soni",
-        "energiya soni",
-      ],
-      correctAnswer: "massa soni",
-    },
-    {
-      question:
-        "Yadro energetikasi __________ energiyasini ajratib olish va foydalanish bilan shug'ullanadi.",
-      choices: ["kimyoviy", "magnit", "elektr", "atom", "yadro"],
-      correctAnswer: "yadro",
-    },
-    {
-      question:
-        "Radioaktiv parchalanish natijasida yangi __________ hosil bo'ladi.",
-      choices: ["atomlar", "elektronlar", "izotoplar", "fotonlar", "kvarklar"],
-      correctAnswer: "atomlar",
-    },
-    {
-      question: "Alfa zarrachalari __________ deb ham ataladi.",
-      choices: [
-        "elektronlar",
-        "protonlar",
-        "geliy yadrolari",
-        "neytronlar",
-        "kvantlar",
-      ],
-      correctAnswer: "geliy yadrolari",
-    },
-    {
-      question: "Yadro zaryadi yadrodagi __________ soni bilan belgilanadi.",
-      choices: [
-        "elektronlar",
-        "protonlar",
-        "neytronlar",
-        "fotonlar",
-        "kvarklar",
-      ],
-      correctAnswer: "protonlar",
-    },
+    // {
+    //   question:
+    //     "Elektronlar energiyani yutganda, ular yuqori energiyali __________ orbitaga o'tadi.",
+    //   choices: ["stacionar", "past", "elliptik", "yuqori", "izchil"],
+    //   correctAnswer: "stacionar",
+    // },
+    // {
+    //   question: "Massa defekti yadroning __________ natijasida yuzaga keladi.",
+    //   choices: [
+    //     "parchalanishi",
+    //     "yutilishi",
+    //     "energiyasi",
+    //     "birikishi",
+    //     "o'zgarishi",
+    //   ],
+    //   correctAnswer: "energiyasi",
+    // },
+    // {
+    //   question: "Elektronlarning zaryadi __________.",
+    //   choices: ["musbat", "manfiy", "neytral", "nol", "o'zgaruvchan"],
+    //   correctAnswer: "manfiy",
+    // },
+    // {
+    //   question: "Yadro kuchlari faqat __________ ichida ta'sir qiladi.",
+    //   choices: [
+    //     "atom orbitasi",
+    //     "yadroning tashqarisida",
+    //     "yadro ichida",
+    //     "elektron buluti",
+    //     "atomning markazida",
+    //   ],
+    //   correctAnswer: "yadro ichida",
+    // },
+    // {
+    //   question: "Yadrodagi nuklonlar soni __________ bilan ifodalanadi.",
+    //   choices: [
+    //     "atom soni",
+    //     "massa soni",
+    //     "zaryad soni",
+    //     "kvant soni",
+    //     "energiya soni",
+    //   ],
+    //   correctAnswer: "massa soni",
+    // },
+    // {
+    //   question:
+    //     "Yadro energetikasi __________ energiyasini ajratib olish va foydalanish bilan shug'ullanadi.",
+    //   choices: ["kimyoviy", "magnit", "elektr", "atom", "yadro"],
+    //   correctAnswer: "yadro",
+    // },
+    // {
+    //   question:
+    //     "Radioaktiv parchalanish natijasida yangi __________ hosil bo'ladi.",
+    //   choices: ["atomlar", "elektronlar", "izotoplar", "fotonlar", "kvarklar"],
+    //   correctAnswer: "atomlar",
+    // },
+    // {
+    //   question: "Alfa zarrachalari __________ deb ham ataladi.",
+    //   choices: [
+    //     "elektronlar",
+    //     "protonlar",
+    //     "geliy yadrolari",
+    //     "neytronlar",
+    //     "kvantlar",
+    //   ],
+    //   correctAnswer: "geliy yadrolari",
+    // },
+    // {
+    //   question: "Yadro zaryadi yadrodagi __________ soni bilan belgilanadi.",
+    //   choices: [
+    //     "elektronlar",
+    //     "protonlar",
+    //     "neytronlar",
+    //     "fotonlar",
+    //     "kvarklar",
+    //   ],
+    //   correctAnswer: "protonlar",
+    // },
   ],
 };
 

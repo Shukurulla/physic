@@ -140,13 +140,13 @@ const TrueFalseQuiz = () => {
                   </button>
                 ))}
               </div>
-              <div className="bg-[#79C142] h-[3px] sm:mx-auto w-fit flex my-4 items-center gap-1 ">
+              <div className="bg-[#79C142] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (
                     <div
                       key={index}
-                      className={`border-[2px] sm:border-[3px] border-[#79C142] rounded-full size-2 sm:size-3 ${
+                      className={`border-[3px] border-[#79C142] rounded-full size-4 ${
                         index === activeQuestion ? "bg-white" : "bg-[#79C142]"
                       }`}
                     ></div>

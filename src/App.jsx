@@ -14,6 +14,14 @@ import Quiz from "./pages/test/tests/quiz/quiz";
 import TrueFalseQuiz from "./pages/test/tests/truefalse/trueOrFalse";
 import UserService from "./service/user.service";
 
+const Redirect = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate("/home");
+  });
+  return <h1>Loading..</h1>;
+};
+
 const App = () => {
   const { user } = useSelector((state) => state.user);
   const navigate = useNavigate();
@@ -47,6 +55,7 @@ const App = () => {
           </>
         )}
         <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Redirect />} />
         <Route path="/register" element={<Register />} />
         <Route path="/test/quiz" element={<Quiz />} />
         <Route path="/test/true-false" element={<TrueFalseQuiz />} />
