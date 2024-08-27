@@ -26,7 +26,9 @@ const Layaout = ({ activPage }) => {
           }`}
         >
           <div>
-            <div className="bg-details"></div>
+            <div className="bg-details">
+              <img src="" alt="" />
+            </div>
             {activPage}
           </div>
         </div>
