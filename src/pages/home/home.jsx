@@ -30,7 +30,11 @@ const Home = () => {
 
   const usersBall = user?.userScore
     ? infoTests
-        .map((item) => user?.userScore[item.keyValue]?.score)
+        .map((item) =>
+          user?.userScore[item.keyValue]
+            ? user?.userScore[item.keyValue]?.score
+            : 0
+        )
         .reduce((a, b) => a + b)
     : 0;
 
