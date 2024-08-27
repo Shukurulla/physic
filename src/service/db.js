@@ -614,6 +614,169 @@ export const matchingPairWordsQuiz = {
   ],
 };
 
+export const learningDB = [
+  {
+    id: 1,
+    title: "Yadro Fizika",
+    desctiption: "mutaxassislarning maqolalarini o'qing",
+    keyValue: "quiz",
+    paragraphs: [
+      {
+        dropTitle:
+          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
+        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
+        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
+        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
+        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
+        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
+        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
+        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
+        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
+        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
+        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
+        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
+        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
+        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
+        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
+        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
+        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+      },
+      {
+        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
+        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Yadro Fizika",
+    keyValue: "truFalseQuiz",
+    desctiption: "mutaxassislarning maqolalarini o'qing",
+    paragraphs: [
+      {
+        dropTitle:
+          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
+        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
+        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
+        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
+        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
+        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
+        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
+        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
+        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
+        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
+        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
+        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
+        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
+        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
+        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
+        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
+        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+      },
+      {
+        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
+        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Yadro Fizika",
+    keyValue: "moreButtons",
+    desctiption: "mutaxassislarning maqolalarini o'qing",
+    paragraphs: [
+      {
+        dropTitle:
+          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
+        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
+        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
+        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
+        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
+        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
+        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
+        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
+        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
+        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
+        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
+        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
+        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
+        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
+        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
+        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
+        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+      },
+      {
+        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
+        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Yadro Fizika",
+    keyValue: "imageQuiz",
+    desctiption: "mutaxassislarning maqolalarini o'qing",
+    paragraphs: [
+      {
+        dropTitle:
+          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
+        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
+        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
+        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
+        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
+        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
+        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
+        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
+        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
+        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
+        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
+        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
+        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
+        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
+        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
+        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
+        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+      },
+      {
+        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
+        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Yadro Fizika",
+    keyValue: "matchingPairWordsQuiz",
+    desctiption: "mutaxassislarning maqolalarini o'qing",
+    paragraphs: [
+      {
+        dropTitle:
+          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
+        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
+        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
+        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
+        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
+        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
+        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
+        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
+        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
+        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
+        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
+        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
+        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
+        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
+        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
+        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
+        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+      },
+      {
+        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
+        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+      },
+    ],
+  },
+];
+
 export const infoTests = [
   {
     id: 1,
@@ -621,6 +784,7 @@ export const infoTests = [
     totalTest: quiz.questions.length,
     path: "/test/quiz",
     keyValue: "quiz",
+    favouriteColor: "#0D6EFD",
   },
   {
     id: 2,
@@ -628,6 +792,7 @@ export const infoTests = [
     totalTest: trueFalseQuiz.questions.length,
     path: "/test/true-false",
     keyValue: "truFalseQuiz",
+    favouriteColor: "#79C142",
   },
   {
     id: 3,
@@ -635,6 +800,7 @@ export const infoTests = [
     totalTest: moreButtonsQuiz.questions.length,
     path: "/test/more-buttons",
     keyValue: "moreButtons",
+    favouriteColor: "#FFE500",
   },
   {
     id: 4,
@@ -642,12 +808,14 @@ export const infoTests = [
     totalTest: imageQuiz.questions.length,
     path: "/test/image-quiz",
     keyValue: "imageQuiz",
+    favouriteColor: "#EE1D23",
   },
   {
-    id: 4,
+    id: 5,
     title: matchingPairWordsQuiz.topic,
     totalTest: matchingPairWordsQuiz.questions.length,
     path: "/test/matching-pair-words-quiz",
     keyValue: "matchingPairWordsQuiz",
+    favouriteColor: "#F47921",
   },
 ];

@@ -25,7 +25,10 @@ const Layaout = ({ activPage }) => {
               : "col-lg-11 col-md-11 col-sm-10 col-9"
           }`}
         >
-          {activPage}
+          <div>
+            <div className="bg-details"></div>
+            {activPage}
+          </div>
         </div>
       </div>
     </>

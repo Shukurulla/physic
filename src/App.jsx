@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/home/home";
 import Layaout from "./pages/layaout";
+import Learning from "./pages/learning/learning";
+import Unit from "./pages/learning/unit";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
 import Setting from "./pages/setting/setting";
@@ -19,11 +21,11 @@ const Redirect = () => {
   useEffect(() => {
     navigate("/home");
   });
-  return <h1>Loading..</h1>;
+  return;
 };
 
 const App = () => {
-  const { user } = useSelector((state) => state.user);
+  const { user, isLoading } = useSelector((state) => state.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
@@ -42,7 +44,10 @@ const App = () => {
         {user !== null && (
           <>
             <Route path="/home" element={<Layaout activPage={<Home />} />} />
-            <Route path="/learning" element={<Layaout />} />
+            <Route
+              path="/learning"
+              element={<Layaout activPage={<Learning />} />}
+            />
             <Route path="/resource" element={<Layaout />} />
             <Route
               path="/setting"
@@ -51,6 +56,10 @@ const App = () => {
             <Route
               path="/tests"
               element={<Layaout activPage={<TestInfo />} />}
+            />
+            <Route
+              path="/learning/:id"
+              element={<Layaout activPage={<Unit />} />}
             />
           </>
         )}

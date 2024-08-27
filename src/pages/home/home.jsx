@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import banner from "../../../public/banner-theory.png";
+import banner from "../../../public/teory-banner.png";
+import testBanner from "../../../public/test-banner.png";
 import bgEllipses from "../../../public/bg-ellipse.png";
-import userPic from "../../../public/profile.png";
 import setting from "../../../public/setting.png";
 import { changeActivePage } from "../../slice/ui";
 import { infoTests } from "../../service/db";
@@ -41,7 +41,7 @@ const Home = () => {
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
-    <div className="px-3">
+    <div className="md:p-3 pb-5 pl-[10px] pt-[40px]">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
       <p className="font-nunito page-path">Bosh shifa /</p>
       <div className="row items-center">
@@ -98,12 +98,12 @@ const Home = () => {
           }`}
         >
           <div className="score-level-box w-100 h-100">
-            <h5 className="font-montserrat md:text-[20px] sm:text-[16px] text-[15px]">
+            <h5 className="font-montserrat md:text-[18px] sm:text-[16px] text-[18px]">
               Natijangizning o'rtacha foizi
             </h5>
             <div className="score-percent  flex justify-center pt-3">
               <CircularProgressbar
-                className="z-[1] montserrat-font mx-auto size-3/4 md:size-3/4"
+                className="z-[1] montserrat-font mx-auto size-3/6 md:size-3/5"
                 value={percentage}
                 text={`${percentage}%`}
                 styles={{
@@ -126,9 +126,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-4  sm:size-3/4 mx-auto">
+      <div className="py-4 h-5/6">
         <Link to={"/learning "} className="col-12">
-          <img src={banner} className="w-100" alt="" />
+          <img src={banner} className="w-100 rounded-[6px]" alt="" />
         </Link>
       </div>
       <div className="resource">
@@ -139,7 +139,7 @@ const Home = () => {
           Nazariyani o'rganish uchun elektron kitoblar
         </p>
         <div className="row size-3/4 mx-auto mt-[20px]">
-          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
             <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
               <img
                 src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
@@ -148,7 +148,7 @@ const Home = () => {
               />
             </a>
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
             <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
               <img
                 src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
@@ -157,7 +157,7 @@ const Home = () => {
               />
             </a>
           </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 col-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
             <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
               <img
                 src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
@@ -167,6 +167,11 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div className="pb-4">
+        <Link to={"/tests"} className="col-12">
+          <img src={testBanner} className="w-100 rounded-[6px]" alt="" />
+        </Link>
       </div>
       <div className="setting" id="#settings">
         <div className="row">
@@ -209,28 +214,30 @@ const Home = () => {
                     <h5 className="font-poppins primary md:text-[20px] sm:text-[16px]  font-[600] text-[20px]">
                       Resurslar:
                     </h5>
-                    <div className="row mt-3 px-3">
-                      <div className="col-12 mt-2">
-                        <p className="font-nunito">Ism va sharifi</p>
-                        <h4 className="font-poppins text-[24px] font-[500] ">
+                    <div className="row  px-3">
+                      <div className="col-12 mt-3  sm:mt-2">
+                        <p className="font-nunito text-[14px] sm:text-[16px]">
+                          Ism va sharifi
+                        </p>
+                        <h4 className="font-poppins md:text-[24px] text-[20px] font-[500] ">
                           {user.fullName}
                         </h4>
                       </div>
-                      <div className="col mt-2">
+                      <div className="col mt-3 sm:mt-2">
                         <p className="font-nunito">Kasb:</p>
-                        <h4 className="font-poppins text-[24px] font-[500] ">
+                        <h4 className="font-poppins md:text-[24px] text-[20px] font-[500] ">
                           {user.job}
                         </h4>
                       </div>
-                      <div className="col mt-2">
+                      <div className="col mt-3 sm:mt-2">
                         <p className="font-nunito">Yoshi:</p>
-                        <h4 className="font-poppins text-[24px] font-[500] ">
+                        <h4 className="font-poppins md:text-[24px] text-[20px] font-[500] ">
                           {user.age}
                         </h4>
                       </div>
-                      <div className="col-12 mt-2">
+                      <div className="col-12 mt-3 sm:mt-2">
                         <p className="font-nunito">Ta'lim joyi:</p>
-                        <h4 className="font-poppins text-[24px] font-[500] ">
+                        <h4 className="font-poppins md:text-[24px] text-[20px] font-[500] ">
                           {user.school}
                         </h4>
                       </div>
@@ -240,12 +247,16 @@ const Home = () => {
                 <div
                   className={`${
                     showSide
-                      ? "col-lg-4 col-md-5 col-sm-5"
-                      : "col-lg-4 col-md-5 col-sm-4"
+                      ? "col-lg-4 col-md-5 col-sm-5 h-100"
+                      : "col-lg-4 col-md-5 col-sm-4  h-100"
                   }`}
                 >
-                  <div className="img-box">
-                    <img src={user.picture} className="w-100 " alt="" />
+                  <div className="img-box mt-3 sm:mt-0 h-[100%]">
+                    <img
+                      src={user.picture}
+                      className="md:w-[100%] w-[70%] mx-auto  h-[200px] "
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>

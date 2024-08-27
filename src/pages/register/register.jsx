@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import UserService from "../../service/user.service";
@@ -14,39 +15,54 @@ const Register = () => {
   const [school, setSchool] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [showAlert, setShowAlert] = useState(false);
+
+  const isNumber = /^[0-9]$/.test(fullName);
+  const isAlphabet = /^[a-zA-Z]$/.test();
 
   const { isLoading } = useSelector((state) => state.user);
 
+  useEffect(() => {
+    if (isNaN(age)) {
+      toast.error("Iltimos yoshingizga harf yozmang!!");
+    }
+    console.log(age);
+  }, [age.length + 1]);
+
   const submitHandler = async (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("upload_preset", "restoran-order");
-    formData.append("cloud_name", "djsdapm3z");
+    if (isNaN(age)) {
+      toast.error("Iltimos yoshingizga harf yozmang!!");
+    } else {
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", "restoran-order");
+      formData.append("cloud_name", "djsdapm3z");
 
-    await fetch("https://api.cloudinary.com/v1_1/djsdapm3z/image/upload", {
-      method: "POST",
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then(async (data) => {
-        await UserService.postUser(
-          dispatch,
-          {
-            fullName,
-            username,
-            password,
-            age,
-            job,
-            school,
-            picture: data.secure_url,
-          },
-          navigate
-        );
+      await fetch("https://api.cloudinary.com/v1_1/djsdapm3z/image/upload", {
+        method: "POST",
+        body: formData,
       })
-      .catch((err) => {
-        console.log(err);
-      });
+        .then((res) => res.json())
+        .then(async (data) => {
+          await UserService.postUser(
+            dispatch,
+            {
+              fullName,
+              username,
+              password,
+              age,
+              job,
+              school,
+              picture: data.secure_url,
+            },
+            navigate
+          );
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   const changeFile = (e) => {
