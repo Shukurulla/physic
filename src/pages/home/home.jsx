@@ -207,7 +207,7 @@ const Home = () => {
                     </h5>
                     <div className="row mt-3 px-3">
                       <div className="col-12 mt-2">
-                        <p className="font-nunito">Ism va sharifi:</p>
+                        <p className="font-nunito">Ism va sharifi</p>
                         <h4 className="font-poppins text-[24px] font-[500] ">
                           {user.fullName}
                         </h4>
