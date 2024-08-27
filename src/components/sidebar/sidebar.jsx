@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { navItems } from "../../constants";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
@@ -12,6 +12,10 @@ const Sidebar = () => {
   const changeSideHandler = (val) => {
     dispatch(changeShowSide(val));
   };
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, [window.innerWidth]);
+
   return (
     <div className={`side-bar  ${showSide ? "" : "hide"}`}>
       <ul>
@@ -20,17 +24,20 @@ const Sidebar = () => {
             key={item.label}
             className={`${activePage == item.label ? "active" : ""}`}
           >
-            <Link to={item.path}>
+            <Link
+              to={item.path}
+              onClick={() =>
+                window.innerWidth < 500 ? changeSideHandler(!showSide) : ""
+              }
+            >
               <img
                 src={item.icon}
                 className={showSide ? "" : "w-[30px]"}
                 alt={item.label}
               />
-              {showSide ? (
-                <span className="font-nunito">{item.label}</span>
-              ) : (
-                ""
-              )}
+              <span className={`font-nunito ${showSide ? "show" : "hide"}`}>
+                {item.label}
+              </span>
             </Link>
           </li>
         ))}

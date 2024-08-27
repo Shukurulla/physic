@@ -140,10 +140,17 @@ const TrueFalseQuiz = () => {
                   </button>
                 ))}
               </div>
-              <div className="dot-line mb-[20px]">
-                {trueFalseQuiz.questions.map((item, idx) => (
-                  <div className={activeQuestion == idx ? "current" : ""}></div>
-                ))}
+              <div className="bg-[#79C142] h-[3px] sm:mx-auto w-fit flex my-4 items-center gap-1 ">
+                {Array(questions.length)
+                  .fill(0)
+                  .map((_, index) => (
+                    <div
+                      key={index}
+                      className={`border-[2px] sm:border-[3px] border-[#79C142] rounded-full size-2 sm:size-3 ${
+                        index === activeQuestion ? "bg-white" : "bg-[#79C142]"
+                      }`}
+                    ></div>
+                  ))}
               </div>
               <div className="flex justify-end">
                 {activeQuestion === questions.length - 1 ? (

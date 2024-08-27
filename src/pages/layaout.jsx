@@ -12,14 +12,14 @@ const Layaout = ({ activPage }) => {
         <div
           className={`${
             showSide
-              ? "col-lg-3 col-md-3 col-sm-4"
+              ? "col-lg-3 col-md-3 col-sm-4 col-8"
               : "col-lg-1 col-md-1 col-sm-2 col-2"
           }`}
         >
           <Sidebar />
         </div>
         <div
-          className={`scroll ${
+          className={`scroll ${window.innerWidth < 500 ? "pt-[40px]" : ""} ${
             showSide
               ? "col-lg-9 col-md-9 col-sm-8"
               : "col-lg-11 col-md-11 col-sm-10 col-9"

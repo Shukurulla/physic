@@ -8,51 +8,56 @@ import { Link } from "react-router-dom";
 const TestInfo = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
+  const { showSide } = useSelector((state) => state.ui);
 
   useEffect(() => {
     dispatch(changeActivePage("Test"));
   }, []);
 
   return (
-    <div className="test-page p-3">
+    <div className="test-page px-3">
       <h4 className="font-nunito  page-label">Testlar</h4>
       <p className="font-nunito page-path">Testlar /</p>
       {infoTests.map((item) => (
-        <div key={item.id} className="test-list">
-          <div className="test-info">
-            <h5 className="font-poppins primary">{item.title}</h5>
-            <p className="font-montserrat">Jami test: {item.totalTest}</p>
-            {user.userScore && user.userScore[item.keyValue] ? (
-              <ul className="mt-[20px]">
-                <li>
-                  Jami yig'gan balingiz:{" "}
-                  {user.userScore && user.userScore[item.keyValue].score}
-                  ball
-                </li>
-                <li>
-                  Tog'ri javoblar soni:{" "}
-                  {user.userScore &&
-                    user.userScore[item.keyValue].correctAnswer}
-                  ta
-                </li>
-              </ul>
-            ) : (
-              ""
-            )}
+        <div className="test-list">
+          <div key={item.id} className="row items-center">
+            <div className={"col-lg-8 col-md-8 col-sm-12"}>
+              <h5 className="font-poppins primary">{item.title}</h5>
+              <p className="font-montserrat">Jami test: {item.totalTest}</p>
+              {user.userScore && user.userScore[item.keyValue] ? (
+                <ul className="mt-[20px]">
+                  <li>
+                    Jami yig'gan balingiz:{" "}
+                    {user.userScore && user.userScore[item.keyValue].score}
+                    ball
+                  </li>
+                  <li>
+                    Tog'ri javoblar soni:{" "}
+                    {user.userScore &&
+                      user.userScore[item.keyValue].correctAnswer}
+                    ta
+                  </li>
+                </ul>
+              ) : (
+                ""
+              )}
+            </div>
+            <div className={"col-lg-4 col-md-4 col-sm-12"}>
+              <Link to={item.path}>
+                <button
+                  className={
+                    user.userScore && user.userScore[item.keyValue]
+                      ? "btn btn-success block w-100 p-[10px]"
+                      : "primary-button"
+                  }
+                >
+                  {user.userScore && user.userScore[item.keyValue]
+                    ? "Qayta Urinish"
+                    : "Boshlash"}
+                </button>
+              </Link>
+            </div>
           </div>
-          <Link to={item.path}>
-            <button
-              className={
-                user.userScore && user.userScore[item.keyValue]
-                  ? "btn btn-success block w-100 p-[10px]"
-                  : "primary-button"
-              }
-            >
-              {user.userScore && user.userScore[item.keyValue]
-                ? "Qayta Urinish"
-                : "Boshlash"}
-            </button>
-          </Link>
         </div>
       ))}
     </div>

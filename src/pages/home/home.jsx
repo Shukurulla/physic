@@ -37,7 +37,7 @@ const Home = () => {
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
-    <div className="p-3">
+    <div className="px-3">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
       <p className="font-nunito page-path">Bosh shifa /</p>
       <div className="row items-center">
@@ -49,7 +49,7 @@ const Home = () => {
           }`}
         >
           <div className="edu-system bg-light">
-            <i className="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react text-[200px] md:text-[300px]"></i>
             <h5 className="font-poppins ">Ta'lim tizimi</h5>
             <div className="leveling">
               <div className="index-level complete font-montserrat">
@@ -89,7 +89,7 @@ const Home = () => {
         <div
           className={`${
             showSide
-              ? "col-lg-4 col-md-3 col-sm-8"
+              ? "col-lg-4 col-md-3 col-sm-8 mx-auto"
               : "col-lg-3 col-md-3 col-sm-8 mx-auto "
           }`}
         >
@@ -99,7 +99,7 @@ const Home = () => {
             </h5>
             <div className="score-percent  flex justify-center pt-3">
               <CircularProgressbar
-                className="z-[1] montserrat-font size-3/4 md:size-3/4"
+                className="z-[1] montserrat-font mx-auto size-3/4 md:size-3/4"
                 value={percentage}
                 text={`${percentage}%`}
                 styles={{
@@ -122,7 +122,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 size-3/4 mx-auto">
+      <div className="py-4  sm:size-3/4 mx-auto">
         <Link to={"/learning "} className="col-12">
           <img src={banner} className="w-100" alt="" />
         </Link>
