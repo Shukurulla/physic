@@ -15,7 +15,7 @@ const TestInfo = () => {
   }, []);
 
   return (
-    <div className="md:p-3 test pb-5 pl-[10px] pt-[40px]">
+    <div className="md:p-3 test pb-5 px-[10px]">
       <h4 className="font-nunito  page-label">Testlar</h4>
       <p className="font-nunito page-path">Testlar /</p>
       {infoTests.map((item) => (

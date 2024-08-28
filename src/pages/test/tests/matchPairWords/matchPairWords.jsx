@@ -150,7 +150,7 @@ const MatchingPairWordsQuiz = () => {
 
   return (
     <div className="bg-[#F6F9FF] w-screen min-h-screen flex justify-center items-center">
-      <div className="w-3/4 my-10">
+      <div className="w-[90%] sm:w-3/4 my-10">
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
@@ -163,14 +163,14 @@ const MatchingPairWordsQuiz = () => {
             ></div>
           </div>
         )}
-        <div className="shadow-[0_0_16px_0_#00000029] rounded-[8px] bg-white p-8">
+        <div className="shadow-[0_0_16px_0_#00000029] sm:p-8  border-t-[10px] sm:border-t-[15px] border-[#F47921] rounded-[8px] bg-white p-4">
           {!showResult ? (
             <>
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center sm:mb-4 mb-2">
                 <span className="text-[#F47921] font-semibold text-3xl">
                   Test
                 </span>
-                <span className="bg-[#F47921] text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#F47921] text-white sm:text-sm sm:py-2 sm:px-5 py-1 text-sm  px-3 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
@@ -213,7 +213,7 @@ const MatchingPairWordsQuiz = () => {
                   ))}
                 </div>
               </div>
-              <div className="bg-[#F47921CC] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+              <div className="bg-[#F47921CC] h-1 w-fit flex my-4 items-center gap-[15px] sm:gap-[25px] mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (

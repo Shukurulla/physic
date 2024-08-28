@@ -41,7 +41,7 @@ const Home = () => {
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
-    <div className="md:p-3 pb-5 pl-[10px] pt-[40px]">
+    <div className="md:p-3 pb-5 px-[10px] ">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
       <p className="font-nunito page-path">Bosh shifa /</p>
       <div className="row items-center">
@@ -52,7 +52,7 @@ const Home = () => {
               : "col-lg-9 col-md-9 col-sm-12"
           }`}
         >
-          <div className="edu-system bg-light">
+          <div className="edu-system bg-light mt-[20px] sm:mt-0">
             <i className="fa-brands fa-react text-[200px] md:text-[300px]"></i>
             <h5 className="font-poppins ">Ta'lim tizimi</h5>
             <div className="leveling">
@@ -63,10 +63,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat primary">
+                <h6 className="font-montserrat primary md:text-[20px] sm:text-[18px] text-[16px]">
                   Teoriya o’zlashtirish
                 </h6>
-                <p className="font-montserrat md:text-[17px] sm:text-[14px] text-[14px]">
+                <p className="font-montserrat md:text-[17px] sm:text-[18px] text-[16px]">
                   mutaxassislarning maqolalarini o'qish {showSide && <br />}
                   ~o'qish vaqti: 15 daqiqa
                 </p>
@@ -97,7 +97,7 @@ const Home = () => {
               : "col-lg-3 col-md-3 col-sm-8 mx-auto "
           }`}
         >
-          <div className="score-level-box w-100 h-100">
+          <div className="score-level-box w-100 h-100 mt-[20px] sm:mt-0">
             <h5 className="font-montserrat md:text-[18px] sm:text-[16px] text-[18px]">
               Natijangizning o'rtacha foizi
             </h5>
@@ -126,9 +126,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 h-5/6">
+      <div className="py-4">
         <Link to={"/learning "} className="col-12">
-          <img src={banner} className="w-100 rounded-[6px]" alt="" />
+          <img
+            src={banner}
+            className="w-100 rounded-[6px] h-[200px] sm:h-auto"
+            alt=""
+          />
         </Link>
       </div>
       <div className="resource">
@@ -170,7 +174,11 @@ const Home = () => {
       </div>
       <div className="pb-4">
         <Link to={"/tests"} className="col-12">
-          <img src={testBanner} className="w-100 rounded-[6px]" alt="" />
+          <img
+            src={testBanner}
+            className="w-100 h-[200px] sm:h-auto rounded-[6px]"
+            alt=""
+          />
         </Link>
       </div>
       <div className="setting" id="#settings">
@@ -189,7 +197,9 @@ const Home = () => {
                 alt=""
               />
               <div className="text">
-                <h5 className="font-montserrat">Sozlamalar</h5>
+                <h5 className="font-montserrat  md:text-[18px] sm:text-[16px] text-[18px]">
+                  Sozlamalar
+                </h5>
                 <img src={setting} alt="" />
               </div>
             </div>
@@ -254,7 +264,7 @@ const Home = () => {
                   <div className="img-box mt-3 sm:mt-0 h-[100%]">
                     <img
                       src={user.picture}
-                      className="md:w-[100%] w-[70%] mx-auto  h-[200px] "
+                      className="md:w-[100%] w-[50%] sm:w-[70%] mx-auto  h-[200px] "
                       alt=""
                     />
                   </div>

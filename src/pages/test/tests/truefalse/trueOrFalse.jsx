@@ -86,7 +86,7 @@ const TrueFalseQuiz = () => {
 
   return (
     <div className="bg-[#F6F9FF] quiz w-screen min-h-screen flex justify-center items-center">
-      <div className="w-3/4 my-10">
+      <div className="w-[90%] sm:w-3/4 my-10">
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
@@ -99,19 +99,19 @@ const TrueFalseQuiz = () => {
             ></div>
           </div>
         )}
-        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#79C142] rounded-[8px] bg-white p-8">
+        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-t-[10px] sm:border-t-[20px] border-[#79C142] rounded-[8px] bg-white sm:p-8 p-4">
           {!showResult ? (
             <>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-[#79C142] font-semibold text-3xl">
+                <span className="text-[#79C142] font-semibold text-2xl sm:text-3xl">
                   Test
                 </span>
-                <span className="bg-[#79C142] text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#79C142] text-white sm:text-sm sm:py-2 sm:px-4 text-sm py-1 px-2 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
-              <p className="mb-10">Durıs juwaptı belgileń</p>
-              <p>{question}</p>
+              <p className="sm:mb-10 mb-2">Durıs juwaptı belgileń</p>
+              <p className="text-lg font-[600]">{question}</p>
               <div className="flex justify-center items-center gap-2 mb-10 mt-6">
                 {choices.map((answer, index) => (
                   <button
@@ -140,7 +140,7 @@ const TrueFalseQuiz = () => {
                   </button>
                 ))}
               </div>
-              <div className="bg-[#79C142] h-1 w-fit flex my-4 items-center gap-6 mx-auto">
+              <div className="bg-[#79C142] h-1 w-fit flex my-4 items-center gap-[15px] sm:gap-[25px] mx-auto">
                 {Array(questions.length)
                   .fill(0)
                   .map((_, index) => (

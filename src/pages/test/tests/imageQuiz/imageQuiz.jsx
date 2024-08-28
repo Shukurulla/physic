@@ -92,11 +92,11 @@ const ImageQuiz = () => {
   }, [showResult]);
 
   return (
-    <div className="bg-[#F6F9FF] overflow-scroll h-[90vh] w-screen min-h-screen flex justify-center items-center">
-      <div className="w-3/4 my-10">
+    <div className="bg-[#F6F9FF] overflow-scroll py-10 h-[100vh] w-screen min-h-screen flex justify-center items-center">
+      <div className="w-[90%] sm:w-3/4 py-10">
         {!showResult && (
           <>
-            <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
+            <div className="border h-4 rounded-full bg-gray-300 mb-3 w-3/4 mx-auto">
               <div
                 className="bg-[#EE1D23] h-full rounded-full transition-all ease-in-out duration-300"
                 style={{
@@ -106,7 +106,7 @@ const ImageQuiz = () => {
                 }}
               ></div>
             </div>
-            <div className="bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#EE1D23] rounded-[8px] h-96 mb-10 lg:w-1/2 mx-auto">
+            <div className="bg-[#F5F5F5] shadow-[0_0_16px_0_#00000029]  quiz-wrapper sm:border-t-[15px] border-t-[10px]  border-[#EE1D23] rounded-[8px] sm:h-64 h-48  mb-10 lg:w-1/2 mx-auto">
               <img
                 src={`./quiz-images/${image}`}
                 alt="Quiz image"
@@ -115,19 +115,19 @@ const ImageQuiz = () => {
             </div>
           </>
         )}
-        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#EE1D23] rounded-[8px] bg-white p-8">
+        <div className="shadow-[0_0_16px_0_#00000029] quiz-wrapper border-[#EE1D23] rounded-[8px] sm:border-t-[15px] border-t-[10px] bg-white  sm:p-8 p-4">
           {!showResult ? (
             <>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-[#EE1D23] font-semibold text-3xl">
+                <span className="text-[#EE1D23] font-semibold text-2xl sm:text-3xl">
                   Test
                 </span>
-                <span className="bg-[#EE1D23] text-white text-sm py-2 px-4 rounded-full ">
+                <span className="bg-[#EE1D23] text-white sm:text-sm sm:py-2 sm:px-4 text-sm py-1 px-3 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
-              <p className="mb-10">Durıs juwaptı belgileń</p>
-              <p>{question}</p>
+              <p className="sm:mb-10 mb-2">Durıs juwaptı belgileń</p>
+              <p className="text-lg font-[600]">{question}</p>
               <div className="space-y-2 mb-10 mt-6">
                 {choices.map((answer, index) => (
                   <div

@@ -12,7 +12,7 @@ const Learning = () => {
 
   return (
     <div>
-      <div className="md:p-3 pb-5 p-[20px] pt-[40px]">
+      <div className="md:p-3 test pb-5 px-[10px]">
         <h4 className="font-nunito page-label">Tayyorlanish</h4>
         <p className="font-nunito page-path">Tayyorlanish /</p>
 

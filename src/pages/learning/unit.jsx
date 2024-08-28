@@ -19,10 +19,12 @@ const Unit = () => {
 
   return (
     <div>
-      <div className="md:p-3 pb-5 pl-[10px] pt-[40px]">
-        <h4 className="font-nunito page-label">Tayyorlanish</h4>
+      <div className="md:p-3 test pb-5 px-[10px]">
+        <Link to={"/learning"} className="font-nunito page-label">
+          Tayyorlanish
+        </Link>
         <p className="font-nunito page-path">
-          Tayyorlanish/{currentLesson.title}
+          <Link to={"/learning"}>Tayyorlanish</Link>/{currentLesson.title}
         </p>
         <div className="unit-box block px-[20px] md:px-[30px] bg-white mt-[16px] rounded pb-[20px] md:pb-[30px] pt-[15px] border-t-[15px] border-[#502E92]">
           <div className="title font-nunito text-[#502E92] font-[700] text-[20px]">
