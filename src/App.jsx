@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Toast from "./components/toast/toast";
 import Home from "./pages/home/home";
 import Layaout from "./pages/layaout";
 import Learning from "./pages/learning/learning";
 import Unit from "./pages/learning/unit";
 import Login from "./pages/login/login";
 import Register from "./pages/register/register";
+import Resource from "./pages/resources/resource";
 import Setting from "./pages/setting/setting";
 import TestInfo from "./pages/test/test-info";
 import ImageQuiz from "./pages/test/tests/imageQuiz/imageQuiz";
@@ -40,6 +42,7 @@ const App = () => {
   }, []);
   return (
     <div>
+      <Toast />
       <Routes>
         {user !== null && (
           <>
@@ -48,7 +51,10 @@ const App = () => {
               path="/learning"
               element={<Layaout activPage={<Learning />} />}
             />
-            <Route path="/resource" element={<Layaout />} />
+            <Route
+              path="/resource"
+              element={<Layaout activPage={<Resource />} />}
+            />
             <Route
               path="/setting"
               element={<Layaout activPage={<Setting />} />}

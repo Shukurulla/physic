@@ -5,6 +5,7 @@ const userSlice = createSlice({
   initialState: {
     isLoading: false,
     user: null,
+    error: "",
   },
   reducers: {
     getUserStart: (state) => {
@@ -14,8 +15,9 @@ const userSlice = createSlice({
       state.isLoading = false;
       state.user = action.payload;
     },
-    getUserFailure: (state) => {
+    getUserFailure: (state, action) => {
       state.isLoading = false;
+      state.error = action.payload;
     },
   },
 });

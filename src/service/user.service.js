@@ -1,3 +1,4 @@
+import { showToast } from "../slice/ui";
 import {
   getUserFailure,
   getUserStart,
@@ -30,9 +31,24 @@ const UserService = {
       if (data.token) {
         localStorage.setItem("jwt", data.token);
         navigate("/home");
+        dispatch(
+          showToast({
+            status: "success",
+            alert: "Profil muaffaqiyatli qoshildi",
+          })
+        );
+      }
+      if (data.msg) {
+        dispatch(getUserFailure(data));
       }
     } catch (error) {
       dispatch(getUserFailure());
+      dispatch(
+        showToast({
+          status: "error",
+          alert: "Serverda xatolik yuz berdi",
+        })
+      );
       console.log(error);
     }
   },
@@ -40,13 +56,21 @@ const UserService = {
     dispatch(getUserStart());
     try {
       const { data } = await axios.post("/login", user);
-      dispatch(getUserSuccess(data.user));
       if (data.token) {
+        dispatch(getUserSuccess(data.user));
         localStorage.setItem("jwt", data.token);
         navigate("/home");
+        dispatch(
+          showToast({
+            status: "success",
+            alert: "Profilg muaffaqiyatli kirildi",
+          })
+        );
+      } else {
+        dispatch(getUserFailure(data));
       }
     } catch (error) {
-      dispatch(getUserFailure());
+      dispatch(getUserFailure(error));
       console.log(error);
     }
   },
@@ -75,10 +99,22 @@ const UserService = {
       dispatch(getUserSuccess(data.user));
       if (data) {
         navigate("/home");
+        dispatch(
+          showToast({
+            status: "success",
+            alert: "Profil malumotlari ozgartirildi",
+          })
+        );
       }
     } catch (error) {
       console.log(error);
       dispatch(getUserFailure());
+      dispatch(
+        showToast({
+          status: "error",
+          alert: "Profil ozgartirilmadi",
+        })
+      );
     }
   },
 };

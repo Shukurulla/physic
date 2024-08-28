@@ -171,6 +171,14 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <div className="flex pt-3 items-center text-center">
+          <Link
+            to={"/resource"}
+            className="mx-auto px-4 py-2 rounded-[5px] text-white bg-blue-500 inline"
+          >
+            Barchasini korish <i className="bi bi-chevron-down"></i>
+          </Link>
+        </div>
       </div>
       <div className="pb-4">
         <Link to={"/tests"} className="col-12">
@@ -196,12 +204,12 @@ const Home = () => {
                 className="bg-ellipses h-100 w-100"
                 alt=""
               />
-              <div className="text">
+              <Link to="/setting" className="text">
                 <h5 className="font-montserrat  md:text-[18px] sm:text-[16px] text-[18px]">
                   Sozlamalar
                 </h5>
                 <img src={setting} alt="" />
-              </div>
+              </Link>
             </div>
           </div>
           <div

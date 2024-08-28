@@ -26,6 +26,7 @@ const Setting = () => {
 
   const changeHandler = async (e) => {
     e.preventDefault();
+    dispatch(getUserStart());
     const formData = new FormData();
     formData.append("file", picture);
     formData.append("upload_preset", "restoran-order");
@@ -160,7 +161,10 @@ const Setting = () => {
             </div>
           </div>
 
-          <button className="primary-button" disabled={isLoading}>
+          <button
+            className="primary-button disabled:opacity-[0.5]"
+            disabled={isLoading}
+          >
             {isLoading ? "Yuklanmoda..." : "Saqlash"}
           </button>
         </div>

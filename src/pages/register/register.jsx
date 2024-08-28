@@ -3,6 +3,7 @@ import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import UserService from "../../service/user.service";
+import { getUserFailure, getUserStart } from "../../slice/user.slice";
 import "./register.scss";
 
 const Register = () => {
@@ -13,14 +14,11 @@ const Register = () => {
   const [job, setJob] = useState("");
   const [age, setAge] = useState("");
   const [school, setSchool] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [showAlert, setShowAlert] = useState(false);
 
-  const isNumber = /^[0-9]$/.test(fullName);
-  const isAlphabet = /^[a-zA-Z]$/.test();
-
-  const { isLoading } = useSelector((state) => state.user);
+  const { isLoading, error } = useSelector((state) => state.user);
 
   useEffect(() => {
     if (isNaN(age)) {
@@ -31,6 +29,7 @@ const Register = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    dispatch(getUserStart());
     if (isNaN(age)) {
       toast.error("Iltimos yoshingizga harf yozmang!!");
     } else {
@@ -69,13 +68,27 @@ const Register = () => {
     setFile(e.target.files[0]);
   };
 
+  useEffect(() => {
+    setShowAlert(true);
+  }, [error != ""]);
+
+  useEffect(() => {
+    setShowAlert(false);
+    dispatch(getUserFailure(""));
+  }, [username, password]);
+
   return (
     <div className="wrapper">
       <form onSubmit={(e) => submitHandler(e)}>
-        <div className="label font-poppins">Create an Account</div>
+        <div className="label font-poppins">Ro'yhatdan o'tish</div>
         <p className="font-open-sans">
-          Enter your personal details to create account
+          Hisob qaydnomasini yaratish uchun shaxsiy ma'lumotlarni kiriting
         </p>
+        {error != "" && showAlert && (
+          <div class="alert alert-danger text-center mt-2" role="alert">
+            {error.msg && error.msg}
+          </div>
+        )}
         <div className="form-box">
           <div className="input">
             <label htmlFor="username">Ism va sharifi</label>
@@ -182,18 +195,19 @@ const Register = () => {
               />
             </div>
           </div>
-          <div className="">
-            <input type="checkbox" id="remember" />{" "}
-            <label htmlFor="remember">
-              I agree and accept the <Link to={"#"}>terms and conditions</Link>
-            </label>
-          </div>
-          <button className="primary-button" disabled={isLoading}>
-            {isLoading ? "Loading..." : "Create Account"}
+
+          <button
+            className={`primary-button disabled:opacity-[0.5]`}
+            disabled={isLoading}
+          >
+            {isLoading ? "Loading..." : "Ro'hatdan o'tish"}
           </button>
-          <small>
-            Already have an account?  <Link to={"/login"}>Log in</Link>
-          </small>
+          <p className="text-start text-xl">
+            Ro'hatdan o'tganmisiz? {" "}
+            <Link to={"/login"} className="text-blue-700">
+              Kirish
+            </Link>
+          </p>
         </div>
       </form>
     </div>

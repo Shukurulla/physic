@@ -1,27 +1,46 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import UserService from "../../service/user.service";
+import { showToast } from "../../slice/ui";
+import { getUserFailure } from "../../slice/user.slice";
 import "./login.scss";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate("");
+
+  const { user, error, isLoading } = useSelector((state) => state.user);
 
   const loginHandler = async (e) => {
     e.preventDefault();
     await UserService.loginUser(dispatch, { username, password }, navigate);
   };
 
+  useEffect(() => {
+    setShowAlert(true);
+  }, [error != ""]);
+
+  useEffect(() => {
+    setShowAlert(false);
+    dispatch(getUserFailure(""));
+  }, [username, password]);
+
   return (
     <div className="wrapper">
       <form onSubmit={(e) => loginHandler(e)}>
         <div className="label font-poppins">Login to Your Account</div>
         <p className="font-open-sans">
-          Enter your username & password to login
+          Kirish uchun foydalanuvchi username va parolingizni kiriting
         </p>
+        {error != "" && showAlert && (
+          <div class="alert alert-danger text-center mt-2" role="alert">
+            {error.msg && error.msg}
+          </div>
+        )}
         <div className="form-box">
           <div className="input">
             <label htmlFor="username">Username</label>
@@ -54,14 +73,19 @@ const Login = () => {
               />
             </div>
           </div>
-          <div className="">
-            <input type="checkbox" id="remember" />{" "}
-            <label htmlFor="remember">Remember me</label>
-          </div>
-          <button className="primary-button">Login</button>
-          <small>
-            Don't have account?  <Link to={"/register"}>Create an account</Link>
-          </small>
+
+          <button
+            className={`primary-button disabled:opacity-[0.5]`}
+            disabled={isLoading}
+          >
+            Kirish
+          </button>
+          <p className="text-start">
+            Siz hali royhatdan otmaganmisiz? {" "}
+            <Link to={"/register"} className="text-blue-700">
+              Ro'yhatdan o'tish
+            </Link>
+          </p>
         </div>
       </form>
     </div>
