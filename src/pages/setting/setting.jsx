@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import UserService from "../../service/user.service";
+import { changeActivePage } from "../../slice/ui";
 import { getUserStart } from "../../slice/user.slice";
 import "./setting.scss";
 
@@ -23,6 +24,10 @@ const Setting = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    dispatch(changeActivePage("Sozlamalar"));
+  }, []);
 
   const changeHandler = async (e) => {
     e.preventDefault();
@@ -59,7 +64,7 @@ const Setting = () => {
     <div className="md:p-3 test pb-5 px-[10px]">
       <h4 className="font-nunito page-label">Sozlamalar</h4>
       <p className="font-nunito page-path">Sozlamalar /</p>
-      <form onSubmit={(e) => changeHandler(e)}>
+      <form onSubmit={(e) => changeHandler(e)} className="md:w-[70%] w-[90%]">
         <div className="label font-poppins text-center primary text-[20px] font-[600]">
           Profile malumotlarini ozgartirish
         </div>

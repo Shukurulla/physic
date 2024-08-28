@@ -23,14 +23,12 @@ const Sidebar = () => {
         {navItems.map((item) => (
           <li
             key={item.label}
+            onClick={() =>
+              window.innerWidth < 560 ? changeSideHandler(!showSide) : ""
+            }
             className={`${activePage == item.label ? "active" : ""}`}
           >
-            <Link
-              to={item.path}
-              onClick={() =>
-                window.innerWidth < 500 ? changeSideHandler(!showSide) : ""
-              }
-            >
+            <Link to={item.path}>
               <img
                 src={item.icon}
                 className={showSide ? "" : "w-[30px]"}

@@ -31,7 +31,7 @@ const Toast = () => {
       } flex justify-between ${
         (toast.status && toast.status == "success" && "bg-success") ||
         toast.status == "bg-danger"
-      } text-light right-[15px] top-20 p-3 rounded-[5px] sm:w-3/5 w-4/5`}
+      } text-light right-[15px] top-20 p-3 rounded-[5px] sm:w-3/5 md:w-2/4 w-4/5`}
     >
       <span>{toast.alert ? toast.alert : ""}</span>
       <i

@@ -21,8 +21,14 @@ const Login = () => {
   };
 
   useEffect(() => {
+    if (window.localStorage.getItem("jwt")) {
+      navigate("/home");
+    }
+  }, []);
+
+  useEffect(() => {
     setShowAlert(true);
-  }, [error != ""]);
+  }, [error && error != ""]);
 
   useEffect(() => {
     setShowAlert(false);
