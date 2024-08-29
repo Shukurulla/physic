@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 const Layaout = ({ activPage }) => {
   const { showSide } = useSelector((state) => state.ui);
   return (
-    <div className={`${showSide ? "overflow-y-hidden" : ""} `}>
+    <div>
       <Navbar />
       <div className="row">
         <div

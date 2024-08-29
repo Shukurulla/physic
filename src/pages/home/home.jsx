@@ -41,21 +41,21 @@ const Home = () => {
   const percentage = ((usersBall * 100) / totalBall).toFixed() || 0;
 
   return (
-    <div className="md:p-3 pb-5 px-[10px] ">
+    <div className="md:p-3 lg:py-[30px] py-[40px] px-[10px] ">
       <h4 className="font-nunito page-label">Bosh sahifa</h4>
       <p className="font-nunito page-path">Bosh shifa /</p>
       <div className="row items-center">
         <div
           className={`${
             showSide
-              ? "col-lg-8 col-md-9 col-sm-12"
+              ? "col-lg-8 col-md-12 col-sm-12"
               : "col-lg-9 col-md-9 col-sm-12"
           }`}
         >
           <div className="edu-system bg-light mt-[20px] sm:mt-0">
             <i className="fa-brands fa-react text-[200px] md:text-[300px]"></i>
             <h5 className="font-poppins ">Ta'lim tizimi</h5>
-            <div className="leveling">
+            <div className="leveling relative z-[999]">
               <div className="index-level complete font-montserrat">
                 01
                 <div className="level-line">
@@ -63,16 +63,16 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat primary md:text-[20px] sm:text-[18px] text-[16px]">
+                <h6 className="font-montserrat primary md:text-[18px] sm:text-[18px] text-[16px]">
                   Teoriya o’zlashtirish
                 </h6>
-                <p className="font-montserrat md:text-[17px] sm:text-[18px] text-[16px]">
+                <p className="font-montserrat md:text-[16px] sm:text-[18px] text-[16px]">
                   mutaxassislarning maqolalarini o'qish {showSide && <br />}
                   ~o'qish vaqti: 15 daqiqa
                 </p>
               </div>
             </div>
-            <div className="leveling">
+            <div className="leveling relative z-[999]">
               <div className="index-level font-montserrat ">
                 02
                 <div className="level-line">
@@ -80,10 +80,10 @@ const Home = () => {
                 </div>
               </div>
               <div className="level-info">
-                <h6 className="font-montserrat md:text-[20px] sm:text-[16px] text-[15px]">
+                <h6 className="font-montserrat md:text-[18px] sm:text-[16px] text-[15px]">
                   Test (<span className="coral">Matching</span>)
                 </h6>
-                <p className="font-montserrat md:text-[17px] sm:text-[14px] text-[14px]">
+                <p className="font-montserrat md:text-[16px] sm:text-[14px] text-[14px]">
                   Matching shaklida testdan o'ting
                 </p>
               </div>
@@ -93,7 +93,7 @@ const Home = () => {
         <div
           className={`${
             showSide
-              ? "col-lg-4 col-md-3 col-sm-8 mx-auto"
+              ? "col-lg-4 col-md-12 col-sm-8 mx-auto"
               : "col-lg-3 col-md-3 col-sm-8 mx-auto "
           }`}
         >
@@ -103,7 +103,7 @@ const Home = () => {
             </h5>
             <div className="score-percent  flex justify-center pt-3">
               <CircularProgressbar
-                className="z-[1] montserrat-font mx-auto size-3/6 md:size-3/5"
+                className="z-[1] montserrat-font mx-auto size-3/6 lg:size-2/3 md:size-2/5"
                 value={percentage}
                 text={`${percentage}%`}
                 styles={{

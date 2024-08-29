@@ -63,7 +63,7 @@ const UserService = {
         dispatch(
           showToast({
             status: "success",
-            alert: "Profilg muaffaqiyatli kirildi",
+            alert: "Profilga muaffaqiyatli kirildi",
           })
         );
       } else {

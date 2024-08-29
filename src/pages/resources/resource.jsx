@@ -12,7 +12,7 @@ const Resource = () => {
   }, []);
 
   return (
-    <div className="md:p-3 pb-5 px-[10px] ">
+    <div className="md:p-3 lg:py-[30px] py-[40px] px-[10px] ">
       <h4 className="font-nunito page-label">Resurslar</h4>
       <p className="font-nunito page-path">Resurslar/</p>
       <div className="bg-white mt-3 rounded-[5px] shadow-[0px_0px_30px_0px_#0000001a] p-2">
