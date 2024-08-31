@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const TestInfo = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
-  const { showSide } = useSelector((state) => state.ui);
 
   useEffect(() => {
     dispatch(changeActivePage("Test"));
