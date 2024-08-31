@@ -72,7 +72,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Redirect />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/test/quiz" element={<Quiz />} />
+        <Route path="/test/:slug" element={<Quiz />} />
         <Route path="/test/true-false" element={<TrueFalseQuiz />} />
         <Route path="/test/more-buttons" element={<MoreButtonsQuiz />} />
         <Route path="/test/image-quiz" element={<ImageQuiz />} />

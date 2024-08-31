@@ -11,6 +11,13 @@ import { infoTests } from "../../service/db";
 import "./home.scss";
 import "react-circular-progressbar/dist/styles.css";
 import UserService from "../../service/user.service";
+import physic9 from "../../assets/books/Fizika 9-sinf.pdf";
+import physic10 from "../../assets/books/Fizika 10-sinf.pdf";
+import physic11 from "../../assets/books/Fizika 11-sinf.pdf";
+import physicImage9 from "../../assets/book-images/fizika-9.png";
+import physicImage10 from "../../assets/book-images/fizika-10.png";
+import physicImage11 from "../../assets/book-images/fizika-11.png";
+
 const Home = () => {
   const dispatch = useDispatch();
   const { showSide } = useSelector((state) => state.ui);
@@ -144,30 +151,18 @@ const Home = () => {
         </p>
         <div className="row size-3/4 mx-auto mt-[20px]">
           <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
-            <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
-                alt=""
-                className="w-100"
-              />
+            <a href={physic9} download="Fizika 9-sinf">
+              <img src={physicImage9} alt="" className="w-100" />
             </a>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
-            <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
-                alt=""
-                className="w-100"
-              />
+            <a href={physic10} download="Fizika 10-sinf">
+              <img src={physicImage10} alt="" className="w-100" />
             </a>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-6 col-12 mt-[20px] md:mt-0">
-            <a href="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__">
-              <img
-                src="https://s3-alpha-sig.figma.com/img/5c25/ee71/d72a70c003a4ed76f83c4da654342432?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GaiLVVvsdk8ZEI0o~Ags0~TuZbQsrvPRewRpVE2ZkbPu2X9Rw3HQLLHUj2sTnSh8rWX1tJb89EqaMFiUBwFZCDafyZzOua3WlrB~98gm2dS~YtLkj7pDu~FZoEHzpGtNri6DBhaztkWHI8oPgHdAmjLn~htrNmpghrFm6tsX5P8PyEWTwH6QDteviC3gwJuyC0hdBeOPua4hXqbPYzdQqqwle2AWBstTovuDKfmsjOkjeIdyUsqqWwYTZh15B4rBNxP4beoNpI4eZysiJRkllBVM2GpR7P1-i0KAw22zKUUJxGs02~ihVPAv31JXtFqv6f59molxNSoJNbduPoUDzg__"
-                alt=""
-                className="w-100"
-              />
+            <a href={physic11} download="Fizika 11-sinf">
+              <img src={physicImage11} alt="" className="w-100" />
             </a>
           </div>
         </div>

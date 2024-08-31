@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { quiz } from "../../../../service/db";
+import { infoTests } from "../../../../service/db";
 import UserService from "../../../../service/user.service";
 import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
 import "./quiz.scss";
+import { useParams } from "react-router-dom";
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -25,8 +26,10 @@ const Quiz = () => {
 
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
+  const { slug } = useParams();
 
-  const { questions } = quiz;
+  const { questions } = infoTests.filter((c) => c.path == `/test/${slug}`)[0]
+    .db;
   const { question, choices, correctAnswer } = questions[activeQuestion];
 
   const onClickNext = () => {
