@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { infoTests } from "../../../../service/db";
+import { infoTests, quiz } from "../../../../service/db";
 import UserService from "../../../../service/user.service";
 import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
 import "./quiz.scss";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -90,6 +90,16 @@ const Quiz = () => {
   return (
     <div className="bg-[#F6F9FF] w-screen min-h-screen flex justify-center items-center">
       <div className="w-[90%] sm:w-3/4 my-10">
+        {showResult ? (
+          <Link
+            to={"/tests"}
+            className="btn btn-primary absolute top-10 left-10 "
+          >
+            <i className="bi bi-arrow-left"></i> Testlerge Qaytiw
+          </Link>
+        ) : (
+          ""
+        )}
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
