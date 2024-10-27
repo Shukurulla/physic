@@ -1,3 +1,34 @@
+import lesson1Quest from "../../public/lesson1.png";
+import lesson1Image from "../../public/lesson-1-7_1.png";
+import image_7_2 from "../../public/7_2.png";
+import image_7_3 from "../../public/7_3.png";
+import image_7_4 from "../../public/7_4.png";
+import image_7_5 from "../../public/7_5.png";
+import image_7_6 from "../../public/7_6.png";
+/* Formula */
+import formula1 from "../../public/formula/1.png";
+import formula2 from "../../public/formula/2.png";
+import formula3 from "../../public/formula/3.png";
+import formula4 from "../../public/formula/4.png";
+import formula5 from "../../public/formula/5.png";
+import formula6 from "../../public/formula/6.png";
+import formula7 from "../../public/formula/7.png";
+import formula8 from "../../public/formula/8.png";
+import formula9 from "../../public/formula/9.png";
+import formula10 from "../../public/formula/10.png";
+import formula11 from "../../public/formula/11.png";
+import formula12 from "../../public/formula/12.png";
+import formula13 from "../../public/formula/13.png";
+import formula14 from "../../public/formula/14.png";
+import formula15 from "../../public/formula/15.png";
+
+// Images
+import image1 from "../../public/images/1.png";
+import image2 from "../../public/images/2.png";
+import image3 from "../../public/images/3.png";
+import image4 from "../../public/images/4.png";
+import image5 from "../../public/images/5.png";
+
 export const quiz = {
   topic: "Fizika",
   perQuestionScore: 5,
@@ -1373,161 +1404,315 @@ export const matchingPairWordsQuiz = {
 export const learningDB = [
   {
     id: 1,
-    title: "Yadro Fizika",
+    title: "Atom tuzilishi. Rezerford tajribasi.",
     desctiption: "mutaxassislarning maqolalarini o'qing",
     keyValue: "quiz",
+    media: {
+      images: [{ src: image1, title: "1-rasm" }],
+      gifsEmbed: [
+        `https://player.vimeo.com/video/1009431766?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`,
+      ],
+    },
     paragraphs: [
       {
-        dropTitle:
-          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
-        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
-        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
-        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
-        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
-        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
-        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
-        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
-        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
-        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
-        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
-        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
-        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
-        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
-        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
-        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
-        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+        text: "Ko‘p tajriba va nazariy tekshirishlar natijasida atom tuzilishi nazariyasi yaratildi. Bu nazariyani yaratishda ingliz olimi Rezerford tomonidan o‘tkazilgan tajribalar muhim ahamiyatga ega bo‘ldi.",
       },
       {
-        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
-        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+        text: `Katod nurlarining elektr va magnit maydonlarda og‘ishini kuzatish elektronlarning bu maydondagi harakat tezligini hisoblashga va ular zaryadining massasiga nisbati (e/m) ni aniqlashga imkon berdi. Elektronning zaryadi elektroliz qonunlari asosida hisoblab topildi va so‘ngra bevosita o‘lchandi. Elektronning zaryadini va uning zaryadining massasiga nisbatini bilgan holda elektronning massasini hisoblash mumkin bo‘ldi. Elektronning massasi vodorod atomi massasidan 1836 marta kichikdir`,
+      },
+      {
+        text: `Elektronlarning massasi atomlarning massasidan bir necha ming marta kichikligidan atomning asosiy massasi uning musbat zaryadli qismiga to‘g‘ri keladi, degan fikr kelib chiqadi`,
+      },
+      {
+        text: "Atom ichida musbat zaryadning va binobarin, massasining taqsimlanishini tadqiq qilish uchun Rezerford va uning shogirdlari -zarralarning yupqa metall plastinka — folgalar orqali o‘tganda uchish yo‘nalishlari o‘zgarishi (sochilishi)ni o‘rgandilar. -zarralar ba'zi moddalarning radioaktiv yemirilishi (parchalanishi) paytida juda katta tezlik bilan ajratib chiqaradigan musbat zaryadli zarralari bo‘lib, ular o‘z tabiatiga ko‘ra geliy ionlaridan iboratdir. Bu zarralarning massalari elektron massasidan taxminan 8000 marta katta, musbat zaryadi esa absolyut kattaligi jihatidan elektron zaryadidan ikki marta kattadir. Radioaktiv moddadan -zarralarning uchib chiqish tezligi 104 km/s tartibida bo‘ladi.",
       },
     ],
   },
   {
     id: 2,
-    title: "Yadro Fizika",
-    keyValue: "truFalseQuiz",
+    title: "Borning kvant postulatlari.",
     desctiption: "mutaxassislarning maqolalarini o'qing",
+    keyValue: "quiz",
+    media: {
+      images: [
+        { src: image2, title: "2-rasm" },
+        { src: image3, title: "3-rasm" },
+        { src: image4, title: "4-rasm" },
+      ],
+      gifsEmbed: [
+        `https://player.vimeo.com/video/1009432243?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`,
+      ],
+    },
     paragraphs: [
       {
-        dropTitle:
-          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
-        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
-        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
-        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
-        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
-        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
-        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
-        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
-        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
-        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
-        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
-        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
-        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
-        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
-        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
-        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
-        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+        text: `Atomning planetar modeli (uni yadro modeli deb ham yuritiladi) klassik mexanika va elektrodinamika bilan birgalikda na atomning turg‘un sistema ekanligini, na atom spektrining xarakterini tushuntirishga qodir emas.`,
       },
       {
-        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
-        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+        text: `Bu ziddiyatlarni hal qilish yo‘lini 1913- yilda daniyalik fizik Nils Bor topgan edi. `,
+      },
+      {
+        text: `Borning qilgan farazi u ta'riflagan quyidagi ikki postulatda o‘z mazmunini topdi:`,
+      },
+      {
+        text: `1.	Atom sistemasi faqat maxsus statsionar yoki kvant holatlarda bo‘la oladi, bu holatlarning har biriga muayyan Wn energiya mos keladi.  Statsionar holatda  atom  yorug‘lik  chiqarmaydi ham, yutmaydi ham.`,
+      },
+      {
+        text: `2.	Atom bir statsionar holatdan ikkinchisiga o‘tganda yorug‘lik chiqaradi (yoki yutadi). Nurlangan (yoki yutilgan) fotonning energiyasi statsionar holatlar energiyalarining ayirmasiga teng:`,
+        formula: formula1,
+      },
+      {
+        text: `bunda: m va n — butun sonlar; Wm va Wn — mos ravishda atomning m va n-statsionar holatlari energiyasi. `,
+      },
+      {
+        text: `Shunday qilib, atom chiqaradigan elektromagnit to‘lqinlar chastotasi atomning statsionar holatlariga mos keladigan energiya farqi bilan aniqlanar ekan. Atomning har bir statsionar holatiga mos keladigan energiya qiymatlarini grafik usulda tasvirlash mumkin (2-rasm). Bu gorizontal chiziqlarni energiya sathlari yoki energetik sathlar deyiladi.`,
+      },
+      {
+        text: "Bor o‘z postulatlarini eng sodda atom — vodorod atomining nazariyasini yaratish uchun qo‘lladi. Vodorod atomi bitta proton (vodorod atomining yadrosi) va bitta elektrondan iborat. Yadroning massasi elektron massasidan 1836 marta katta bo‘lgani uchun yadroni qo‘zg‘almas deb hisoblash mumkin",
+      },
+      {
+        text: `Boshqacha aytganda, energiyani kvantlash qoidasini bilish zarur. Bu qoidani ham Bor postulat tarzida berdi.`,
+      },
+      {
+        text: "Atomning to‘liq energiyasi:",
+        formula: formula2,
+      },
+      {
+        text: "Borning birinchi postulatiga ko‘ra energiya faqat tayinli Wn qiymatlargina  qabul  qilishi  mumkin. Borning kvantlash qoidasi orbitalarning mumkin bo‘lgan radiuslari uchun:",
+        formula: formula3,
+      },
+      {
+        text: "Elektronning orbita bo‘yicha harakat tezligi uchun:",
+        formula: formula4,
+      },
+      {
+        text: "ifodani beradi, bunda n=1,2,3, ... qiymatlarni oladi.",
+      },
+      {
+        text: "Bor postulati bo‘yicha bu orbitalarni ruxsat etilgan yoki Bor orbitalari deb ataladi. Bor orbitalarining radiuslari n soni o‘zgarishi bilan uzlukli (diskret) ravishda o‘zgaradi. Bor orbitasining eng kichik radiusi uchun n=1 bo‘ladi, binobarin:",
+        formula: formula5,
+      },
+      {
+        text: "Atomning statsionar holatlari energiyalarining qiymatlarini topamiz:",
+        formula: formula6,
+      },
+      {
+        text: "Atomning statsionar orbitalari radiusi va statsionar holatlari energiyasi kvant soni deb ataladigan n sonining qiymatiga bog‘liq. Energiyaning manfiy ishorasi atomdan elektronni olish uchun tashqi kuchlar ish bajarishi kerakligini bildiradi.",
+      },
+      {
+        text: `Elektronning eng kam W1 energiyasi atomning normal holatdagi statsionar orbitasining r1 radiusiga mos keladi. Atom bu holda nur chiqara olmaydi, chunki elektronning bu orbitadan yadroga yanada yaqinroq orbitaga o‘tishining imkoni yo‘q. Elektronni n=1 orbitadan (normal holatdan) n= orbitaga (cheksiz uzoqlikka) o‘tkazish uchun zarur bo‘lgan energiyani atomning ionlashish energiyasi deyiladi. `,
+      },
+      {
+        text: "Borning ikkinchi postulatiga muvofiq, vodorod atomi nurlanishining mumkin bo‘lgan chastotalari quyidagi formula bilan aniqlanadi:",
+        formula: formula7,
+      },
+      {
+        text: "bunda: m>n, m va Wm — atomning boshlang‘ich (nur chiqarish- gacha) holatiga mos kelgan kvant soni va energiyasi; n va Wn — atomning oxirgi (nur chiqargandan keyingi) holatiga oid xarakteristikalari.",
+      },
+      {
+        text: "Ma'lum bo‘lishicha, atom spektridagi chiziqlar tartibsiz joylashgan bo‘lmay, balki ularning joylashishi muayyan qonuni- yatlarga bo‘ysunar ekan. Eng sodda atom bo‘lgan vodorod atomida buni yaqqol ko‘rish mumkin. ",
+      },
+      {
+        text: "1885- yilda shveytsariyalik o‘qituvchi Ya. Balmer birinchi bo‘lib vodorod atomining nurlanish spektrining ko‘rinadigan qismida yotgan spektral chiziqlarning chastotasini hisoblashga imkon beradigan empirik formulani topdi. Vodorod spektrining bu qismidagi barcha chastotalar quyidagi sodda munosabatni qanoatlantiradi:",
+        formula: formula8,
+      },
+      {
+        text: "bunda m=3, 4, 5 ... (butun sonlar); R - Ridberg doimiysi deb atalib, 3,28985·1015 s-1 ga teng.",
+      },
+      {
+        text: "Bu formula juda aniq bajariladi. Shuning uchun u nur chiqa- rayotgan atomlarga xos bo‘lgan biror ichki qonuniyatni ifodalaydi, deb aytish mumkin.",
+      },
+      {
+        text: "Keyinchalik vodorod spektrida yana bir necha seriyalar borligi aniqlangan. Jumladan, spektrning ultrabinafsha qismida 1906- yilda ingliz fizigi Layman topgan seriya va spektrning infraqizil qismida 1908- yili nemis fizigi Pashen topgan seriya bor (3-rasmga qarang).",
+      },
+      {
+        text: " Layman seriyasidagi spektral chiziqlarning chastotalari quyidagi formuladan aniqlanadi:",
+        formula: formula9,
+      },
+      {
+        text: "bunda m=2,3,4 ...",
+      },
+      {
+        text: "Pashen seriyasi chiziqlarining chastotalari esa quyidagi formula bilan aniqlanadi:",
+        formula: formula10,
+      },
+      {
+        text: "bunda m=4, 5, 6 ... Barcha seriyalarning empirik formulalari bir xil strukturaga ega, shuning uchun vodorod spektrining barcha chiziqlarini quyidagi bitta formula bilan ifodalash mumkin:",
+        formula: formula11,
+      },
+      {
+        text: "bunda n va m butun sonlar bo‘lib, n=1, 2, 3 ... qiymatlarni, m=(n+1), (n+2), (n+3) ... qiymatlarni oladi. Ko‘rinib turibdiki, m>n. (144) ifoda Balmerning umumlashgan formulasi deb ataladi.",
+      },
+      {
+        text: "Ridberg doimiysi uchun:",
+        formula: formula12,
       },
     ],
   },
   {
     id: 3,
-    title: "Yadro Fizika",
-    keyValue: "moreButtons",
+    title: "Lazerlar.",
     desctiption: "mutaxassislarning maqolalarini o'qing",
+    keyValue: "quiz",
+    media: {
+      images: [{ src: image5, title: "5-rasm" }],
+      gifsEmbed: [
+        `https://player.vimeo.com/video/1009431766?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`,
+      ],
+    },
     paragraphs: [
       {
-        dropTitle:
-          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
-        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
-        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
-        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
-        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
-        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
-        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
-        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
-        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
-        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
-        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
-        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
-        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
-        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
-        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
-        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
-        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+        text: "Elektromagnit to‘lqinlarni kuchaytirish va generatsiyalash prinsipini rus fiziklari N.G. Basov va A.M. Proxorov hamda ayni bir vaqtda amerikalik olimlar Ch.X. Tauns va Sh. Veberlar tavsiya qilgan edilar. Santimetrli to‘lqinlar diapazonida ishlaydigan bunga mos asboblar mazerlar deb atalgan.",
       },
       {
-        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
-        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+        text: `1960- yili amerikalik fizik T.G. Meyman optikaviy diapazonda ishlaydigan shunday asbobni yaratdi. Bu asbobga lazer nomi berildi. Ba'zan lazerlar optik kvant generatorlari deb ataladi. Optik kvant generatorlari ikki asosiy qismdan-aktiv muhit va rezonatordan tuzilgan.`,
+      },
+      {
+        text: `Yoqut lazeri. Yoqut lazerida aktiv muhit sifatida tarkibida 0,05% ga yaqin xrom aralashmasi bo‘lgan yoqut kristalli (Al2O3) dan foydalaniladi. Lazerning bu asosiy elementi, odatda, diametri 0,42 sm va uzunligi 320 sm bo‘lgan 1- silindr shaklida bo‘ladi`,
+      },
+      {
+        text: "(5-rasm). Sterjenning 3 va 4 asos sirtlari bir-biriga rosa parallel joylashgan va yaxshilab silliqlangan. Ulardan biri shaffof bo‘lmagan, ikkinchisi esa qisman shaffof darajada kumush qatlami bilan qoplangan. Qisman shaffof sirtdan 92% yorug‘lik oqimi qaytadi va 8% ga yaqinini u o‘zi orqali o‘tkazadi. Bu o‘zaro parallel ko‘zgular generatorning rezonatori vazifasini o‘taydi.",
+      },
+      {
+        text: "Yoqut sterjen spiral ko‘rinishdagi impulsli 2 ksenon lampa ichiga joylashtirilgan bo‘lib, lampa kondensatorlar batareyasiga ulangan (201- rasmga qarang). Kondensator batareyasidan kelgan qisqa vaqtli tok impulsi lampani yorug‘ chaqnatadi va sterjen yoritiladi, lampa",
+      },
+      {
+        text: "uyg‘otuvchi nurlanish manbayi bo‘lib xizmat qiladi.Nurlanishda chastotaga qizil yorug‘likning =6,943·10-7 m to‘lqin uzunligi mos keladi.",
+      },
+      {
+        text: "Atomlarni asosiy holatdan uyg‘ongan holatga o‘tkazish uchun kerakli bo‘ladigan energiyani uzatish jarayoni nakachka (quvvatlash) deb ataladi. Bu lazerda foydalaniladigan impulsli ksenon lampani nakachka lampasi deb ataladi. Ko‘zgudan qaytgandan keyin fotonlar qarama-qarshi yo‘nalishda harakatlanadi va yo‘l-yo‘lakay metastabil sathda qolgan uyg‘ongan atomlarni nurlanishga majbur qiladi. Bu nurlanish rezonatorning yarimshaffof ko‘zgusidan tashqariga chiqadi (rasmga qarang). Nurlanish to‘lqin uzunligi =694,3 angestrem bo‘lgan monoxromatik, kogerent va o‘tkir yo‘nalishli bo‘lib, uni lazer nurlari deb ataladi. Yoqut lazerlari impuls rejimda ishlaydi.",
+      },
+      {
+        text: "Lazer nurlanishining bir qator ajoyib xossalari mavjud. Lazer nurlanishi, birinchidan, vaqt bo‘yicha va fazoviy kogerent; ikkinchidan, qat'iy monoxromatik; uchinchidan, quvvati katta; to‘rtinchidan, dastasi o‘tkir yo‘nalishli (ingichka) bo‘ladi.",
+      },
+      {
+        text: "Lazer eng kuchli yorug‘lik manbalaridir. Bunga sabab yorug‘lik to‘lqinida elektr maydoni kuchlanganligining yuqori bo‘lishidir.",
+      },
+      {
+        text: "Quyosh nuri uchun monoxromatik yorug‘likning elektr maydon kuchlanganligi taxminan 103 V/m ga teng bo‘lsa, lazer nuri uchun bu kattalik 1011 V/m  ga yetishi mumkun.",
+      },
+      {
+        text: "Kichik quvvatli impuls lazerlardan mikroelektronika va elek- trovakuum sanoatida mitti detallarni kesish hamda payvandlashda, mitti detallarga markalar tushirishda foydalaniladi; poligrafiya sanoati ehtiyojlari uchun raqamlar, harflar, tasvirlar avtomatik tarzda kuydirib tayyorlanadi.",
+      },
+      {
+        text: "Lazer texnologiyasining ikkinchi turi o‘rtacha quvvati katta bo‘lgan lazerlardan foydalanishga asoslangan. Bunday lazerlardan kuchli texnologik jarayonlar: qalin po‘lat listlarni qirqish va payvandlash, sirtqi toblash, yirik gabaritli detallarga metallni eritib yopishtirish va legirlash (metallarni xrom, nikel va boshqalar bilan qoplash), binolar sirtini tozalash, marmar, granitni kesish, gazlama, teri va boshqa materiallarni bichishda foydalaniladi.",
+      },
+      {
+        text: "Shuningdek, respublikada terapevtik ta'sir etish uchun lazer asboblari ishlab chiqariladi. Bu asboblar turli tibbiyot muassasalarida ko‘z va teri kasalliklarini davolash uchun, operatsiyadan keyingi va kuyish jarohatlarining bitish muddatini qisqartirish uchun keng qo‘llaniladi.",
+      },
+      {
+        text: "Hozirgi vaqtda lazer texnologiyalaridan foydalanish jadal o‘sib bormoqda. Hozirda biz dunyoni lazer kompakt disklarsiz, lazer printerlarsiz, nishonni mo‘ljalga olish va aniqlashning lazer sistemalarisiz, lazer lokatsiyasi va lazer aloqasisiz tasavvur qila olmaymiz. Hatto hozirgi zamon butunjahon informatsion tarmoq-Internet ham aloqaning lazer texnologiyasidan foydalanadi.",
       },
     ],
   },
   {
     id: 4,
-    title: "Yadro Fizika",
-    keyValue: "imageQuiz",
+    title: "Atom yadrosining tarkibi.",
     desctiption: "mutaxassislarning maqolalarini o'qing",
+    keyValue: "quiz",
+    media: {
+      images: [image1],
+      gifsEmbed: [
+        `https://player.vimeo.com/video/1009431766?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`,
+      ],
+    },
     paragraphs: [
       {
-        dropTitle:
-          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
-        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
-        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
-        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
-        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
-        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
-        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
-        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
-        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
-        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
-        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
-        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
-        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
-        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
-        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
-        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
-        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+        text: "Atom yadrosi ham atomning o‘zi singari ma'lum ichki tuzilishga ega. 1932- yilgacha olimlar atomlarning yadrolari protonlar (vodorod yadrolari) va elektronlardan iborat, deb qarar edilar. Biroq atom yadrolarining tuzilishi haqidagi bunday tasavvur noto‘g‘ri edi. Atom yadrolarining tuzilishini bunday tushunishda atomlarning yadrolarida elektronlarning mavjudligi dalilini mutlaqo izohlab bo‘lmas edi. ",
       },
       {
-        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
-        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+        text: `1932- yilda ingliz fizigi, Rezerfordning shogirdi D. Chedvik yangi zarra - neytronni kashf etdi. Bu kashfiyot yadro fizikasi uchun muhim voqea edi.`,
+      },
+
+      {
+        text: `D.D. Ivanenko va V. Geyzenberg nazariyasiga ko‘ra barcha atom yadrolari tarkibiga faqat ikki xil zarra: protonlar va neytronlar kiradi. Yadroning proton-neytronli nazariyasi hozirgi vaqtda butun dunyoda tan olingan nazariya bo‘lib qoldi. `,
+      },
+      {
+        text: "Proton musbat zaryadga ega bo‘lib, uning zaryadi elektron zaryadiga teng (ya'ni, elementar zaryadga teng: e=1,6·10-19 C) va tinch holatdagi massasi mp =1,6724·10-27 kg. Neytronning zaryadi yo‘q, u neytral zarra hisoblanadi. Neytronning massasi proton massasidan bir oz kattaroq va mn =1,6748·10-27 kg. Protonni p harfi bilan, neytronni n harfi bilan belgilash qabul qilingan. Bu zarralar nuklonlar deb ataladi.",
+      },
+      {
+        text: "Yadro va elementar zarralarning massasi, odatda, massaning atom birligi (m.a.b.)da ifodalanadi. Massaning atom birligi qilib uglerod atomi massasining 1/12 qismi qabul qilingan. Bu birlik quyidagiga teng:",
+      },
+      {
+        text: "1 m.a.b. =1,66·10-27 kg.",
+      },
+      {
+        text: "Demak, mp=1,00747 m.a.b, mn=1,00892 m.a.b.",
+      },
+      {
+        text: "Shunday qilib:",
+        formula: formula13,
+      },
+      {
+        text: "Istalgan kimyoviy elementning Mendeleyev davriy sistemasidagi atom nomeri Z ga teng. Elementning atom yadrosidagi protonlar soni Np elementning atom nomeri Z ga teng:",
+        formula: formula14,
+      },
+      {
+        text: "Yadrodagi nuklonlar soni (ya'ni, protonlar va neytronlar yig‘in- disi) yadroning massa soni deb ataladi va A harfi bilan belgilanadi.",
+        formula: formula15,
+      },
+      {
+        text: "Massaning atom birligi (m.a.b.) da ifodalangan yadro massasining son qiymati (atom og‘irligi)ga eng yaqin bo‘lgan butun son massa soni A ga teng bo‘ladi.",
+      },
+      {
+        text: "Kimyoviy elementlarning atomi yadrolarini (_Z^A)X simvol bilan belgilash qabul qilingan, bunda: X - elementning kimyoviy simvoli, A - massa soni; Z - atomning tartib nomeri. Masalan, (_2^4)He – geliy atomi yadrosini, (_8^16)O – kislorod atomi yadrosini bildiradi.",
+      },
+      {
+        text: "Atom yadrolarida protonlar soni bir xil, ammo neytronlar soni har xil bo‘ladi. Bunday  elementlarning atomlariga shu elementning izotoplari deyiladi. Masalan (_7^16)N va (_7^15)N, kislorodning uchta izotopi bor: (_8^16)O, (_8^17)O, (_8^18)O hokazo.",
+      },
+      {
+        text: "A massa soni bir xil bo‘lgan yadrolar izobarlar deyiladi. Izobarlarga (_18^40)Ar va (_20^40)Ca, (_3^7)Li va (_4^7)Be yadrolar misol bo‘la oladi.",
+      },
+      {
+        text: "Neytronlar soni bir xil bo‘lgan yadrolar izotonlar deyiladi. Bunga misol qilib (_6^13)C va (_7^14)N, (_3^7)Li va (_4^8)Be yadrolarni ko‘rsatish mumkin.",
       },
     ],
   },
   {
     id: 5,
-    title: "Yadro Fizika",
-    keyValue: "matchingPairWordsQuiz",
+    title: "Yadro kuchlari. Yadroviy o‘zaro tasirning almashinuv modeli.",
     desctiption: "mutaxassislarning maqolalarini o'qing",
+    keyValue: "quiz",
+    media: {
+      images: [image1],
+      gifsEmbed: [
+        `https://player.vimeo.com/video/1009431766?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`,
+      ],
+    },
     paragraphs: [
       {
-        dropTitle:
-          "ATOM VA YADRO FIZIKASI. ATOM ENERGETIKASINING FIZIK ASOSLARI",
-        body: `Barcha moddalar ko‘p sonli bo‘linmas zarralardan (atomlardan) tashkil topgan,
-        degan fikr juda qadim zamonlarda yunon olimlari Demokrit, Epikur va Lukretsiylar
-        tomonidan bildirilgan (atom so‘zi yunoncha «atomos» – bo‘linmas degan ma’noni anglatadi).
-        Lekin bu fikrga turli sabablarga ko‘ra uzoq vaqtlargacha jiddiy e’tibor berilmagan.
-        Ammo o‘n sakkizinchi asrda A. Lavuazye (fransuz) (1743–1794), J. Dalton (ingliz)
-        (1766–1844), A. Avogadro (italyan) (1776–1856), M.Lomonosov (rus) (1711–1765),
-        Y.Berselius (shved) (1779–1848) kabi olimlarning sa’y-harakatlari natijasida atomlarning
-        mavjudligiga shubha qolmadi. D.I. Mendeleyev 1869-yilda elementlar davriy sistemasini
-        yaratib, barcha moddalarning atomlari bir-birlariga o‘xshash tuzilishga ega ekanligini ko‘rsatib
-        berdi. Shu bilan birga, yigirmanchi asrning boshlariga kelib, bo‘linmas hisoblanuvchi atomning
-        ichiga nigoh tashlash, ya’ni uning tuzilishini o‘rganish muammosi vujudga keldi. Ingliz fizigi
-        J. J.  Tomson 1903-yilda atomning tuzilishi haqidagi birinchi modelni taklif qildi. Boshqa ingliz
-        fizigi D.  Rezerford o‘z tajribalariga asosan Tomson modelini inkor etib, atomning planetar
-        modelini taklif qildi. Ushbu modelga muvofiq, atom yadrodan (o‘zakdan) va uning atrofida
-        harakatlanuvchi elektronlardan tashkil topgan. Keyinchalik esa atom yadrosi – musbat
-        zaryadlangan proton va elektr jihatdan neytral neytronlar majmuasidan iboratligi aniqlandi.`,
+        text: "Yadrolar juda barqaror sistemadir, binobarin, protonlar va neytronlar yadro ichida qandaydir juda katta kuchlar bilan tutib turiladi. Yadrolarning tuzilishi haqidagi ta'limotning eng muhim masalalaridan biri yadroda mavjud bo‘lgan nuklonlarni tutib turuvchi kuchlarning tabiati haqidagi masaladir.",
       },
       {
-        dropTitle: "ATOMNING BOR MODELI. BOR POSTULATLARI",
-        body: `1903-yilda ingliz fizigi J. J.  Tomson atomning tuzilishi haqidagi birinchi modelni taklif qildi. Tomson modeliga muvofiq, atom – massasi tekis taqsimlangan 10–10 m kattalikdagi musbat zaryadlardan iborat shar sifatida tasavvur qilinadi. Uning ichida esa, o‘z muvozanat vaziyatlari atrofida tebranma harakat qiluvchi manfiy zaryadlar (elektronlar) mavjud bo‘lib (bunda atomni tarvuzga o‘xshatish va elektron tarvuzning urug‘lari singari joylashgan deyish mumkin), musbat va manfiy zaryadlarning yig‘indisi o‘zaro teng. Boshqa ingliz fizigi D.  Rezerford 1911-yilda o‘z tajribalariga asosan Tomson modelini inkor etib, atomning yadroviy (planetar) modelini taklif qildi. Ushbu modelga ko‘ra atom jajjigina quyosh sistemasidek tasavvur qilinadi. Elektronlar yadro atrofida (yopiq) orbitalar – atomning elektron qobig‘i bo‘ylab harakatlanadi va ularning zaryadi yadrodagi musbat zaryadga teng. Atomning o‘lchamlari juda kichik bo‘lgani uchun (≈ 10–10m) uning tuzilishini bevosita o‘rganish juda qiyin. Shuning uchun uning tuzilishini bilvosita, ya’ni ichki tuzilishi haqida ma’lumot beruvchi xarakteristikalar yordamida o‘rganish maqsadga muvofiqdir. Shunday xarakteristikalardan biri – atomning nurlanish spektri. Atomning nurlanish spektri, ya’ni atom elektromagnit nurlar chiqarishida (yoki yutishida) hosil bo‘ladigan optik spektrlar ancha batafsil o‘rganilgan. Shveysariyalik fizik I.Balmer 1885-yilda tajriba natijalariga tayanib vodorod spektri chiziqlari chastotalari uchun quyidagi formulani topdi.`,
+        text: `1932- yilda ingliz fizigi, Rezerfordning shogirdi D. Chedvik yangi zarra - neytronni kashf etdi. Bu kashfiyot yadro fizikasi uchun muhim voqea edi.`,
+      },
+
+      {
+        text: `1.	Yadro kuchlari qisqa masofada ta'sir etadigan kuchlardir. Bu kuchlar nuklonlarni bir-biridan 10-15 m masofada ushlab turadi. Nuklonlar orasidagi masofa 2·10-15 m dan ortganda ularning ta'siri sezilmaydi. Nuklonlar orasidagi masofa 1·10-15 m dan kichik bo‘lganda ular tortishish o‘rniga itarishadi. Yadro kuchlari ta'sir etadigan r =2·10-15 m masofaga yadro kuchlarining ta’sir radiusi deyiladi.`,
+      },
+      {
+        text: "2.	Kuchli o‘zaro ta'sir nuklonlar zaryadiga bog‘liq bo‘lmaydi. Ikki proton, proton va neytron, ikki neytron orasida ta'sir qiluvchi yadro kuchlari kattaligi jihatdan bir xil bo‘ladi. Bu xossa yadro kuchlarining zaryaddan mustaqilligi deyiladi.",
+      },
+      {
+        text: "3.	Yadro kuchlari gravitatsion yoki Kulon kuchlari kabi markaziy kuchlar emas. Bu kuchlar nuklonlar orasidagi masofaga bog‘liq bo‘lish bilan birga, yana o‘zaro ta'sirlashayotgan nuklonlar spinlarining bir-biriga nisbatan qanday joylashganiga ham bog‘liq bo‘ladi.",
+      },
+      {
+        text: "4.	Yadro kuchlari to‘yinish xossasiga ega. Bu xossaga ko‘ra har bir nuklon yadrodagi barcha nuklonlar bilan emas, balki o‘ziga yaqin turgan chekli sanoqli nuklonlar bilangina o‘zaro ta’sirda bo‘ladi",
+      },
+      {
+        text: "5.	Yadro kuchlari almashinish xarakteriga ega. 1935- yilda yapon fizigi X. Yukava yadroda nuklonlar bir-biri bilan alohida elementar zarralarni almashtirish yo‘li bilan o‘zaro ta’sirlashadi, degan gipotezani ilgari surdi. Bu zarralarning tinchlikdagi massasi elektron va nuklon massalari oralig‘ida bo‘lib, taxminan 300 me ga teng va -mezonlar yoki pionlar deb ataladi (grekcha «mezon» so‘zi - «o‘rta» deganni bildiradi), bunda me -  elektronning tinchlikdagi massasi. Yukava nazariyasiga ko‘ra nuklonlar o‘z atrofida (elektr zarayadlarning elektromagnit maydoniga o‘xshash) mezon maydoni hosil qiladi. Bu maydon proton va neytronlarga turlicha ta'sir ko‘rsatadi. Elektr zaryadlarning fotonlarini chiqarishi va yutishi kabi nuklonlar bu maydon kvantlari - pionlar chiqarishi va yutishi mumkin.",
+      },
+
+      {
+        text: "Yadro kuchlarining tabiatini va qonuniyatlarini tushuntirib beradigan qat’iy nazariya mavjud emas. Shu sababli atom yadrosining turli xossalari yadro modellari yordamida o‘rganiladi.",
+      },
+      {
+        text: "Yadroning tomchi modelini 1938- yilda Ya.I. Frenkel ishlab chiqqan, N. Bor va Vayszekkerlar tomonidan rivojlantirilgan. Frenkel nazariyasiga ko‘ra atom yadrosini zaryadlangan suyuqlik tomchisiga o‘xshatish mumkin. Suyuqlik tomchisidagi molekulalar o‘zaro molekulyar tutinish kuchlari bilan bog‘langani singari yadroni tashkil qiluvchi nuklonlar ham o‘zaro yadro kuchlari bilan bog‘langan. ",
+      },
+      {
+        text: "Yadroning qobiqsimon modeli atom yadrosining eng samarali zamonaviy modellaridan biri hisoblanadi. Bu modelga ko‘ra yadrodagi nuklonlar ularning o‘zi hosil qilgan maydonda deyarli bir-biridan mustaqil harakatlanadi. Yadroda ham, xuddi atomdagidek, diskret energetik sathlar bo‘lib, ular nuklonlar bilan to‘ldiriladi. Energetik sathlari bir-biriga yaqin bo‘lgan nuklonlar yadro qobiqlarini hosil qiladi.",
+      },
+      {
+        text: "Hozirgi vaqtda yadroning qobiqsimon modeli oxirigacha yetkazilmagan bo‘lsa0da, ko‘p olimlar tomonidan tan olingan. Amalda yadrolarning 2, 8, 14, 20, 28, 50, 82, 126 ta nuklonlar bilan to‘ldirilgan qobiqlari topilgan. Berk yadro qobig‘idagi nuklonlarning bu sonini magik sonlar (sehrli sonlar) deb ataladi. Aniqlanishicha, nuklonlar (proton yoki neytronlar) soni magik sonlarga teng bo‘lgan yadrolar boshqalariga qaraganda turg‘unroq bo‘lar ekan.",
       },
     ],
   },

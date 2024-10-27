@@ -1,13 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { infoTests, learningDB } from "../../service/db";
 import { changeActivePage } from "../../slice/ui";
 import TestInfo from "../test/test-info";
+import FormulaRenderComponent from "../../utilities/formulaRender.jsx";
+import TextWithMath from "../../utilities/formulaRender.jsx";
 
 const Unit = () => {
   const dispatch = useDispatch();
   const { id } = useParams();
+  const mediaRef = useRef();
 
   const currentLesson = learningDB.filter((c) => c.id == id)[0];
   const test = infoTests.filter((c) => c.keyValue == currentLesson.keyValue)[0];
@@ -16,6 +19,13 @@ const Unit = () => {
   useEffect(() => {
     dispatch(changeActivePage("Tayyorlanish"));
   }, []);
+  function restoreSuperscript(text) {
+    // 10 darajali ifodalarni (10^-15 kabi) to'g'rilash
+    return text
+      .replace(/10-(\d+)/g, "10<sup>-$1</sup>") // 10-15 -> 10^-15
+      .replace(/2·10-(\d+)/g, "2·10<sup>-$1</sup>") // 2·10-15 -> 2·10^-15
+      .replace(/1·10-(\d+)/g, "1·10<sup>-$1</sup>"); // 1·10-15 -> 1·10^-15
+  }
 
   return (
     <div>
@@ -28,21 +38,38 @@ const Unit = () => {
         </p>
         <div className="unit-box block px-[20px] md:px-[30px] bg-white mt-[16px] rounded pb-[20px] md:pb-[30px] pt-[15px] border-t-[15px] border-[#502E92]">
           <div className="title font-nunito text-[#502E92] font-[700] text-[20px]">
-            Tema:
+            Tema: {currentLesson.title}
           </div>
           <div className="desription font-nunito text-[#939393] font-[400] text-[16px]">
             {currentLesson.desctiption}
           </div>
-          {currentLesson.paragraphs.map((item) => (
-            <div className="mt-3">
-              <div className="title font-nunito text-[#012970] md:text-[24px] font-[700]">
-                {item.dropTitle}
+          <div className="row">
+            <div className="col-lg-8 col-md-8 col-sm-12">
+              {currentLesson.paragraphs.map((item) => (
+                <div>
+                  <span className="px-3">
+                    <FormulaRenderComponent content={item.text} />
+                  </span>
+                  <div className="flex items-center justify-center">
+                    {<img className="" src={item?.formula} />}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="col-lg-4 col-md-4 col-sm-12">
+              <div className="images">
+                {currentLesson.media?.images.map((item) => (
+                  <div className="my-3">
+                    <img src={item.src} alt="" />
+                    <p className="text-center">{item.title}</p>
+                  </div>
+                ))}
               </div>
-              <div className="paragraph font-nunito text-[#012970] ">
-                {item.body}
+              <div className="flex justify-center" ref={mediaRef}>
+                <script src="https://player.vimeo.com/api/player.js"></script>
               </div>
             </div>
-          ))}
+          </div>
         </div>
         <Link
           to={`${test.path}`}
