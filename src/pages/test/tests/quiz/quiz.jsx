@@ -6,8 +6,12 @@ import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
 import "./quiz.scss";
+<<<<<<< HEAD
 import { useParams } from "react-router-dom";
 import Result from "../../../../components/result/result";
+=======
+import { Link, useParams } from "react-router-dom";
+>>>>>>> 64693580e27e2843a581977ae8e6942e4e429ad7
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -94,6 +98,16 @@ const Quiz = () => {
   return (
     <div className="bg-[#F6F9FF] w-screen min-h-screen flex justify-center items-center">
       <div className="w-[90%] sm:w-3/4 my-10">
+        {showResult ? (
+          <Link
+            to={"/tests"}
+            className="btn btn-primary absolute top-10 left-10 "
+          >
+            <i className="bi bi-arrow-left"></i> Testlerge Qaytiw
+          </Link>
+        ) : (
+          ""
+        )}
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div

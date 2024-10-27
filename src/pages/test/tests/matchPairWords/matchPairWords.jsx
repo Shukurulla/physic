@@ -150,7 +150,7 @@ const MatchingPairWordsQuiz = () => {
   };
 
   return (
-    <div className="bg-[#F6F9FF] w-screen min-h-screen flex justify-center items-center">
+    <div className="bg-[#F6F9FF] w-screen min-h-screen h-[100vh] overflow-y-scroll flex justify-center items-center">
       <div className="w-[90%] sm:w-3/4 my-10">
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
