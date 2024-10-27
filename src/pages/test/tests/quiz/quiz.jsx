@@ -6,12 +6,8 @@ import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
 import "./quiz.scss";
-<<<<<<< HEAD
-import { useParams } from "react-router-dom";
 import Result from "../../../../components/result/result";
-=======
 import { Link, useParams } from "react-router-dom";
->>>>>>> 64693580e27e2843a581977ae8e6942e4e429ad7
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
