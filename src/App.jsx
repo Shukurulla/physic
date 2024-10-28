@@ -41,7 +41,7 @@ const App = () => {
     }
   }, []);
   return (
-    <div className="w-[100vw] overflow-x-hidden relative">
+    <div className="w-[100vw] overflow-x-hidden overflow-y-hidden relative">
       <Toast />
       <Routes>
         {user !== null && (

@@ -1424,7 +1424,7 @@ export const learningDB = [
         text: `Elektronlarning massasi atomlarning massasidan bir necha ming marta kichikligidan atomning asosiy massasi uning musbat zaryadli qismiga to‘g‘ri keladi, degan fikr kelib chiqadi`,
       },
       {
-        text: "Atom ichida musbat zaryadning va binobarin, massasining taqsimlanishini tadqiq qilish uchun Rezerford va uning shogirdlari -zarralarning yupqa metall plastinka — folgalar orqali o‘tganda uchish yo‘nalishlari o‘zgarishi (sochilishi)ni o‘rgandilar. -zarralar ba'zi moddalarning radioaktiv yemirilishi (parchalanishi) paytida juda katta tezlik bilan ajratib chiqaradigan musbat zaryadli zarralari bo‘lib, ular o‘z tabiatiga ko‘ra geliy ionlaridan iboratdir. Bu zarralarning massalari elektron massasidan taxminan 8000 marta katta, musbat zaryadi esa absolyut kattaligi jihatidan elektron zaryadidan ikki marta kattadir. Radioaktiv moddadan -zarralarning uchib chiqish tezligi 104 km/s tartibida bo‘ladi.",
+        text: "Atom ichida musbat zaryadning va binobarin, massasining taqsimlanishini tadqiq qilish uchun Rezerford va uning shogirdlari -zarralarning yupqa metall plastinka — folgalar orqali o‘tganda uchish yo‘nalishlari o‘zgarishi (sochilishi)ni o‘rgandilar. α-zarralar ba'zi moddalarning radioaktiv yemirilishi (parchalanishi) paytida juda katta tezlik bilan ajratib chiqaradigan musbat zaryadli zarralari bo‘lib, ular o‘z tabiatiga ko‘ra geliy ionlaridan iboratdir. Bu zarralarning massalari elektron massasidan taxminan 8000 marta katta, musbat zaryadi esa absolyut kattaligi jihatidan elektron zaryadidan ikki marta kattadir. Radioaktiv moddadan -zarralarning uchib chiqish tezligi 104 km/s tartibida bo‘ladi.",
       },
     ],
   },

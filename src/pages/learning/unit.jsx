@@ -3,9 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import { infoTests, learningDB } from "../../service/db";
 import { changeActivePage } from "../../slice/ui";
-import TestInfo from "../test/test-info";
 import FormulaRenderComponent from "../../utilities/formulaRender.jsx";
-import TextWithMath from "../../utilities/formulaRender.jsx";
 
 const Unit = () => {
   const dispatch = useDispatch();
@@ -19,17 +17,10 @@ const Unit = () => {
   useEffect(() => {
     dispatch(changeActivePage("Tayyorlanish"));
   }, []);
-  function restoreSuperscript(text) {
-    // 10 darajali ifodalarni (10^-15 kabi) to'g'rilash
-    return text
-      .replace(/10-(\d+)/g, "10<sup>-$1</sup>") // 10-15 -> 10^-15
-      .replace(/2·10-(\d+)/g, "2·10<sup>-$1</sup>") // 2·10-15 -> 2·10^-15
-      .replace(/1·10-(\d+)/g, "1·10<sup>-$1</sup>"); // 1·10-15 -> 1·10^-15
-  }
 
   return (
     <div>
-      <div className="md:p-3 test pb-5 px-[10px]">
+      <div className="md:p-3  pb-5 px-[10px]">
         <Link to={"/learning"} className="font-nunito page-label">
           Tayyorlanish
         </Link>
