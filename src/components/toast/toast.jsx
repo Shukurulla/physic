@@ -14,7 +14,7 @@ const Toast = () => {
   }
 
   useEffect(() => {
-    if (!window.localStorage.getItem("jwt")) {
+    if (!window.localStorage.getItem("jwt-token")) {
       dispatch(
         showToast({
           alert: "Profildan muaffaqiyatli chiqildi",

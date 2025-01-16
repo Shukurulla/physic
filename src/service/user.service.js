@@ -6,7 +6,7 @@ import {
 } from "../slice/user.slice";
 import axios from "./api";
 
-const token = localStorage.getItem("jwt");
+const token = localStorage.getItem("jwt-token");
 const UserService = {
   async getUser(dispatch) {
     dispatch(getUserStart());
@@ -29,7 +29,7 @@ const UserService = {
       const { data } = await axios.post("/create-user", user);
       dispatch(getUserSuccess(data.user));
       if (data.token) {
-        localStorage.setItem("jwt", data.token);
+        localStorage.setItem("jwt-token", data.token);
         navigate("/home");
         dispatch(
           showToast({
@@ -58,7 +58,7 @@ const UserService = {
       const { data } = await axios.post("/login", user);
       if (data.token) {
         dispatch(getUserSuccess(data.user));
-        localStorage.setItem("jwt", data.token);
+        localStorage.setItem("jwt-token", data.token);
         navigate("/home");
         dispatch(
           showToast({

@@ -47,7 +47,7 @@ const Sidebar = () => {
             activePage == "Chiqish" ? "active" : ""
           }`}
           onClick={() => {
-            localStorage.removeItem("jwt");
+            localStorage.removeItem("jwt-token");
             window.location.reload();
           }}
         >
