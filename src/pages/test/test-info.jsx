@@ -10,6 +10,8 @@ const TestInfo = () => {
   const { user } = useSelector((state) => state.user);
 
   useEffect(() => {
+    console.log(user);
+
     dispatch(changeActivePage("Test"));
   }, []);
 

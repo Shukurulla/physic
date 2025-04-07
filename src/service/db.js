@@ -30,1162 +30,1182 @@ import image4 from "../../public/images/4.png";
 import image5 from "../../public/images/5.png";
 
 export const quiz = {
-  topic: "Fizika",
+  topic: "Atom tuzilishi. Tomson modeli. Rezerford tajribasi",
   perQuestionScore: 5,
   questions: [
     {
-      question: "Atomlar haqida ilk bor fikr bildirgan olim kim?",
-      choices: ["Demokrit", "Aristotel", "Nyuton", "Farobiy"],
-      correctAnswer: "Demokrit",
+      question: "J. Tomson o‘zining atom modelini qachon taklif qildi?",
+      choices: ["1948-yilda", "1903-yilda", "1957-yilda", "1991-yilda"],
+      correctAnswer: "1903-yilda",
     },
 
     {
       question:
-        "Elektronlarning yadro atrofida orbitalar bo'ylab harakatlanishi qaysi modelga xos?",
-      choices: [
-        "Bor modeli",
-        "Tomson modeli",
-        "Dalton modeli",
-        "Rezerford modeli",
-      ],
-      correctAnswer: "Rezerford modeli",
+        "Elektronning massasi vodorod atomi massasidan qanchaga kichik?",
+      choices: ["2336 marta", "36 marta", "1836 marta", "72 marta"],
+      correctAnswer: "1836 marta",
+    },
+    {
+      question: "Rezerford tajribasida qaysi nurdan foydalanildi?",
+      choices: ["foton", "gamma", "betta", "alfa"],
+      correctAnswer: "alfa",
+    },
+    {
+      question: "Rezerford tajiriybasida yupqa folga qog‘oz nimadan yasalgan?",
+      choices: ["kumushdan", "oltindan", "temirdan", "misdan"],
+      correctAnswer: "oltindan",
     },
     {
       question:
-        "Elektronlarning yadro atrofida orbitalar bo'ylab harakatlanishi qaysi modelga xos?",
+        "Rezerford tajiriybasida alfa zarralar atom yadrosiga to‘g‘ri yuzma-yuz kelganlarida…",
       choices: [
-        "Bor modeli",
-        "Tomson modeli",
-        "Dalton modeli",
-        "Rezerford modeli",
+        "orqaga qaytgan",
+        "yo‘nalishi o‘zgarmagan",
+        "aylana chizgan",
+        "to‘xtab qolgan",
       ],
-      correctAnswer: "Rezerford modeli",
-    },
-    {
-      question:
-        "Bohr modeli bo'yicha atomdagi elektronlar qachon nur chiqaradi yoki yutadi?",
-      choices: [
-        "Elektronlar o'z orbitalarida harakatlanayotganda",
-        "Elektronlar bir orbitadan ikkinchisiga o'tganda",
-        "Elektronlar o'z orbitasida turib nurlanadi",
-        "Elektronlar yadroga yaqinlashganda",
-      ],
-      correctAnswer: "Elektronlar bir orbitadan ikkinchisiga o'tganda",
-    },
-    {
-      question: "Atomning eng birinchi modeli kim tomonidan taklif etilgan?",
-      choices: ["Nyuton", "Bor", "Tomson", "Rezerford"],
-      correctAnswer: "Tomson",
-    },
-    {
-      question:
-        "O'zbekistonning qaysi universitetida yadro fizikasi yo'nalishi bo'yicha ilmiy izlanishlar olib boriladi?",
-      choices: [
-        "Toshkent Davlat Universiteti",
-        "Samarqand Davlat Universiteti",
-        "Buxoro Davlat Universiteti",
-        "Nukus Davlat Universiteti",
-      ],
-      correctAnswer: "Toshkent Davlat Universiteti",
-    },
-    {
-      question:
-        "O'zbekistonda yadro fizikasi bo'yicha tadqiqotlarni qaysi tashkilot muvofiqlashtiradi?",
-      choices: [
-        "Yadro Tadqiqotlari Instituti",
-        "Fanlar Akademiyasi",
-        "Energetika Vazirligi",
-        "Mudofaa Vazirligi",
-      ],
-      correctAnswer: "Fanlar Akademiyasi",
-    },
-    {
-      question: "Atomning spektral chiziqlari haqida ma'lumot bergan olim kim?",
-      choices: ["Bor", "Rezerford", "Balmer", "Tomson"],
-      correctAnswer: "Balmer",
-    },
-    {
-      question:
-        "O'zbekistonda qaysi yilga qadar birinchi atom elektr stansiyasi qurilishi rejalashtirilgan?",
-      choices: ["2025", "2030", "2040", "2050"],
-      correctAnswer: "2025",
-    },
-    {
-      question: "Rezerfordning atom modeli qaysi yilda taklif etilgan?",
-      choices: ["1903", "1911", "1920", "1932"],
-      correctAnswer: "1911",
-    },
-    // {
-    //   question: "Rezerford modeli qaysi tamoyilga zid bo'lib chiqdi?",
-    //   choices: [
-    //     "Klassik mexanika va elektrodinamika tamoyillariga",
-    //     "Nyuton mexanikasiga",
-    //     "Atomning massasiga",
-    //     "Elektronlarning spektral chiziqlariga",
-    //   ],
-    //   correctAnswer: "Klassik mexanika va elektrodinamika tamoyillariga",
-    // },
-    // {
-    //   question:
-    //     "O'zbekiston Yadro Tadqiqotlari Instituti qachon tashkil etilgan?",
-    //   choices: ["1956-yilda", "1960-yilda", "1970-yilda", "1980-yilda"],
-    //   correctAnswer: "1956-yilda",
-    // },
-    // {
-    //   question: "O'zbekiston Yadro Tadqiqotlari Instituti qayerda joylashgan?",
-    //   choices: ["Samarqand", "Toshkent", "Nukus", "Buxoro"],
-    //   correctAnswer: "Toshkent",
-    // },
-    // {
-    //   question:
-    //     "O'zbekiston Yadro Tadqiqotlari Instituti qanday sohalarda ishlaydi?",
-    //   choices: [
-    //     "Energetika va texnologiya",
-    //     "Tibbiyot va qishloq xo'jaligi",
-    //     "Biologiya va ekologiya",
-    //     "Yuqoridagilarning barchasi",
-    //   ],
-    //   correctAnswer: "Yuqoridagilarning barchasi",
-    // },
-    // {
-    //   question: "Bohr postulatlaridan biri qaysi?",
-    //   choices: [
-    //     "Atomning ichki tuzilishi haqida",
-    //     "Elektronlarning spektral chiziqlari haqida",
-    //     "Elektronlarning stasionar orbitalari haqida",
-    //     "Atomning massasi haqida",
-    //   ],
-    //   correctAnswer: "Elektronlarning stasionar orbitalari haqida",
-    // },
-    // {
-    //   question: "Radioaktivlik kim tomonidan kashf etilgan?",
-    //   choices: ["Rezerford", "Bekkerel", "Kyuri", "Dalton"],
-    //   correctAnswer: "Bekkerel",
-    // },
-    // {
-    //   question:
-    //     "Radioaktiv elementlardan qaysi biri uran rudasi ichidan ajratib olingan?",
-    //   choices: ["Poloniy", "Uran", "Toriy", "Karbon"],
-    //   correctAnswer: "Poloniy",
-    // },
-    // {
-    //   question: "Atom yadrosi nimadan iborat?",
-    //   choices: [
-    //     "Elektron va proton",
-    //     "Proton va neytron",
-    //     "Proton va elektron",
-    //     "Neytron va elektron",
-    //   ],
-    //   correctAnswer: "Proton va neytron",
-    // },
-    // {
-    //   question: "Rezerfordning tadqiqotlariga ko'ra, atomning o'lchami qanday?",
-    //   choices: ["10^-10 m", "10^-15 m", "10^-20 m", "10^-25 m"],
-    //   correctAnswer: "10^-10 m",
-    // },
-    // {
-    //   question: "Massa defekti deganda nimani tushunamiz?",
-    //   choices: [
-    //     "Atomning massasini",
-    //     "Nuklonlarning massasini",
-    //     "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
-    //     "Elektronlarning massasini",
-    //   ],
-    //   correctAnswer:
-    //     "Nuklonlarning umumiy massasi va yadro massasi o'rtasidagi farqni",
-    // },
-    // {
-    //   question: "Bohr postulatlarining ikkinchisi nima haqida?",
-    //   choices: [
-    //     "Elektronlarning stasionar orbitalari",
-    //     "Elektronlarning energetik holatlari",
-    //     "Elektronlarning nur chiqarishi va yutishi",
-    //     "Atomning massasi",
-    //   ],
-    //   correctAnswer: "Elektronlarning nur chiqarishi va yutishi",
-    // },
-    // {
-    //   question: "Atom yadrosining zaryad sanisi nimani ifodalaydi?",
-    //   choices: [
-    //     "Yadrodagi protonlar sonini",
-    //     "Yadrodagi neytronlar sonini",
-    //     "Elektronlar sonini",
-    //     "Atomning umumiy massasini",
-    //   ],
-    //   correctAnswer: "Yadrodagi protonlar sonini",
-    // },
-    // {
-    //   question: "Izotoplar deganda nimani tushunamiz?",
-    //   choices: [
-    //     "Protonlar soni bir xil, massa soni turli elementlar",
-    //     "Protonlar va neytronlar soni bir xil elementlar",
-    //     "Elektronlar soni bir xil, protonlar soni turli elementlar",
-    //     "Neytronlar soni bir xil, protonlar soni turli elementlar",
-    //   ],
-    //   correctAnswer: "Protonlar soni bir xil, massa soni turli elementlar",
-    // },
-    // {
-    //   question:
-    //     "O'zbekistonning qaysi viloyatida yadro chiqindilari saqlanadi?",
-    //   choices: ["Toshkent", "Samarqand", "Navoi", "Qashqadaryo"],
-    //   correctAnswer: "Navoi",
-    // },
-    // {
-    //   question: "Alfa nurlanishi nima?",
-    //   choices: [
-    //     "Elektronlar oqimi",
-    //     "Geliy yadrolari oqimi",
-    //     "Fotokvantlar oqimi",
-    //     "Neytronlar oqimi",
-    //   ],
-    //   correctAnswer: "Geliy yadrolari oqimi",
-    // },
-    // {
-    //   question:
-    //     "O'zbekistonda qaysi radioaktiv izotoplar tibbiyotda keng qo'llaniladi?",
-    //   choices: [
-    //     "Poloniy va Radon",
-    //     "Yod va Teknesiy",
-    //     "Uran va Toriy",
-    //     "Kaliy va Karbon",
-    //   ],
-    //   correctAnswer: "Yod va Teknesiy",
-    // },
-    // {
-    //   question:
-    //     "O'zbekiston Respublikasida yadroviy xavfsizlikni ta'minlash uchun qanday choralar ko'riladi?",
-    //   choices: [
-    //     "Xodimlar maxsus kiyimlarda ishlaydi",
-    //     "Reaktorlarda suv va beton bilan himoyalanadi",
-    //     "Har kuni nazorat o'tkaziladi",
-    //     "Yadro chiqindilari ko'miladi",
-    //   ],
-    //   correctAnswer: "Reaktorlarda suv va beton bilan himoyalanadi",
-    // },
-    // {
-    //   question: "Scintillyatsion hisoblagich qanday printsipda ishlaydi?",
-    //   choices: [
-    //     "Gaz ionlanishi",
-    //     "Fotonlarning fotokimyoviy ta'siri",
-    //     "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
-    //     "Elektronlarning magnit maydoni",
-    //   ],
-    //   correctAnswer:
-    //     "Tez zaryadlangan zarrachalarning florastatsion ekranga tushishi",
-    // },
-    // {
-    //   question: "Bor radiusi nima?",
-    //   choices: [
-    //     "Atom yadrosi radiusi",
-    //     "Elektron orbitasi radiusi",
-    //     "Proton radiusi",
-    //     "Elektronning erkin holatda radiusi",
-    //   ],
-    //   correctAnswer: "Elektron orbitasi radiusi",
-    // },
-  ],
-};
-
-export const quiz_1 = {
-  topic: "Lazer va ularning turlari",
-  questions: [
-    {
-      question: "Lazer so'zining to'liq ma'nosi nima?",
-      choices: [
-        "Light Amplification by Stimulated Emission of Radiation",
-        "Light Absorption by Stimulated Emission of Radiation",
-        "Light Amplification by Spontaneous Emission of Radiation",
-        "Light Absorption by Spontaneous Emission of Radiation",
-      ],
-      correctAnswer: "Light Amplification by Stimulated Emission of Radiation",
-    },
-    {
-      question: "Lazerning asosiy ishlash prinsipi qaysi jarayonga asoslangan?",
-      choices: [
-        "Spontan nurlanish",
-        "Majburiy nurlanish",
-        "Infraqizil nurlanish",
-        "Ultrabinafsha nurlanish",
-      ],
-      correctAnswer: "Majburiy nurlanish",
-    },
-    {
-      question:
-        "Quyidagi lazer turlaridan qaysi biri qattiq jismli lazerga misol bo'ladi?",
-      choices: [
-        "Geliy-neon lazeri",
-        "Yoqtosh lazeri",
-        "Karbonat angidrid lazeri",
-        "Argon lazeri",
-      ],
-      correctAnswer: "Yoqtosh lazeri",
-    },
-    {
-      question: "Tibbiyotda ko'pincha qaysi turdagi lazer ishlatiladi?",
-      choices: [
-        "Yarim o'tkazgichli lazer",
-        "Gaz lazeri",
-        "Suyuqlik lazeri",
-        "Erkin elektronli lazer",
-      ],
-      correctAnswer: "Yarim o'tkazgichli lazer",
-    },
-    {
-      question:
-        "Lazer nurining qaysi xususiyati uni oddiy yorug'likdan farqlaydi?",
-      choices: [
-        "Monoxromatikligi",
-        "Yorqinligi",
-        "Yo'naltirilganligi",
-        "Barcha yuqoridagilar",
-      ],
-      correctAnswer: "Barcha yuqoridagilar",
-    },
-    {
-      question: "Qaysi lazer turi eng yuqori quvvatga ega bo'lishi mumkin?",
-      choices: [
-        "Yarim o'tkazgichli lazer",
-        "Gaz lazeri",
-        "Kimyoviy lazer",
-        "Erkin elektronli lazer",
-      ],
-      correctAnswer: "Erkin elektronli lazer",
-    },
-    {
-      question:
-        "Lazerning qaysi xususiyati ularni aloqa tizimlarida ishlatishga imkon beradi?",
-      choices: [
-        "Yuqori energiya",
-        "Kuchli yo'naltirilganlik",
-        "Keng spektr",
-        "Past chastota",
-      ],
-      correctAnswer: "Kuchli yo'naltirilganlik",
-    },
-    {
-      question:
-        "Quyidagilardan qaysi biri sanoatda metall kesish uchun eng ko'p ishlatiladi?",
-      choices: [
-        "Rubin lazeri",
-        "Karbonat angidrid lazeri",
-        "Geliy-neon lazeri",
-        "Argon lazeri",
-      ],
-      correctAnswer: "Karbonat angidrid lazeri",
-    },
-    {
-      question: "Lazer nurining kogerentligi nima degani?",
-      choices: [
-        "Nurning bir xil chastotaga ega bo'lishi",
-        "Nurning bir xil fazaga ega bo'lishi",
-        "Nurning bir xil yo'nalishga ega bo'lishi",
-        "Nurning bir xil chastota va fazaga ega bo'lishi",
-      ],
-      correctAnswer: "Nurning bir xil chastota va fazaga ega bo'lishi",
-    },
-    {
-      question: "Qaysi lazer turi ko'z jarrohligida ko'pincha ishlatiladi?",
-      choices: [
-        "Rubin lazeri",
-        "Eksimer lazeri",
-        "Yoqtosh lazeri",
-        "Karbonat angidrid lazeri",
-      ],
-      correctAnswer: "Eksimer lazeri",
+      correctAnswer: "yo‘nalishi o‘zgarmagan",
     },
   ],
 };
 
 export const quiz_2 = {
-  topic: "Atom yadrosining tarkibi. Bog'lanish energiyasi. Massa defekti",
+  topic: "Borning kvant postulatlari",
   questions: [
     {
-      question: "Atom yadrosining asosiy tarkibiy qismlari qaysilar?",
+      question:
+        "Vodorod atomidagi elektron birinchi kvant orbitasida harakatlanmoqda. Agar orbitaning radiusi ( r_1 = 5{,}29 cdot 10^{-11} , \text{m} ) bo‘lsa, elektronning tezligini aniqlang. (Elektronning zaryadi ( e_1 = 1{,}6 cdot 10^{-19} , \text{C} ), massasi ( m_e = 9{,}11 cdot 10^{-31} , \text{kg} ), va Kulon doimiysi ( k = 9 cdot 10^9 , \text{N} cdot \text{m}^2 / \text{C}^2 ))",
       choices: [
-        "Elektronlar va protonlar",
-        "Protonlar va neytronlar",
-        "Neytronlar va elektronlar",
-        "Protonlar, neytronlar va elektronlar",
+        "( 1{,}09 cdot 10^6 , \text{m/s} )",
+        "( 2{,}18 cdot 10^6 , \text{m/s} )",
+        "( 3{,}27 cdot 10^6 , \text{m/s} )",
+        "( 4{,}36 cdot 10^6 , \text{m/s} )",
       ],
-      correctAnswer: "Protonlar va neytronlar",
-    },
-    {
-      question: "Massa defekti nima?",
-      choices: [
-        "Yadroning haqiqiy massasi",
-        "Yadroni tashkil etuvchi nuklonlar massalarining yig'indisi",
-        "Yadroni tashkil etuvchi nuklonlar massalari yig'indisi bilan yadroning haqiqiy massasi orasidagi farq",
-        "Yadro massasining elektron massasiga nisbati",
-      ],
-      correctAnswer:
-        "Yadroni tashkil etuvchi nuklonlar massalari yig'indisi bilan yadroning haqiqiy massasi orasidagi farq",
-    },
-    {
-      question: "Bog'lanish energiyasi qanday aniqlanadi?",
-      choices: ["E = mc²", "E = hv", "E = ½mv²", "E = mgh"],
-      correctAnswer: "E = mc²",
+      correctAnswer: "( 2{,}18 cdot 10^6 , \text{m/s} )",
     },
     {
       question:
-        "Qaysi element yadrosi eng katta solishtirma bog'lanish energiyasiga ega?",
-      choices: ["Vodorod", "Uran", "Temir", "Geliy"],
-      correctAnswer: "Temir",
-    },
-    {
-      question:
-        "Yadro reaksiyasida energiya ajralishi yoki yutilishini nima belgilaydi?",
+        "Vodorod atomida elektron uchinchi orbitadan birinchi orbitaga o‘tmoqda. Agar birinchi orbitadagi energiya ( E_1 = -13{,}6 , \text{eV} ), uchinchi orbitadagi energiya ( E_3 = -1{,}51 , \text{eV} ) bo‘lsa, chiqadigan fotonning chastotasini aniqlang. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ))",
       choices: [
-        "Reaksiya mahsulotlarining massasi",
-        "Boshlang'ich va oxirgi yadrolar massalarining farqi",
-        "Reaksiyada ishtirok etayotgan yadrolar soni",
-        "Yadrolarning zaryadi",
+        "( 2{,}47 cdot 10^{14} , \text{Hz} )",
+        "( 1{,}03 cdot 10^{15} , \text{Hz} )",
+        "( 4{,}17 cdot 10^{15} , \text{Hz} )",
+        "( 3{,}29 cdot 10^{15} , \text{Hz} )",
       ],
-      correctAnswer: "Boshlang'ich va oxirgi yadrolar massalarining farqi",
+      correctAnswer: "( 4{,}17 cdot 10^{15} , \text{Hz} )",
     },
     {
-      question: "Atom yadrosidagi nuklonlar soni nimani bildiradi?",
+      question:
+        "Elektron uchinchi kvant orbitada harakatlanmoqda. Bor modeliga ko‘ra, uchinchi orbitadagi burchak momentini toping. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ))",
       choices: [
-        "Atom massasini",
-        "Yadro zaryadini",
-        "Mass sonini",
-        "Neytronlar sonini",
+        "( 3{,}5 cdot 10^{-34} , \text{Js} )",
+        "( 6{,}0 cdot 10^{-34} , \text{Js} )",
+        "( 3{,}16 cdot 10^{-34} , \text{Js} )",
+        "( 9{,}94 cdot 10^{-34} , \text{Js} )",
       ],
-      correctAnswer: "Mass sonini",
+      correctAnswer: "( 9{,}94 cdot 10^{-34} , \text{Js} )",
     },
     {
       question:
-        "Agar yadrodagi protonlar soni 26 va neytronlar soni 30 bo'lsa, bu elementning mass soni nechaga teng?",
-      choices: ["26", "30", "56", "4"],
-      correctAnswer: "56",
-    },
-    {
-      question:
-        "Quyidagi formulalardan qaysi biri yadroning bog'lanish energiyasini ifodalaydi?",
+        "Bor modeliga ko‘ra, ikkinchi orbitaning radiusi qanday? Agar birinchi orbitaning radiusi ( r_1 = 5{,}29 cdot 10^{-11} , \text{m} ) bo‘lsa.",
       choices: [
-        "E_bog' = (Zm_p + Nm_n - M_yadr)c²",
-        "E_bog' = (Zm_p + Nm_n + M_yadr)c²",
-        "E_bog' = (M_yadr - Zm_p - Nm_n)c²",
-        "E_bog' = (Zm_p - Nm_n - M_yadr)c²",
+        "( 1{,}06 cdot 10^{-10} , \text{m} )",
+        "( 2{,}12 cdot 10^{-10} , \text{m} )",
+        "( 1{,}59 cdot 10^{-10} , \text{m} )",
+        "( 5{,}29 cdot 10^{-11} , \text{m} )",
       ],
-      correctAnswer: "E_bog' = (Zm_p + Nm_n - M_yadr)c²",
-    },
-    {
-      question: "Yadro kuchlari qanday masofada ta'sir qiladi?",
-      choices: ["10^-15 m", "10^-10 m", "10^-5 m", "10^-20 m"],
-      correctAnswer: "10^-15 m",
+      correctAnswer: "( 2{,}12 cdot 10^{-10} , \text{m} )",
     },
     {
       question:
-        "Quyidagilardan qaysi biri to'g'ri?\nI. Yadro kuchlari elektromagnit kuchlardan kuchli\nII. Yadro kuchlari faqat protonlar orasida ta'sir qiladi\nIII. Yadro kuchlari qisqa masofada ta'sir qiladi",
-      choices: ["Faqat I", "I va II", "I va III", "II va III"],
-      correctAnswer: "I va III",
+        "Elektron ikkinchi orbitadan uchinchi orbitaga o‘tmoqda. Agar ushbu o‘tish davomida chiqqan fotonning energiyasi ( 10{,}2 , \text{eV} ) bo‘lsa, fotonning to‘lqin uzunligini toping. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ), yorug‘lik tezligi ( c = 3 cdot 10^8 , \text{m/s} ))",
+      choices: [
+        "( 122 , \text{nm} )",
+        "( 488 , \text{nm} )",
+        "( 250 , \text{nm} )",
+        "( 50 , \text{nm} )",
+      ],
+      correctAnswer: "( 122 , \text{nm} )",
     },
   ],
 };
 
 export const quiz_3 = {
-  topic: "Radioaktiv nurlanishni va zarralarni qayd qilish usullari",
+  topic: "Lazerlar",
   questions: [
     {
       question:
-        "Quyidagi detektorlardan qaysi biri ionlashtiruvchi nurlanishni qayd qilish uchun ishlatiladi?",
+        "Yoqut lazerida aktiv muhit sifatida tarkibida 0,05% ga yaqin ... bo‘lgan yoqut kristalli (Al₂O₃) dan foydalaniladi.",
       choices: [
-        "Geyger-Myuller hisoblagichi",
-        "Mikroskop",
-        "Barometr",
-        "Termometr",
+        "xrom aralashmasi",
+        "geliy aralashmasi",
+        "temir aralashmasi",
+        "oltin aralashmasi",
       ],
-      correctAnswer: "Geyger-Myuller hisoblagichi",
+      correctAnswer: "oltin aralashmasi",
     },
     {
       question:
-        "Ssintilyatsion detektorning ishlash prinsipi nimaga asoslangan?",
-      choices: [
-        "Radioaktiv nurlanish ta'sirida kristallning yaltirashiga",
-        "Radioaktiv nurlanish ta'sirida suyuqlikning qaynashiga",
-        "Radioaktiv nurlanish ta'sirida kristallning erishiga",
-        "Radioaktiv nurlanish ta'sirida kristallning sovishiga",
-      ],
-      correctAnswer: "Radioaktiv nurlanish ta'sirida kristallning yaltirashiga",
+        "Lazer nurlarining elektr maydon kuchlanganligi taxminan qanchaga yetadi.",
+      choices: ["10¹¹ V/m", "10⁸ V/m", "10¹⁴ V/m", "10⁵ V/m"],
+      correctAnswer: "10¹¹ V/m",
     },
     {
-      question: "Vilson kamerasi qanday zarralarni kuzatish uchun ishlatiladi?",
+      question: "Yoqut lazerlari qanday ishlaydi?",
       choices: [
-        "Faqat neytronlarni",
-        "Faqat gamma-nurlanishni",
-        "Zaryadlangan zarralarni",
-        "Faqat neytral zarralarni",
+        "impuls rejimda",
+        "kontakt rejimda",
+        "sinov rejimda",
+        "rele rejimida",
       ],
-      correctAnswer: "Zaryadlangan zarralarni",
+      correctAnswer: "impuls rejimda",
     },
     {
-      question:
-        "Fotoemulsiya usuli qaysi turdagi nurlanishni qayd qilish uchun eng samarali?",
+      question: "Lazer nurlanishi qanday xossaga ega?",
       choices: [
-        "Alfa-zarralar",
-        "Beta-zarralar",
-        "Gamma-nurlanish",
-        "Neytronlar",
+        "qat’iy monoxromatik",
+        "katta sochilishga",
+        "oddiy nur bilan bir xil",
+        "kichik quvvatga",
       ],
-      correctAnswer: "Alfa-zarralar",
+      correctAnswer: "qat’iy monoxromatik",
     },
     {
       question:
-        "Quyidagi detektorlardan qaysi biri yarim o'tkazgichli detektor hisoblanadi?",
-      choices: [
-        "Geyger-Myuller hisoblagichi",
-        "Ssintilyatsion detektor",
-        "Kremniy-dreyf detektor",
-        "Vilson kamerasi",
-      ],
-      correctAnswer: "Kremniy-dreyf detektor",
-    },
-    {
-      question: "Ionizatsion kamera asosan qanday maqsadda ishlatiladi?",
-      choices: [
-        "Nurlanish dozasini o'lchash",
-        "Zarralar tezligini aniqlash",
-        "Zarralar massasini o'lchash",
-        "Zarralar zaryadini aniqlash",
-      ],
-      correctAnswer: "Nurlanish dozasini o'lchash",
-    },
-    {
-      question: "Kalorimetrik detektorlar qanday fizik hodisaga asoslangan?",
-      choices: [
-        "Nurlanishning yutilishi natijasida haroratning o'zgarishiga",
-        "Nurlanishning qaytishiga",
-        "Nurlanishning sinishiga",
-        "Nurlanishning tarqalishiga",
-      ],
-      correctAnswer:
-        "Nurlanishning yutilishi natijasida haroratning o'zgarishiga",
-    },
-    {
-      question: "Cherenkov detektori qanday hodisaga asoslangan?",
-      choices: [
-        "Zaryadlangan zarralarning muhitda yorug'lik tezligidan tezroq harakatlanishiga",
-        "Zarralarning to'qnashishiga",
-        "Zarralarning tormozlanishiga",
-        "Zarralarning neytrallanishiga",
-      ],
-      correctAnswer:
-        "Zaryadlangan zarralarning muhitda yorug'lik tezligidan tezroq harakatlanishiga",
-    },
-    {
-      question:
-        "Quyidagi detektorlardan qaysi biri gazli detektor hisoblanadi?",
-      choices: [
-        "Ssintilyatsion detektor",
-        "Yarim o'tkazgichli detektor",
-        "Proporsional kamera",
-        "Fotoemulsiya plates",
-      ],
-      correctAnswer: "Proporsional kamera",
-    },
-    {
-      question:
-        "Qaysi usul yordamida zarralarning trayektoriyasini kuzatish mumkin?\nI. Vilson kamerasi\nII. Pufakli kamera\nIII. Geyger-Myuller hisoblagichi",
-      choices: ["Faqat I", "I va II", "I va III", "II va III"],
-      correctAnswer: "I va II",
+        "Lazer nurlanishi:\n1) vaqt bo‘yicha va fazoviy koherent;\n2) qat’iy monoxromatik;\n3) quvvati katta;\n4) dastasi o‘tkir yo‘nalishli (ingichka) bo‘ladi.",
+      choices: ["1,2,3,4", "3,4", "1,2", "1,2,4"],
+      correctAnswer: "1,2,3,4",
     },
   ],
 };
-
 export const quiz_4 = {
-  topic: "Radioaktiv yemirilish qonuni",
+  topic: "Atom yadrosining tarkibi",
   questions: [
     {
-      question: "Radioaktiv yemirilish qonuni qanday ifoda bilan beriladi?",
-      choices: ["N = N₀e^(-λt)", "N = N₀e^(λt)", "N = N₀/t", "N = N₀t"],
-      correctAnswer: "N = N₀e^(-λt)",
-    },
-    {
-      question: "Radioaktiv moddaning yarim yemirilish davri nima?",
-      choices: [
-        "Radioaktiv atomlar sonining 2 marta kamayishi uchun ketgan vaqt",
-        "Radioaktiv atomlar sonining 2 marta ko'payishi uchun ketgan vaqt",
-        "Radioaktiv atomlar sonining 4 marta kamayishi uchun ketgan vaqt",
-        "Radioaktiv atomlar sonining yarimini yo'qotish uchun ketgan vaqt",
-      ],
-      correctAnswer:
-        "Radioaktiv atomlar sonining yarimini yo'qotish uchun ketgan vaqt",
-    },
-    {
-      question: "Radioaktiv yemirilish doimiysi λ nimani ifodalaydi?",
-      choices: [
-        "Vaqt birligi ichida yemirilgan yadrolar sonining boshlang'ich yadrolar soniga nisbati",
-        "Yemirilgan yadrolar sonining umumiy yadrolar soniga nisbati",
-        "Yarim yemirilish davrining teskari qiymati",
-        "Yemirilmagan yadrolar sonining boshlang'ich yadrolar soniga nisbati",
-      ],
-      correctAnswer:
-        "Vaqt birligi ichida yemirilgan yadrolar sonining boshlang'ich yadrolar soniga nisbati",
+      question:
+        "Atom yadrosi 13 ta proton va 14 ta neytrondan tashkil topgan. Ushbu elementning yadro zaryadi sonini va umumiy massasini (massiv sonini) aniqlang.",
+      choices: ["Z=27, A=13", "Z=13, A=27", "Z=14, A=13", "Z=27, A=14"],
+      correctAnswer: "Z=13, A=27",
     },
     {
       question:
-        "Agar radioaktiv modda massasining 3/4 qismi yemirilgan bo'lsa, necha yarim yemirilish davri o'tgan?",
-      choices: ["1", "2", "3", "4"],
-      correctAnswer: "2",
-    },
-    {
-      question: "Radioaktiv preparatning aktivligi nimani bildiradi?",
-      choices: [
-        "Vaqt birligi ichida yemirilayotgan yadrolar soni",
-        "Preparatdagi umumiy yadrolar soni",
-        "Preparatning massasi",
-        "Preparatning energiyasi",
-      ],
-      correctAnswer: "Vaqt birligi ichida yemirilayotgan yadrolar soni",
-    },
-    {
-      question: "Radioaktiv yemirilish qonunidagi e nimani bildiradi?",
-      choices: [
-        "Natural logarifm asosi",
-        "Elektron zaryadini",
-        "Energiyani",
-        "Yemirilish tezligini",
-      ],
-      correctAnswer: "Natural logarifm asosi",
+        "Azotning yadrosida 7 ta proton bor. Uning massaviy soni A=15. Ushbu yadroning neytronlar sonini aniqlang.",
+      choices: ["7 ta", "8 ta", "15 ta", "22 ta"],
+      correctAnswer: "8 ta",
     },
     {
       question:
-        "Quyidagi formulalardan qaysi biri yarim yemirilish davri T₁/₂ va yemirilish doimiysi λ orasidagi bog'lanishni ifodalaydi?",
-      choices: ["T₁/₂ = ln2 / λ", "T₁/₂ = λ / ln2", "T₁/₂ = 2λ", "T₁/₂ = λ²"],
-      correctAnswer: "T₁/₂ = ln2 / λ",
+        "Geliy yadrosida 2 ta proton va 2 ta neytron bor. Agar proton massasi 1,0073 u, neytron massasi 1,0087 u bo‘lsa, yadroning umumiy massasi qanday bo‘ladi?",
+      choices: ["4,032 u", "4,012 u", "4,004 u", "4,027 u"],
+      correctAnswer: "4,032 u",
     },
     {
       question:
-        "Radioaktiv moddaning boshlang'ich miqdorining 1/8 qismi qolishi uchun necha yarim yemirilish davri o'tishi kerak?",
-      choices: ["1", "2", "3", "4"],
-      correctAnswer: "3",
+        "Qandaydir element yadrosida 20 ta proton va 24 ta neytron bor. Proton va neytronlar sonining nisbatini toping.",
+      choices: ["5:6", "4:5", "6:5", "5:4"],
+      correctAnswer: "5:6",
     },
     {
       question:
-        "Radioaktiv yemirilish jarayonida quyidagilardan qaysi biri o'zgarmaydi?",
-      choices: ["Yadrolar soni", "Yemirilish doimiysi", "Aktivlik", "Massa"],
-      correctAnswer: "Yemirilish doimiysi",
-    },
-    {
-      question:
-        "Agar radioaktiv moddaning yarim yemirilish davri 10 kun bo'lsa, 30 kun o'tgandan keyin boshlang'ich miqdorning qancha qismi qoladi?",
-      choices: ["1/2", "1/4", "1/8", "1/16"],
-      correctAnswer: "1/8",
+        "Elementning massaviy soni A=40, zaryadli soni Z=20. Ushbu element qanday kimyoviy elementga tegishli?",
+      choices: ["Kaliy (K)", "Kalsiy (Ca)", "Xlor (Cl)", "Magniy (Mg)"],
+      correctAnswer: "Kalsiy (Ca)",
     },
   ],
 };
 
 export const quiz_5 = {
-  topic: "Yadro reaksiyalari. Siljish qonuni",
+  topic: "Yadro kuchlari. Yadroviy o‘zaro ta’sirning almashinuv modeli",
   questions: [
     {
-      question: "Yadro reaksiyasi nima?",
+      question: "Yadro kuchlari bu …",
       choices: [
-        "Atom yadrolarining o'zaro ta'sirlashuvi natijasida yangi yadrolar hosil bo'lishi",
-        "Atomlarning ionlashuvi",
-        "Elektronlarning yadro atrofida aylanishi",
-        "Yadroning spontan parchalanishi",
+        "yadroda nuklonlarni tutib turuvchi kuch",
+        "gravitatsiyaviy kuch",
+        "yadroda neytronlarni tutib turuvchi kuch",
+        "yadroda elektronni tutib turuvchi kuch",
       ],
-      correctAnswer:
-        "Atom yadrolarining o'zaro ta'sirlashuvi natijasida yangi yadrolar hosil bo'lishi",
+      correctAnswer: "yadroda nuklonlarni tutib turuvchi kuch",
     },
     {
       question:
-        "α-yemirilishda siljish qonuniga ko'ra, yadroning zaryadi qanday o'zgaradi?",
-      choices: ["2 ga kamayadi", "2 ga ortadi", "4 ga kamayadi", "O'zgarmaydi"],
-      correctAnswer: "2 ga kamayadi",
+        "Yadro kuchlari qaysi zarralar orasida mavjud? 1) p-n 2) p-p 3) n-n 4) p-e 5) n-e 6) e-e",
+      choices: ["1,2,3", "1,4,5", "2,3,6", "4,5,6"],
+      correctAnswer: "1,2,3",
     },
     {
       question:
-        "β⁻-yemirilishda siljish qonuniga ko'ra, yadroning massa soni qanday o'zgaradi?",
-      choices: ["1 ga kamayadi", "1 ga ortadi", "2 ga kamayadi", "O'zgarmaydi"],
-      correctAnswer: "O'zgarmaydi",
-    },
-    {
-      question: "Yadro reaksiyasida X nima?",
-      choices: ["Proton", "Neytron", "α-zarra", "Elektron"],
-      correctAnswer: "Neytron",
-    },
-    {
-      question:
-        "Pozitron chiqishi bilan sodir bo'ladigan β⁺-yemirilishda yadroning zaryadi qanday o'zgaradi?",
-      choices: ["1 ga ortadi", "1 ga kamayadi", "2 ga ortadi", "O'zgarmaydi"],
-      correctAnswer: "1 ga kamayadi",
-    },
-    {
-      question: "Quyidagi yadro reaksiyalaridan qaysi biri noto'g'ri yozilgan?",
-      choices: ["A)", "B)", "C)", "D)"],
-      correctAnswer: "C)",
-    },
-    {
-      question:
-        "Siljish qonuniga ko'ra, α-yemirilishda yadroning massa soni qanday o'zgaradi?",
-      choices: ["2 ga kamayadi", "4 ga kamayadi", "4 ga ortadi", "O'zgarmaydi"],
-      correctAnswer: "4 ga kamayadi",
-    },
-    {
-      question: "Yadro reaksiyalarida qaysi kattaliklar saqlanadi?",
-      choices: ["Faqat I", "I va II", "II va III", "I, II va III"],
-      correctAnswer: "I, II va III",
-    },
-    {
-      question: "Quyidagi yadro reaksiyasida X nimani ifodalaydi: ?",
-      choices: ["Proton", "Neytron", "Deutron", "α-zarra"],
-      correctAnswer: "Deutron",
-    },
-    {
-      question: "Yadro reaksiyasining energetik effekti qanday aniqlanadi?",
+        "Frenkel nazariyasiga ko‘ra atom yadrosini zaryadlangan suyuqlik tomchisiga o‘xshatish mumkin. Bu …",
       choices: [
-        "Reaksiya mahsulotlari massalarining yig'indisi minus reaksiyaga kirishuvchi yadrolar massalarining yig'indisi",
-        "Reaksiyaga kirishuvchi yadrolar massalarining yig'indisi minus reaksiya mahsulotlari massalarining yig'indisi",
-        "Reaksiyaga kirishuvchi yadrolar energiyalarining yig'indisi",
-        "Reaksiya mahsulotlari energiyalarining yig'indisi",
+        "yadroning tomchi modeli",
+        "yadroining qobiqsimon modeli",
+        "yadroining shar modeli",
+        "yadroining planetar modeli",
       ],
-      correctAnswer:
-        "Reaksiyaga kirishuvchi yadrolar massalarining yig'indisi minus reaksiya mahsulotlari massalarining yig'indisi",
+      correctAnswer: "yadroning tomchi modeli",
+    },
+    {
+      question:
+        "Yadro kuchlari ta’sir etadigan masofaga yadro kuchlarining ... deyiladi.",
+      choices: [
+        "ta’sir radiusi",
+        "ta’sir diametri",
+        "ta’sir segmenti",
+        "ta’sir maydoni",
+      ],
+      correctAnswer: "ta’sir radiusi",
+    },
+    {
+      question:
+        "Yadro kuchlari nuklonlarni bir-biridan qancha masofada ushlab turadi?",
+      choices: ["10⁻¹⁵ m", "10⁻¹⁴ m", "10⁻¹³ m", "10⁻¹² m"],
+      correctAnswer: "10⁻¹⁵ m",
     },
   ],
 };
 
 export const quiz_6 = {
-  topic: "Elementar zarralar",
+  topic: "Atom yadrolarining bog‘lanish energiyasi",
   questions: [
     {
-      question: "Quyidagilardan qaysi biri lepton hisoblanadi?",
-      choices: ["Proton", "Neytron", "Elektron", "Kvark"],
-      correctAnswer: "Elektron",
-    },
-    {
-      question: "Barionlar qanday zarralardan tashkil topgan?",
-      choices: ["2 ta kvark", "3 ta kvark", "4 ta kvark", "5 ta kvark"],
-      correctAnswer: "3 ta kvark",
-    },
-    {
-      question: "Quyidagi zarralardan qaysi biri antimoddaga tegishli?",
-      choices: ["Proton", "Neytron", "Elektron", "Pozitron"],
-      correctAnswer: "Pozitron",
-    },
-    {
-      question: "Mezonlar qanday zarralardan tashkil topgan?",
+      question:
+        "Energiyaning 4,19 J o‘zgarishi massaning qanday o‘zgarishiga mos keladi?",
       choices: [
-        "1 ta kvark va 1 ta antikvark",
-        "2 ta kvark",
-        "3 ta kvark",
-        "1 ta lepton va 1 ta antileptondan",
+        "3,66·10⁻¹⁷ kg",
+        "4,66·10⁻¹⁷ kg",
+        "5,66·10⁻¹⁷ kg",
+        "6,66·10⁻¹⁷ kg",
       ],
-      correctAnswer: "1 ta kvark va 1 ta antikvark",
+      correctAnswer: "4,66·10⁻¹⁷ kg",
     },
     {
-      question: "Kuchli o'zaro ta'sirga qaysi zarralar kirishadi?",
+      question:
+        "Elektron massasining miqdorini tinch turgan elektron massasi miqdoricha o‘zgartirilganda uning energiyasining o‘zgarishini toping.",
+      choices: ["7,19·10⁻¹⁴ J", "8,19·10⁻¹⁴ J", "9,19·10⁻¹⁴ J", "6,19·10⁻¹⁴ J"],
+      correctAnswer: "8,19·10⁻¹⁴ J",
+    },
+    {
+      question: "Vodorod izotipi ¹²H yadrosining massa defektini hisoblang.",
       choices: [
-        "Faqat leptonlar",
-        "Faqat kvarklar va glyuonlar",
-        "Barcha zarralar",
-        "Faqat neytral zarralar",
+        "2,97·10⁻³⁰ kg",
+        "3,97·10⁻³⁰ kg",
+        "4,97·10⁻³⁰ kg",
+        "5,97·10⁻³⁰ kg",
       ],
-      correctAnswer: "Faqat kvarklar va glyuonlar",
+      correctAnswer: "3,97·10⁻³⁰ kg",
     },
     {
-      question: "Quyidagi zarralardan qaysi biri bozon hisoblanadi?",
-      choices: ["Elektron", "Proton", "Foton", "Neytron"],
-      correctAnswer: "Foton",
+      question:
+        "Alyuminiy atomi ²⁷₁₃Al yadrosining bog‘lanish energiyasini toping.",
+      choices: ["2,36·10⁻¹¹ J", "3,36·10⁻¹¹ J", "4,36·10⁻¹¹ J", "5,36·10⁻¹¹ J"],
+      correctAnswer: "3,36·10⁻¹¹ J",
     },
     {
-      question: "Standart modelga ko'ra, necha xil kvark mavjud?",
-      choices: ["4", "6", "8", "10"],
-      correctAnswer: "6",
-    },
-    {
-      question: "Neytrinoning asosiy xususiyati nima?",
-      choices: [
-        "Elektr zaryadiga ega",
-        "Juda kichik massaga ega",
-        "Kuchli o'zaro ta'sirga kirishadi",
-        "Barqaror emas",
-      ],
-      correctAnswer: "Juda kichik massaga ega",
-    },
-    {
-      question: "Qaysi zarra graviton deb ataladi?",
-      choices: [
-        "Gravitatsion o'zaro ta'sirni tashuvchi nazariy zarra",
-        "Elektromagnit o'zaro ta'sirni tashuvchi zarra",
-        "Kuchsiz o'zaro ta'sirni tashuvchi zarra",
-        "Kuchli o'zaro ta'sirni tashuvchi zarra",
-      ],
-      correctAnswer: "Gravitatsion o'zaro ta'sirni tashuvchi nazariy zarra",
-    },
-    {
-      question: "Quyidagi juftliklardan qaysi biri bir-biriga antizerradir?",
-      choices: [
-        "Proton va neytron",
-        "Elektron va pozitron",
-        "Neytron va antineytron",
-        "Proton va elektron",
-      ],
-      correctAnswer: "Elektron va pozitron",
+      question: "Geliy atomi ⁴₂He yadrosining bog‘lanish energiyasini toping.",
+      choices: ["3,37·10⁻¹² J", "4,37·10⁻¹² J", "5,37·10⁻¹² J", "6,37·10⁻¹² J"],
+      correctAnswer: "4,37·10⁻¹² J",
     },
   ],
 };
-
 export const quiz_7 = {
-  topic:
-    "Atom energetikasining fizik asoslari. Yadro energiyasidan foydalanishda xavfsizlik choralari",
+  topic: "Radioaktivlik va ularning turlari",
   questions: [
     {
       question:
-        "Atom elektr stansiyalarida (AES) energiya qanday jarayondan olinadi?",
+        "Ularni yupqa alyuminiy varag‘i yoki qog‘oz varag‘i bilan ham tutib qolish mumkin. Bu …",
       choices: [
-        "Kimyoviy reaksiyalardan",
-        "Yadro bo'linish reaksiyasidan",
-        "Yadro sintez reaksiyasidan",
-        "Radioaktiv yemirilishdan",
+        "\\( \\alpha \\)-nurlardir",
+        "\\( \\beta \\)-nurlardir",
+        "gamma nurlardir",
+        "rentgen nurlardir",
       ],
-      correctAnswer: "Yadro bo'linish reaksiyasidan",
+      correctAnswer: "\\( \\alpha \\)-nurlardir",
     },
     {
       question:
-        "AESda odatda qaysi element izotopi yoqilg'i sifatida ishlatiladi?",
-      choices: ["U-235", "Pu-239", "U-238", "Th-232"],
-      correctAnswer: "U-235",
-    },
-    {
-      question:
-        "Yadro reaktorida zanjir reaksiyani boshqarish uchun nima ishlatiladi?",
+        "…-nurlari chastotasi juda katta \\( (10^{20} \\text{ Hz}) \\), to‘lqin uzunligi esa juda qisqa \\( (10^{-12} \\text{ m}) \\) bo‘lgan elektromagnit to‘lqinlar.",
       choices: [
-        "Issiqlik almashinuvchi",
-        "Neytron sekinlashtirgich",
-        "Neytron yutuvchi sterjenlar",
-        "Radiatsiyadan himoya qobig'i",
+        "\\( \\alpha \\)-nurlardir",
+        "\\( \\beta \\)-nurlardir",
+        "gamma nurlardir",
+        "rentgen nurlardir",
       ],
-      correctAnswer: "Neytron yutuvchi sterjenlar",
+      correctAnswer: "gamma nurlardir",
     },
     {
       question:
-        "Reaktorda zanjir reaksiyani davom ettirish uchun qanday zarralar muhim rol o'ynaydi?",
-      choices: ["Protonlar", "Neytronlar", "Elektronlar", "Alfa zarralar"],
-      correctAnswer: "Neytronlar",
-    },
-    {
-      question:
-        "AESda radioaktiv chiqindilar bilan ishlashda qanday asosiy xavfsizlik chorasi qo'llaniladi?",
+        "Bu qanday radioaktiv nurlanish? \n\\[ ^{210}_{84}\\text{Po} \\rightarrow ^{206}_{82}\\text{Pb} + ^{4}_{2}\\text{He} \\]",
       choices: [
-        "Chiqindilarni atmosferaga chiqarish",
-        "Chiqindilarni maxsus konteynerlariga joylashtirish va saqlash",
-        "Chiqindilarni yer ostiga ko'mish",
-        "Chiqindilarni okeanga tashlash",
+        "\\( \\alpha \\)-nurlanish",
+        "\\( \\beta \\)-nurlanish",
+        "gamma nurlanish",
+        "rentgen nurlanish",
       ],
-      correctAnswer:
-        "Chiqindilarni maxsus konteynerlariga joylashtirish va saqlash",
+      correctAnswer: "\\( \\alpha \\)-nurlanish",
     },
     {
       question:
-        "Quyidagilardan qaysi biri AESda xavfsizlikni ta'minlash uchun ishlatilmaydi?",
+        "Bu qanday radioaktiv nurlanish? \n\\[ ^{210}_{83}\\text{Bi} \\rightarrow ^{210}_{84}\\text{Po} + \\beta^- + \\bar{\\nu} \\]",
       choices: [
-        "Radiatsiyadan himoya qobig'i",
-        "Avariya sovutish tizimi",
-        "Neytron reflektori",
-        "Reaktorni o'chirish tizimi",
+        "\\( \\alpha \\)-nurlanish",
+        "\\( \\beta \\)-nurlanish",
+        "gamma nurlanish",
+        "rentgen nurlanish",
       ],
-      correctAnswer: "Neytron reflektori",
+      correctAnswer: "\\( \\beta \\)-nurlanish",
     },
     {
       question:
-        "AES xodimlarining radiatsiyadan himoyalanishi uchun qanday asosiy prinsip qo'llaniladi?",
+        "Radioaktiv nurlanish natijasida nurlanish zarrasi qanday? \n\\[ ^{30}_{15}\\text{P} \\rightarrow ^{30}_{14}\\text{Si} + \\beta^+ \\]",
+      choices: ["elektron", "pozitron", "proton", "geliy yadrosi"],
+      correctAnswer: "pozitron",
+    },
+  ],
+};
+export const quiz_8 = {
+  topic: "Radioaktiv yemirilish qonuni. Yarim yemirilish davri",
+  questions: [
+    {
+      question:
+        "Agar yadrodan: 1) proton; 2) \\( \\alpha \\)-zarra otilib chiqsa, atom massasi va element nomeri qanday o‘zgaradi?",
       choices: [
-        "ALARA (As Low As Reasonably Achievable) prinsipi",
-        "Maksimal nurlanish prinsipi",
-        "Minimal vaqt prinsipi",
-        "Maksimal masofa prinsipi",
+        "1) kamayadi-kamayadi 2) kamayadi-kamayadi.",
+        "1) ortadi-kamayadi 2) ortadi-kamayadi.",
+        "1) ortadi-ortadi 2) kamayadi-kamayadi.",
+        "1) ortadi-ortadi 2) ortadi-ortadi.",
       ],
-      correctAnswer: "ALARA (As Low As Reasonably Achievable) prinsipi",
+      correctAnswer: "1) kamayadi-kamayadi 2) kamayadi-kamayadi.",
     },
     {
       question:
-        "Yadro reaktorida issiqlik tashuvchi sifatida odatda nima ishlatiladi?",
-      choices: ["Simob", "Suv yoki suyuq metall", "Moy", "Havo"],
-      correctAnswer: "Suv yoki suyuq metall",
-    },
-    {
-      question: "AESda foydalanilgan yoqilg'i elementlari bilan nima qilinadi?",
+        "Ikkita \\( \\beta \\)-yemirilish va bitta \\( \\alpha \\)-yemirilishdan so‘ng \\( ^{238}_{92}U \\) dan qanday izotop hosil bo‘ladi?",
       choices: [
-        "Qayta ishlanadi va qayta ishlatiladi",
-        "Atmosferaga chiqariladi",
-        "Darhol yo'q qilinadi",
-        "Cheksiz muddat saqlanadi",
+        "\\( ^{234}_{92}U \\rightarrow ^{232}_{90}Pu \\)",
+        "\\( ^{234}_{89}Np \\)",
+        "\\( ^{234}_{89}Th \\)",
+        "\\( ^{238}_{88}Ra \\)",
       ],
-      correctAnswer: "Qayta ishlanadi va qayta ishlatiladi",
+      correctAnswer: "\\( ^{234}_{89}Np \\)",
     },
     {
       question:
-        "Quyidagilardan qaysi biri yadro energetikasining afzalligi hisoblanmaydi?",
+        "Agar proton tomonidan neytron tutib olinsa, qaysi element atomining yadrosi hosil bo‘ladi? Reaksiya formulasini yozing.",
       choices: [
-        "Kam miqdordagi yoqilg'idan ko'p energiya olish",
-        "Atmosferaga issiqxona gazlari chiqarmaslik",
-        "Radioaktiv chiqindilarning xavfsizligi",
-        "Yoqilg'i resurslarining uzoq muddatga yetishi",
+        "\\( ^{2}_{1}H \\)",
+        "\\( ^{1}_{1}H \\)",
+        "\\( ^{3}_{1}H \\)",
+        "\\( ^{1}_{0}n \\)",
       ],
-      correctAnswer: "Radioaktiv chiqindilarning xavfsizligi",
+      correctAnswer: "\\( ^{2}_{1}H \\)",
+    },
+    {
+      question:
+        "Radioaktiv yemirilish natijasida uran \\( ^{238}_{92}U \\) qo‘rg‘oshin \\( ^{206}_{82}Pb \\) ga aylanadi. Bunda u necha marta \\( \\alpha \\)- va \\( \\beta \\)-yemirilishlarga duch kelgan?",
+      choices: [
+        "8 ta \\( \\alpha \\) va 6 ta \\( \\beta \\)",
+        "6 ta \\( \\alpha \\) va 8 ta \\( \\beta \\)",
+        "7 ta \\( \\alpha \\) va 7 ta \\( \\beta \\)",
+        "8 ta \\( \\alpha \\) va 4 ta \\( \\beta \\)",
+      ],
+      correctAnswer: "8 ta \\( \\alpha \\) va 6 ta \\( \\beta \\)",
+    },
+    {
+      question:
+        "Radon atom soni 1 sutkada 18.2% kamayса, radonning yemirilish doimiysini toping.",
+      choices: [
+        "\\( 2{,}33 \\cdot 10^{-6} \\)",
+        "\\( 3{,}33 \\cdot 10^{-6} \\)",
+        "\\( 4{,}33 \\cdot 10^{-6} \\)",
+        "\\( 5{,}33 \\cdot 10^{-6} \\)",
+      ],
+      correctAnswer: "\\( 3{,}33 \\cdot 10^{-6} \\)",
+    },
+  ],
+};
+export const quiz_9 = {
+  topic: "Elementar zarralarni kuzatish va qayd qilish usullari.",
+  questions: [
+    {
+      question:
+        "Pufakli kamera amerikalik fizik ... tomonidan ixtiro qilingan.",
+      choices: ["D. Gleyzer", "A. Eynshteyn", "N. Bor", "I. Nyuton"],
+      correctAnswer: "D. Gleyzer",
+    },
+    {
+      question:
+        "Havoda uchib o‘tayotgan zarra hosil qiladigan ionlarning o‘ta to‘yingan bug‘ uchun kondensatsiya markazi bo‘lib qolishiga asoslangan",
+      choices: [
+        "Vilson kamerasi",
+        "Pufakli kamera",
+        "Geyger sanagichi",
+        "Uch o‘lchamli kamera",
+      ],
+      correctAnswer: "Vilson kamerasi",
+    },
+    {
+      question:
+        "Harakatlanayotgan zaryadli zarraning gaz molekulalari va atomlarini ionlashtirishiga asoslangan",
+      choices: [
+        "Geyger sanagich",
+        "Pufakli kamera",
+        "Vilson kamerasi",
+        "Rezerford usuli",
+      ],
+      correctAnswer: "Geyger sanagich",
+    },
+    {
+      question:
+        "Radioaktiv nurlanish natijasida chiqqan zarralar ta'sirida moddaning chaqnab (sintillatsiyalar) yorug‘lik chiqarishiga asoslangan.",
+      choices: [
+        "Chaqnash usuli",
+        "Pufakli kamera",
+        "Vilson kamerasi",
+        "Geyger sanagichi",
+      ],
+      correctAnswer: "Chaqnash usuli",
+    },
+    {
+      question:
+        "Bu usul zaryadlangan zarra mayda donali fotoemulsiya qatlamiga tushganda unda o‘z yo‘lining yashirin izini qoldirishiga asoslangan",
+      choices: [
+        "Qalin qatlamli fotoemulsiya usuli. ",
+        "Pufakli kamera",
+        "Vilson kamerasi",
+        "Geyger sanagichi",
+      ],
+      correctAnswer: "Qalin qatlamli fotoemulsiya usuli. ",
+    },
+  ],
+};
+export const quiz_10 = {
+  topic: "Sun’iy radioaktivlik. Yadro reaksiyalari",
+  questions: [
+    {
+      question:
+        "\\( ^{10}_{5}B \\) bor izotopining qanday zarra bilan bombardimon qilinaganda radioaktiv azot \\( ^{13}_{7}N \\) hosil bo‘ladi va u neytron chiqarib parchalanadi.",
+      choices: [
+        "A) proton",
+        "B) neytron",
+        "C) \\( \\alpha \\)-zarra",
+        "D) elektron",
+      ],
+      correctAnswer: "A) proton",
+    },
+    {
+      question:
+        "\\( ^{17}_{7}N \\) radioaktiv azot parchalanib, uglerod \\( ^{18}_{6}C \\) izotopiga aylanadi. Bunda qanday zarra otilib chiqadi?",
+      choices: ["A) elektron", "B) pozitron", "C) proton", "D) geliy yadrosi"],
+      correctAnswer: "A) elektron",
+    },
+    {
+      question:
+        "Litiy \\( ^{6}_{3}Li \\) yadrosiga neytron tushib, reaksiya jarayonida \\( \\alpha \\)-zarra uchib chiqqan. Bu reaksiya natijasida qanday yadро hosil bo‘lgan?",
+      choices: ["A) deytriy", "B) tritiy", "C) vodorod", "D) pozitron"],
+      correctAnswer: "B) tritiy",
+    },
+    {
+      question:
+        "5g uran \\( ^{235}_{92}U \\) izotopining radioaktiv yemirilishida qancha kW-soat energiya ajralib chiqadi?",
+      choices: [
+        "A) 114 kW-soat",
+        "B) 228 kW-soat",
+        "C) 57 kW-soat",
+        "D) 92 kW-soat",
+      ],
+      correctAnswer: "B) 228 kW-soat",
+    },
+    {
+      question:
+        "Quyidagi yadro reaksiyalarini to‘ldiring: \n\\[ ^{12}_{6}C + ^{1}_{1}H \\rightarrow \\gamma + ^{13}_{7}N \\quad ^{2}_{1}H + ^{2}_{1}H \\rightarrow ^{3}_{1}H + ? \\quad ^{56}_{26}Fe + ? \\rightarrow ^{58}_{26}Fe + ^{1}_{0}n \\]",
+      choices: [
+        "A) 1) \\( ^{3}_{2}He \\), 2) \\( ^{1}_{0}n \\)",
+        "B) 1) \\( \\beta^- \\), 2) \\( -1e \\)",
+        "C) 1) \\( \\beta \\), 2) \\( ^{1}_{1}p \\)",
+        "D) 1) \\( \\beta \\), 2) \\( ^{2}_{1}n \\)",
+      ],
+      correctAnswer: "A) 1) \\( ^{3}_{2}He \\), 2) \\( ^{1}_{0}n \\)",
+    },
+  ],
+};
+export const quiz_11 = {
+  topic: "Uran yadrosining bo‘linishi. Bo‘linishning zanjir reaksiyasi",
+  questions: [
+    {
+      question:
+        "1. Sof \\( ^{235}_{92}U \\) uchun kritik massa taxminan qancha.",
+      choices: ["A) 40 kg", "B) 4 kg", "C) 400 kg", "D) 4 g"],
+      correctAnswer: "B) 4 kg",
+    },
+    {
+      question:
+        "2. Qanday holatda zanjir reaksiya boshqarib bo‘lmaydigan darajada avj oladi va portlash ro‘y beradi.",
+      choices: [
+        "A) \\( k > 1 \\)",
+        "B) \\( k < 1 \\)",
+        "C) \\( k = 1 \\)",
+        "D) \\( k = 0 \\)",
+      ],
+      correctAnswer: "A) \\( k > 1 \\)",
+    },
+    {
+      question: "3. Qanday holatda bo‘linish reaksiyasi asta-sekin so‘nadi.",
+      choices: [
+        "A) \\( k < 1 \\)",
+        "B) \\( k > 1 \\)",
+        "C) \\( k = 1 \\)",
+        "D) \\( k = 0 \\)",
+      ],
+      correctAnswer: "A) \\( k < 1 \\)",
+    },
+    {
+      question:
+        "4. Qanday holatda zanjir reaksiya o‘zgarmas intensivlik bilan boradi.",
+      choices: [
+        "A) \\( k = 1 \\)",
+        "B) \\( k < 1 \\)",
+        "C) \\( k > 1 \\)",
+        "D) \\( k = 0 \\)",
+      ],
+      correctAnswer: "A) \\( k = 1 \\)",
+    },
+    {
+      question:
+        "5. Radioaktiv yadrolarining parchalanishga o‘z-o‘zidan bo‘linishini ...",
+      choices: [
+        "A) spontan bo‘linish",
+        "B) fontan bo‘linish",
+        "C) matematik bo‘linish",
+        "D) geometrik bo‘linish",
+      ],
+      correctAnswer: "A) spontan bo‘linish",
     },
   ],
 };
 
-export const quiz_8 = {
-  topic:
-    "Oʻzbekistonda yadro fizikasi sohasidagi tadqiqotlar va ularning natijalaridan xalq xoʻjaligida foydalanish",
+export const quiz_12 = {
+  topic: "Yadro reaktori",
   questions: [
     {
       question:
-        "O‘zbekistonda yadro fizikasi bo‘yicha muntazam tadqiqotlar qaysi yilda boshlandi?",
-      choices: ["1920-yilda", "1949-yilda", "1956-yilda", "1980-yilda"],
-      correctAnswer: "1949-yilda",
+        "1. 1 kg \\( ^{235}_{92}U \\) da bo‘lgan barcha yadrolarning bo‘linishida ajraladigan energiya taxminan ... toshko‘mir yonganida ajraladigan energiyaga tengdir.",
+      choices: [
+        "A) 2500-tonna",
+        "B) 2000-tonna",
+        "C) 1500-tonna",
+        "D) 1000-tonna",
+      ],
+      correctAnswer: "B) 2000-tonna",
     },
     {
       question:
-        "O‘zbekistonda yadro fizikasi sohasidagi ilmiy-tadqiqot ishlari qaysi muassasada olib boriladi?",
+        "2. Qanday holatda zanjir reaksiya boshqarib bo‘lmaydigan darajada avj oladi va portlash ro‘y beradi.",
       choices: [
-        "Samarqand davlat universitetida",
-        "Fizika-texnika institutida",
-        "O‘zbekiston Milliy universitetida",
-        "Barcha javoblar to‘g‘ri",
+        "A) \\( k > 1 \\)",
+        "B) \\( k < 1 \\)",
+        "C) \\( k = 1 \\)",
+        "D) \\( k = 0 \\)",
       ],
-      correctAnswer: "Barcha javoblar to‘g‘ri",
+      correctAnswer: "A) \\( k > 1 \\)",
+    },
+    {
+      question: "3. Qanday holatda bo‘linish reaksiyasi asta-sekin so‘nadi.",
+      choices: [
+        "A) \\( k < 1 \\)",
+        "B) \\( k > 1 \\)",
+        "C) \\( k = 1 \\)",
+        "D) \\( k = 0 \\)",
+      ],
+      correctAnswer: "A) \\( k < 1 \\)",
     },
     {
       question:
-        "Qaysi akademiklar O‘zbekiston Fanlar akademiyasining Yadro fizikasi institutining tashkil qilinishida muhim rol o‘ynagan?",
+        "4. Qanday holatda zanjir reaksiya o‘zgarmas intensivlik bilan boradi.",
       choices: [
-        "I. V. Kurchatov va S. A. Azimov",
-        "U. O. Orifov va I. V. Kurchatov",
-        "S. A. Azimov va U. O. Orifov",
-        "Barcha javoblar to‘g‘ri",
+        "A) \\( k = 1 \\)",
+        "B) \\( k < 1 \\)",
+        "C) \\( k > 1 \\)",
+        "D) \\( k = 0 \\)",
       ],
-      correctAnswer: "Barcha javoblar to‘g‘ri",
+      correctAnswer: "A) \\( k = 1 \\)",
     },
     {
       question:
-        "O‘zbekistonda yadro spektroskopiyasi va yadro tuzilishi sohasidagi tadqiqotlar nimaga yo‘naltirilgan?",
+        "5. Radioaktiv yadrolarining parchalanishga o‘z-o‘zidan bo‘linishini ...",
       choices: [
-        "Faqat ilmiy-tadqiqot ishlariga",
-        "Fan, texnika va xalq xo‘jaligiga",
-        "Faqat xalq xo‘jaligiga",
-        "Tibbiyotga",
+        "A) spontan bo‘linish",
+        "B) fontan bo‘linish",
+        "C) matematik bo‘linish",
+        "D) geometrik bo‘linish",
       ],
-      correctAnswer: "Fan, texnika va xalq xo‘jaligiga",
+      correctAnswer: "A) spontan bo‘linish",
+    },
+  ],
+};
+export const quiz_13 = {
+  topic: "Termoyadrovi reaksiyalar",
+  questions: [
+    {
+      question:
+        "Deytriy va tritiying yadro sintezi yordamida qancha energiya ajralib chiqadi.",
+      choices: ["17,5 MeV", "35 MeV", "0,5 MeV", "40 MeV"],
+      correctAnswer: "17,5 MeV",
     },
     {
       question:
-        "O‘zbek olimlari tomonidan pufaksimon kameralar yordamida nimalar o‘rganilgan?",
-      choices: [
-        "Elementar zarralar",
-        "Kumulativ izobarlar",
-        "Gamma-nurlar",
-        "Rentgen nurlar",
-      ],
-      correctAnswer: "Kumulativ izobarlar",
+        "Atom yadrolari orasida kichik masofa qanchaga yaqinlashganda ikki yadro o‘zaro qo‘shilishi mumkin.",
+      choices: ["~10^{-15} m", "~10^{-10} m", "~10^{-5} m", "~10^{-11} m"],
+      correctAnswer: "~10^{-15} m",
     },
     {
       question:
-        "Quyidagi ilmiy-tadqiqot muassasalaridan qaysi biri «Fizika-Quyosh» ishlab chiqarish birlashmasiga kiradi?",
+        "Termoyadrovi reaksiya boshlanishi uchun deytriy va tritiy harorati qanchaga yetishi kerak?",
+      choices: ["77 mln B", "10 mln C", "5 mln D", "1 mln"],
+      correctAnswer: "10 mln C",
+    },
+    {
+      question: "Termoyadrovi reaksiyada qanday modda ishlatiladi?",
+      choices: ["Deytriy", "Uran", "Kadmiy", "Kislorod"],
+      correctAnswer: "Deytriy",
+    },
+    {
+      question: "Boshqarilmaydigan termoyadrovi reaksiya mavjudmi?",
       choices: [
-        "Fizika-texnika instituti",
-        "Samarqand davlat universiteti",
-        "O‘zbekiston Milliy universiteti",
-        "Astronomiya instituti",
+        "A) quyoshda",
+        "B) vodorod bombasida",
+        "C) issiqlik elektrostansiyasida",
+        "D) A va B javoblar",
       ],
-      correctAnswer: "Fizika-texnika instituti",
+      correctAnswer: "D) A va B javoblar",
+    },
+  ],
+};
+export const quiz_14 = {
+  topic:
+    "Izotoplar. Radioaktiv izotoplarni ishlab chiqarish va qo‘llash. Yadro energiyasining qo‘llanilishi",
+  questions: [
+    {
+      question: "106-va 107-elementlar birinchi marta qaysi shaharda ochildi?",
+      choices: ["Dubna", "Moskva", "London", "Pekin"],
+      correctAnswer: "Dubna",
     },
     {
       question:
-        "Yadro fizikasi tadqiqotlarining tibbiyotda qo‘llanilishi qaysi kasalliklarni davolashda muhim rol o‘ynaydi?",
-      choices: [
-        "Yurak kasalliklari",
-        "Saraton kasalligi",
-        "Qon bosimi kasalliklari",
-        "Barcha javoblar noto‘g‘ri",
-      ],
-      correctAnswer: "Saraton kasalligi",
+        "Atom yadrolari orasida kichik masofa qanchagacha yaqinlashganda ikki yadro o‘zaro qo‘shilishi mumkin.",
+      choices: ["~10^{-15} m", "~10^{-10} m", "~10^{-5} m", "~10^{-11} m"],
+      correctAnswer: "~10^{-15} m",
     },
     {
       question:
-        "Gamma-nurlarning qaysi xalq xo‘jaligi sohasida qo‘llanilishi ma’lum?",
+        "Termoyadrovi reaksiya boshlanishi uchun deytriy va tritiy harorati qanchaga yetishi kerak?",
+      choices: ["77 mln B", "10 mln C", "5 mln D", "1 mln"],
+      correctAnswer: "10 mln C",
+    },
+    {
+      question: "Termoyadrovi reaksiyada qanday modda ishlatiladi?",
+      choices: ["Deytriy", "Uran", "Kadmiy", "Kislorod"],
+      correctAnswer: "Deytriy",
+    },
+    {
+      question: "Boshqarilmaydigan termoyadrovi reaksiya mavjudmi?",
       choices: [
-        "G‘o‘za seleksiyasida",
-        "Suvni tozalashda",
-        "Qurilishda",
-        "Energiya ishlab chiqarishda",
+        "quyoshda",
+        "vodorod bombasida",
+        "issiqlik elektrostansiyasida",
+        "A va B javoblar",
       ],
-      correctAnswer: "G‘o‘za seleksiyasida",
+      correctAnswer: "A va B javoblar",
+    },
+  ],
+};
+
+export const quiz_15 = {
+  topic:
+    "Elementar zarralarning rivojlanishining uch bosqichi. Adronlar. Leptonlar",
+  questions: [
+    {
+      question: "Elektronning yashash vaqti kamida qancha?",
+      choices: ["10^{22} yil", "10^{10} yil", "10 yil", "1 yil"],
+      correctAnswer: "10^{22} yil",
+    },
+    {
+      question: "Atom yadrolari tarkibiga kiruvchi zarrachalar qaysi?",
+      choices: ["proton", "elektron", "neytron", "A va C javoblar"],
+      correctAnswer: "A va C javoblar",
+    },
+    {
+      question: "Neytronning yashash vaqti o‘rtacha qancha?",
+      choices: ["15 min", "1 yil", "5 yil", "10 yil"],
+      correctAnswer: "15 min",
     },
     {
       question:
-        "O‘zbek olimlari tomonidan Quyoshning qanday hodisalari o‘rganilgan?",
-      choices: [
-        "Quyosh atmosferasidagi hodisalar",
-        "Quyosh energiyasi",
-        "Quyosh magnit maydoni",
-        "Quyosh plazmasi",
-      ],
-      correctAnswer: "Quyosh atmosferasidagi hodisalar",
+        "Kuchli o‘zaro ta’sirda ishtirok etuvchi subatomik zarralar bo‘lib, ular kvarklardan tashkil topgan. Bu…",
+      choices: ["Adronlar", "Leptonlar", "Kvarklar", "Fotonlar"],
+      correctAnswer: "Adronlar",
     },
     {
       question:
-        "Rentgenologiya va radiologiya sohasidagi dastlabki ishlar qaysi muassasa bilan hamkorlikda olib borilgan?",
+        "Kuchli o‘zaro ta’sirda ishtirok etmaydigan, ammo boshqa fundamental o‘zaro ta’sirlarda (elektromagnit, zaif va gravitatsion kuchlar) qatnashuvchi elementar zarrachalardir. Bu…",
+      choices: ["Leptonlar", "Adronlar", "Kvarklar", "Fotonlar"],
+      correctAnswer: "Leptonlar",
+    },
+  ],
+};
+export const quiz_16 = {
+  topic: "Pozitronning kashf etilishi. Antizarralar",
+  questions: [
+    {
+      question: "Elektronning antizarrasi nomi?",
+      choices: ["pozitron", "antineytron", "antiproton", "antifoton"],
+      correctAnswer: "pozitron",
+    },
+    {
+      question:
+        "Zarra va antizarra massasi, elektr zaryadining kattaligi, spini bir xil, ammo … bilan farq qiladi?",
+      choices: ["zaryad ishorasi", "rangi", "shakli", "hajmi"],
+      correctAnswer: "zaryad ishorasi",
+    },
+    {
+      question: "Zarra va antizarra zaryadi yo‘q bo‘lganda qanday farqlanadi?",
+      choices: ["spin yo‘nalishi", "rangi", "shakli", "hajmi"],
+      correctAnswer: "spin yo‘nalishi",
+    },
+    {
+      question: "Antizarrasi mavjud bo‘lmagan zarrachalarni qanday ataymiz?",
       choices: [
-        "Yadro fizikasi instituti",
-        "Fizika-texnika instituti",
-        "O‘zbekiston Milliy universiteti",
-        "Astronomiya instituti",
+        "Absolyut neytral zarralar",
+        "Absolyut zaryadsiz zarralar",
+        "Absolyut qattiq zarralar",
+        "Absolyut qora zarralar",
       ],
-      correctAnswer: "Yadro fizikasi instituti",
+      correctAnswer: "Absolyut neytral zarralar",
+    },
+    {
+      question:
+        "Juftlaning aniqlashtirilishiga, masalan, proton va antiprotonning pi-nol-mezonga aylanishi qaysi?",
+      choices: [
+        "p + p̄ → 2π",
+        "p + p̄ → π̄ + n̄",
+        "e⁺ + e⁻ → γγ",
+        "e⁻ + γ → e⁻ + e⁻ + e⁺",
+      ],
+      correctAnswer: "p + p̄ → 2π",
+    },
+  ],
+};
+export const quiz_17 = {
+  topic: "Kvarklar. Glyuonlar.",
+  questions: [
+    {
+      question: "1. Elektronning antizarrasi nomi?",
+      choices: ["pozitron", "antineytron", "antiproton", "antifoton"],
+      correctAnswer: "pozitron",
+    },
+    {
+      question:
+        "2. Zarra va antizarra massasi, elektr zaryadining kattaligi, spini bir xil, ammo … bilan farq qiladi?",
+      choices: ["zaryad ishorasi", "rangi", "shakli", "hajmi"],
+      correctAnswer: "zaryad ishorasi",
+    },
+    {
+      question:
+        "3. Zarra va antizarra zaryadi yo‘q bo‘lganda qanday farqlanadi?",
+      choices: ["spin yo‘nalishi", "rangi", "shakli", "hajmi"],
+      correctAnswer: "spin yo‘nalishi",
+    },
+    {
+      question: "4. Antizarrasi mavjud bo‘lmagan zarrachalarni qanday ataymiz?",
+      choices: [
+        "Absolyut neytral zarralar",
+        "Absolyut zaryadsiz zarralar",
+        "Absolyut qattiq zarralar",
+        "Absolyut qora zarralar",
+      ],
+      correctAnswer: "Absolyut neytral zarralar",
+    },
+    {
+      question:
+        "5. Juftlarning aniqlashtirilishiga, masalan, proton va antiprotonning pi-nol-mezonga aylanishi qaysi?",
+      choices: [
+        "$$p + \\bar{p} \\rightarrow 2\\pi$$",
+        "$$p + \\bar{p} \\rightarrow \\bar{\\pi} + \\bar{n}$$",
+        "$$e^+ + e^- \\rightarrow 2\\gamma$$",
+        "$$e^- + \\gamma \\rightarrow e^- + e^- + e^+$$",
+      ],
+      correctAnswer: "$$p + \\bar{p} \\rightarrow 2\\pi$$",
+    },
+  ],
+};
+export const quiz_18 = {
+  topic: "Kosmik nurlar haqida tushuncha. Birlamchi kosmik nurlar.",
+  questions: [
+    {
+      question:
+        "1. Yer atmosferasi chegarasida birlamchi kosmik nurlar turli massa soniga ega va bitta nuklonga taxminan qanday tartibda energiya mos keladi?",
+      choices: [
+        "$$10^9 - 10^{20}$$ eV",
+        "$$10^{29} - 10^{32}$$ eV",
+        "$$10^{25} - 10^{30}$$ eV",
+        "$$10^6 - 10^8$$ eV",
+      ],
+      correctAnswer: "$$10^9 - 10^{20}$$ eV",
+    },
+    {
+      question:
+        "2. $$10^{13}$$ eV dan kichik energiyali birlamchi kosmik nurlardagi protonlar ulushi qancha?",
+      choices: ["90%", "50%", "20%", "60%"],
+      correctAnswer: "90%",
+    },
+    {
+      question:
+        "3. $$10^{13}$$ eV dan kichik energiyali birlamchi kosmik nurlardagi geliy atomlari ulushi qancha?",
+      choices: ["9%", "4%", "1%", "5%"],
+      correctAnswer: "9%",
+    },
+    {
+      question:
+        "4. Yadrovy portlashning har keyingi bosqichida zarralar ko‘payaveradi. Buning nomi...?",
+      choices: [
+        "Kaskadli yadro quyyini",
+        "Zaryadsiz zarralar oqimi",
+        "Qattiq zarralar oqimi",
+        "Annigelyatsiya",
+      ],
+      correctAnswer: "Kaskadli yadro quyyini",
+    },
+    {
+      question:
+        "5. XX asrning o‘rtalarida o‘zbek olimlaridan kimlar kosmik nurlarni tadqiq eta boshladi?",
+      choices: [
+        "Akademik A.S. Azimov rahbarligidagi olimlar",
+        "Akademik A.X. Abdullayev rahbarligidagi olimlar",
+        "Akademik U.A. Arifov rahbarligidagi olimlar",
+        "Akademik A.B. Karimov rahbarligidagi olimlar",
+      ],
+      correctAnswer: "Akademik A.X. Abdullayev rahbarligidagi olimlar",
     },
   ],
 };
 
 export const trueFalseQuiz = {
-  topic: "True or False",
+  topic: "Atom tuzilishi. Tomson modeli. Rezerford tajribasi.",
   perQuestionScore: 5,
   questions: [
     {
-      question: "Atomning birinchi modeli Nyuton tomonidan taklif etilgan.",
+      question:
+        "V asrda atom haqidagi birinchi tushunchani yunon olimi, faylasuf-materialist Demokrit kiritgan",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Radioaktiv moddadан alfa zarralarning uchib chiqish tezligi \\( 10^4  {km/s} \\) tartibida bo‘ladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_2 = {
+  topic: "Borning kvant postulatlari.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Vodorod atomi bitta proton (vodorod atomining yadrosi) va bitta neytrondan iborat.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Noto'g'ri",
     },
     {
-      question: "Atom yadrosi Rezerford tomonidan kashf etilgan.",
+      question: "Bor orbitasining eng kichik radiusi uchun n=1 bo‘ladi.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
+  ],
+};
+export const trueFalseQuiz_3 = {
+  topic: "Lazerlar",
+  perQuestionScore: 5,
+  questions: [
     {
-      question:
-        "Bohr modeli elektronlarning energiya sathlari bo'yicha harakatlanishini tushuntiradi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Atomning planetar modeli Dj. Dj. Tomson tomonidan taklif etilgan.",
+      question: "Ba'zan lazerlar optik kvant mashinalari deb ataladi",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Noto'g'ri",
     },
     {
-      question: "Elektronlar yadro atrofida stacionar orbitada harakatlanadi.",
+      question: "Lazer eng kuchli yorug‘lik manbalaridir.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
+  ],
+};
+export const trueFalseQuiz_4 = {
+  topic: "Atom yadrosining tarkibi",
+  perQuestionScore: 5,
+  questions: [
     {
-      question:
-        "Rezerford modeli klassik mexanika va elektrodinamika tamoyillariga zid bo'lib chiqdi.",
-      choices: ["Haqiqat", "Noto'g'ri"],
-      correctAnswer: "Haqiqat",
-    },
-    {
-      question:
-        "Atom yadrosining radiusi R = R0A^(1/2) formula yordamida aniqlanadi.",
+      question: "Yadro kuchlari almashinish xarakteriga ega emas.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Noto'g'ri",
     },
     {
-      question: "Elektron orbitasining radiusi Bohr radiusi deb ataladi.",
+      question:
+        "Yadro kuchlari gravitatsion yoki Kulon kuchlari kabi markaziy kuchlar emas",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_5 = {
+  topic: "Yadro kuchlari. Yadroviy o‘zaro tasirning almashinuv modeli.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question: "Yadro kuchlari almashinish xarakteriga ega emas.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Noto'g'ri",
+    },
+    {
+      question:
+        "Yadro kuchlari gravitatsion yoki Kulon kuchlari kabi markaziy kuchlar emas",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_6 = {
+  topic: "Yadro kuchlari. Yadroviy o‘zaro tasirning almashinuv modeli.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Yadroni tashkil qilgan nuklonlarni bir-biridan ajratib yuborish uchun zarur bo‘lgan energiya yadroning bog‘lanish energiyasi deb ataladi.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
     {
       question:
-        "Yadroda protonlar va neytronlar bo'lib, ular birgalikda nuklonlar deb ataladi.",
+        "Δm kattalik massa defekti (massaning yetishmasligi) deb ataladi",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_7 = {
+  topic: "Radioaktivlik va ularning turlari.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Alfa nurlanishda yadro miqdor jihatidan ikkita elektron zaryadiga teng musbat zaryadni yo‘qotadi va massa soni 4 ga kamayadi",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question: "Beta-nurlar elektr va magnit maydonlarda og‘maydi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Noto'g'ri",
+    },
+  ],
+};
+export const trueFalseQuiz_8 = {
+  topic: "Radioaktiv yemirilish qonuni. Yarim yemirilish davri.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Radioaktiv yemirilish doimiysiga teskari bo‘lgan kattalik radioaktiv izotopning o‘rtacha yashash vaqti deb ataladi",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
     {
       question:
-        "Izotoplar bir xil protonlar soniga ega, ammo turli massa soniga ega elementlardir.",
+        "Radioaktiv yemirilish element atomlarining asta-sekin kamayishiga olib keladi.",
       choices: ["Haqiqat", "Noto'g'ri"],
       correctAnswer: "Haqiqat",
     },
-    // {
-    //   question: "Alfa nurlanishi elektronlar oqimi hisoblanadi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Noto'g'ri",
-    // },
-    // {
-    //   question: "Yadro fizikasi bo'yicha tadqiqotlar Toshkentda olib boriladi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question: "Atom massasining 95 foizi yadroda joylashgan.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question: "Geyger – Myuller hisoblagichi gaz ionlanishiga asoslangan.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Vilson kamerasida zaryadlangan zarrachalar izlarini kuzatish mumkin.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Scintillyatsion hisoblagich zaryadlangan zarrachalarning elektromagnit to'lqinlarini kuzatishga asoslangan.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Noto'g'ri",
-    // },
-    // {
-    //   question: "Yadro kuchlari yadrodagi nuklonlarni birga saqlab turadi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Massa defekti yadroning umumiy massasidan kichik bo'lgan massa farqidir.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Borning birinchi postulati elektronlarning stacionar orbitada nur chiqarmasdan harakatlanishini ifodalaydi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Elektronlar nur chiqarib, bir energetik holatdan ikkinchisiga o'tadi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Vodorod atomining asosiy holatidagi energiyasi -13,6 eV ga teng.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Elektron orbitasining radiusi R = R0A^(2/3) formula yordamida aniqlanadi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Noto'g'ri",
-    // },
-    // {
-    //   question: "Yadrodagi protonlar soni atomning zaryad sonini ifodalaydi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Yadro fizikasi fanidan izlanishlar O'zbekiston Fanlar Akademiyasi tomonidan muvofiqlashtiriladi.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Haqiqat",
-    // },
-    // {
-    //   question:
-    //     "Radioaktivlik izotopning qanday agregat holatda bo'lishiga bog'liq.",
-    //   choices: ["Haqiqat", "Noto'g'ri"],
-    //   correctAnswer: "Noto'g'ri",
-    // },
+  ],
+};
+export const trueFalseQuiz_9 = {
+  topic: "Radioaktiv yemirilish qonuni. Yarim yemirilish davri.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Pufakli kamera o‘ta isitilgan suyuqlik ichida zaryadli zarra harakatlanganda hosil bo‘ladigan ionlar ustida bug‘ pufakchalari paydo bo‘lishiga asoslangan",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Zaryadli zarralar modda orqali o‘tganda qoldiradigan izlari tufayli ularni kuzatish mumkin.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_10 = {
+  topic: "Sun’iy radioaktivlik. Yadro reaksiyalari",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Atom yadrolarining katta tezlik bilan harakatlanayotgan elementar zarralar (yoki boshqa atomlarning yadrolari) ta'sirida o‘zgarish jarayoni yadro reaksiyasi deb ataladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Sun'iy radioaktivlik hodisasini 1934- yilda fransuz fiziklari Iren va Frederik Jolio-Kyurilar kashf qilishgan",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_11 = {
+  topic: "Uran yadrosining bo‘linishi. Bo‘linishning zanjir reaksiyasi",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Zanjir reaksiyaning kuchayishi neytronlarning ko‘payish koeffitsiyenti k bilan xarakterlanadi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Agar yadro yoqilg‘isining massasi kritik massadan oz bo‘lsa, u vaqtda k<1 va bo‘linish reaksiyasi asta-sekin so‘nadi",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_12 = {
+  topic: "Yadro reaktori",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Zanjir reaksiyaning kuchayishi neytronlarning ko‘payish koeffitsiyenti \\( k \\) bilan xarakterlanadi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Agar yadro yoqilg‘isining massasi kritik massadan oz bo‘lsa, u vaqtda \\( k < 1 \\) va bo‘linish reaksiyasi asta-sekin so‘nadi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_13 = {
+  topic: "Termoyadrovi reaksiyalar",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Yengil yadrolarning qo‘shilib, og‘irroq yadро hosil qilishi yadro sintezi deb ataladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Termoyadro reaksiyasini amalga oshirish uchun yadro yoqilg‘isi ni bir necha 10 million gradus temperaturagacha qizdirish kerak.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+
+export const trueFalseQuiz_14 = {
+  topic:
+    "Izotoplar. Radioaktiv izotoplarni ishlab chiqarish va qo‘llash. Yadro energiyasining qo‘llanilishi",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question: "Radioaktiv izotoplar ko‘proq sun’iy yo‘l bilan olinadi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "«Nishonli atomlar» usuli radioaktiv izotoplarning kimyoviy xossalari o‘sha elementning radioaktiv bo‘lmagan izotoplarining kimyoviy xossalaridan farq qilmasligiga asoslangan.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_15 = {
+  topic:
+    "Elementar zarralarning rivojlanishining uch bosqichi. Adronlar. Leptonlar ",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Elementar zarralar - deb, fizika fanining hozirgi taraqqiyot bosqichida eng sodda, ma’lum ichki tuzilishga ega bo‘lmagan, faqat bitta zarrachadan tashkil topgan zarrachalarga aytiladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "1932-yilgacha elementar zarrachalarning soni uchtа - elektron, proton va neytron edi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Noto'g'ri",
+    },
+  ],
+};
+
+export const trueFalseQuiz_16 = {
+  topic: "Pozitronning kashf etilishi. Antizarralar",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "Zarra bilan antizarra o‘zaro to‘qnashganda boshqa elementar zarrachalarga aylanadi, bunda ularning ikkisi ham avvalgi holatdagi mavjudligini yo‘qotadi. Bu jarayonni juftlaning aniqlashtirilishi deyiladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "Antizarralar ichida pozitron nazariy aytilgan birinchi antizarradir.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_17 = {
+  topic: "Kvarklar. Glyuonlar.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "1. Zarra bilan antizarra o‘zaro to‘qnashganda boshqa elementar zarrachalarga aylanadi, bunda ularning ikkala ham avvalgi holatdagi mavjudligini yo‘qotadi. Bu jarayonni juftlarning aniqlashtirilishi deyiladi.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+    {
+      question:
+        "2. Antizarralar ichida pozitron nazariy aytilgan birinchi antizarradir.",
+      choices: ["Haqiqat", "Noto'g'ri"],
+      correctAnswer: "Haqiqat",
+    },
+  ],
+};
+export const trueFalseQuiz_18 = {
+  topic: "Kosmik nurlar haqida tushuncha. Birlamchi kosmik nurlar.",
+  perQuestionScore: 5,
+  questions: [
+    {
+      question:
+        "1. Olam fazosidan yer atmosferasiga kirib keladigan kosmik nurlarni birlamchi kosmik nurlar deb ataladi.",
+      choices: ["ha", "yo'q"],
+      correctAnswer: "ha",
+    },
+    {
+      question:
+        "2. Birlamchi kosmik nurlanish zarralarining Yer atmosferasidagi havo atomlari yadrolari bilan o‘zaro to‘qnashuvi tufayli sodir bo‘ladigan yadro reaksiyalari natijasida ikkilamchi kosmik nurlar deb ataladigan zarralar oqimi vujudga keladi.",
+      choices: ["ha", "yo'q"],
+      correctAnswer: "ha",
+    },
   ],
 };
 
@@ -1265,84 +1285,6 @@ export const moreButtonsQuiz = {
       choices: ["geliy", "vodorod", "karbon", "neon", "azot"],
       correctAnswer: "geliy",
     },
-    // {
-    //   question:
-    //     "Elektronlar energiyani yutganda, ular yuqori energiyali __________ orbitaga o'tadi.",
-    //   choices: ["stacionar", "past", "elliptik", "yuqori", "izchil"],
-    //   correctAnswer: "stacionar",
-    // },
-    // {
-    //   question: "Massa defekti yadroning __________ natijasida yuzaga keladi.",
-    //   choices: [
-    //     "parchalanishi",
-    //     "yutilishi",
-    //     "energiyasi",
-    //     "birikishi",
-    //     "o'zgarishi",
-    //   ],
-    //   correctAnswer: "energiyasi",
-    // },
-    // {
-    //   question: "Elektronlarning zaryadi __________.",
-    //   choices: ["musbat", "manfiy", "neytral", "nol", "o'zgaruvchan"],
-    //   correctAnswer: "manfiy",
-    // },
-    // {
-    //   question: "Yadro kuchlari faqat __________ ichida ta'sir qiladi.",
-    //   choices: [
-    //     "atom orbitasi",
-    //     "yadroning tashqarisida",
-    //     "yadro ichida",
-    //     "elektron buluti",
-    //     "atomning markazida",
-    //   ],
-    //   correctAnswer: "yadro ichida",
-    // },
-    // {
-    //   question: "Yadrodagi nuklonlar soni __________ bilan ifodalanadi.",
-    //   choices: [
-    //     "atom soni",
-    //     "massa soni",
-    //     "zaryad soni",
-    //     "kvant soni",
-    //     "energiya soni",
-    //   ],
-    //   correctAnswer: "massa soni",
-    // },
-    // {
-    //   question:
-    //     "Yadro energetikasi __________ energiyasini ajratib olish va foydalanish bilan shug'ullanadi.",
-    //   choices: ["kimyoviy", "magnit", "elektr", "atom", "yadro"],
-    //   correctAnswer: "yadro",
-    // },
-    // {
-    //   question:
-    //     "Radioaktiv parchalanish natijasida yangi __________ hosil bo'ladi.",
-    //   choices: ["atomlar", "elektronlar", "izotoplar", "fotonlar", "kvarklar"],
-    //   correctAnswer: "atomlar",
-    // },
-    // {
-    //   question: "Alfa zarrachalari __________ deb ham ataladi.",
-    //   choices: [
-    //     "elektronlar",
-    //     "protonlar",
-    //     "geliy yadrolari",
-    //     "neytronlar",
-    //     "kvantlar",
-    //   ],
-    //   correctAnswer: "geliy yadrolari",
-    // },
-    // {
-    //   question: "Yadro zaryadi yadrodagi __________ soni bilan belgilanadi.",
-    //   choices: [
-    //     "elektronlar",
-    //     "protonlar",
-    //     "neytronlar",
-    //     "fotonlar",
-    //     "kvarklar",
-    //   ],
-    //   correctAnswer: "protonlar",
-    // },
   ],
 };
 
@@ -1720,23 +1662,168 @@ export const learningDB = [
 
 export const infoTests = [
   {
-    id: 1,
-    title: quiz.topic,
-    totalTest: quiz.questions.length,
-    path: "/test/quiz",
-    keyValue: "quiz",
-    favouriteColor: "#0D6EFD",
-    db: quiz,
-  },
-  {
     id: 2,
     title: trueFalseQuiz.topic,
     totalTest: trueFalseQuiz.questions.length,
-    path: "/test/true-false",
-    keyValue: "truFalseQuiz",
+    path: "/test/quiz/trueFalseQuiz_1",
+    keyValue: "trueFalseQuiz_1",
     favouriteColor: "#79C142",
     db: trueFalseQuiz,
   },
+  {
+    id: 50,
+    title: trueFalseQuiz_2.topic,
+    totalTest: trueFalseQuiz_2.questions.length,
+    path: "/test/quiz/trueFalseQuiz_2",
+    keyValue: "trueFalseQuiz_2",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_2,
+  },
+  {
+    id: 51,
+    title: trueFalseQuiz_3.topic,
+    totalTest: trueFalseQuiz_3.questions.length,
+    path: "/test/quiz/trueFalseQuiz_3",
+    keyValue: "trueFalseQuiz_3",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_3,
+  },
+  {
+    id: 52,
+    title: trueFalseQuiz_4.topic,
+    totalTest: trueFalseQuiz_4.questions.length,
+    path: "/test/quiz/trueFalseQuiz_4",
+    keyValue: "trueFalseQuiz_4",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_4,
+  },
+  {
+    id: 53,
+    title: trueFalseQuiz_5.topic,
+    totalTest: trueFalseQuiz_5.questions.length,
+    path: "/test/quiz/trueFalseQuiz_5",
+    keyValue: "trueFalseQuiz_5",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_5,
+  },
+  {
+    id: 54,
+    title: trueFalseQuiz_6.topic,
+    totalTest: trueFalseQuiz_6.questions.length,
+    path: "/test/quiz/trueFalseQuiz_6",
+    keyValue: "trueFalseQuiz_6",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_6,
+  },
+  {
+    id: 55,
+    title: trueFalseQuiz_7.topic,
+    totalTest: trueFalseQuiz_7.questions.length,
+    path: "/test/quiz/trueFalseQuiz_7",
+    keyValue: "trueFalseQuiz_7",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_7,
+  },
+  {
+    id: 56,
+    title: trueFalseQuiz_8.topic,
+    totalTest: trueFalseQuiz_8.questions.length,
+    path: "/test/quiz/trueFalseQuiz_8",
+    keyValue: "trueFalseQuiz_8",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_8,
+  },
+  {
+    id: 57,
+    title: trueFalseQuiz_9.topic,
+    totalTest: trueFalseQuiz_9.questions.length,
+    path: "/test/quiz/trueFalseQuiz_9",
+    keyValue: "trueFalseQuiz_9",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_9,
+  },
+  {
+    id: 58,
+    title: trueFalseQuiz_10.topic,
+    totalTest: trueFalseQuiz_10.questions.length,
+    path: "/test/quiz/trueFalseQuiz_10",
+    keyValue: "trueFalseQuiz_10",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_10,
+  },
+  {
+    id: 58,
+    title: trueFalseQuiz_11.topic,
+    totalTest: trueFalseQuiz_11.questions.length,
+    path: "/test/quiz/trueFalseQuiz_11",
+    keyValue: "trueFalseQuiz_11",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_11,
+  },
+  {
+    id: 59,
+    title: trueFalseQuiz_12.topic,
+    totalTest: trueFalseQuiz_12.questions.length,
+    path: "/test/quiz/trueFalseQuiz_12",
+    keyValue: "trueFalseQuiz_12",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_12,
+  },
+  {
+    id: 60,
+    title: trueFalseQuiz_13.topic,
+    totalTest: trueFalseQuiz_13.questions.length,
+    path: "/test/quiz/trueFalseQuiz_13",
+    keyValue: "trueFalseQuiz_13",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_13,
+  },
+  {
+    id: 61,
+    title: trueFalseQuiz_14.topic,
+    totalTest: trueFalseQuiz_14.questions.length,
+    path: "/test/quiz/trueFalseQuiz_14",
+    keyValue: "trueFalseQuiz_14",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_14,
+  },
+  {
+    id: 62,
+    title: trueFalseQuiz_15.topic,
+    totalTest: trueFalseQuiz_15.questions.length,
+    path: "/test/quiz/trueFalseQuiz_15",
+    keyValue: "trueFalseQuiz_15",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_15,
+  },
+  {
+    id: 64,
+    title: trueFalseQuiz_16.topic,
+    totalTest: trueFalseQuiz_16.questions.length,
+    path: "/test/quiz/trueFalseQuiz_16",
+    keyValue: "trueFalseQuiz_16",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_16,
+  },
+  {
+    id: 64,
+    title: trueFalseQuiz_17.topic,
+    totalTest: trueFalseQuiz_17.questions.length,
+    path: "/test/quiz/trueFalseQuiz_17",
+    keyValue: "trueFalseQuiz_17",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_17,
+  },
+  {
+    id: 64,
+    title: trueFalseQuiz_18.topic,
+    totalTest: trueFalseQuiz_18.questions.length,
+    path: "/test/quiz/trueFalseQuiz_18",
+    keyValue: "trueFalseQuiz_18",
+    favouriteColor: "#79C142",
+    db: trueFalseQuiz_18,
+  },
+
   {
     id: 3,
     title: moreButtonsQuiz.topic,
@@ -1766,12 +1853,12 @@ export const infoTests = [
   },
   {
     id: 6,
-    title: quiz_1.topic,
-    totalTest: quiz_1.questions.length,
+    title: quiz.topic,
+    totalTest: quiz.questions.length,
     path: "/test/quiz_1",
     keyValue: "quiz_1",
     favouriteColor: "#0D6EFD",
-    db: quiz_1,
+    db: quiz,
   },
   {
     id: 7,
@@ -1835,5 +1922,95 @@ export const infoTests = [
     keyValue: "quiz_8",
     favouriteColor: "#0D6EFD",
     db: quiz_8,
+  },
+  {
+    id: 13,
+    title: quiz_9.topic,
+    totalTest: quiz_9.questions.length,
+    path: "/test/quiz_9",
+    keyValue: "quiz_9",
+    favouriteColor: "#0D6EFD",
+    db: quiz_9,
+  },
+  {
+    id: 13,
+    title: quiz_10.topic,
+    totalTest: quiz_10.questions.length,
+    path: "/test/quiz_10",
+    keyValue: "quiz_10",
+    favouriteColor: "#0D6EFD",
+    db: quiz_10,
+  },
+  {
+    id: 13,
+    title: quiz_11.topic,
+    totalTest: quiz_11.questions.length,
+    path: "/test/quiz_11",
+    keyValue: "quiz_11",
+    favouriteColor: "#0D6EFD",
+    db: quiz_11,
+  },
+  {
+    id: 13,
+    title: quiz_12.topic,
+    totalTest: quiz_12.questions.length,
+    path: "/test/quiz_12",
+    keyValue: "quiz_12",
+    favouriteColor: "#0D6EFD",
+    db: quiz_12,
+  },
+  {
+    id: 13,
+    title: quiz_13.topic,
+    totalTest: quiz_13.questions.length,
+    path: "/test/quiz_13",
+    keyValue: "quiz_13",
+    favouriteColor: "#0D6EFD",
+    db: quiz_13,
+  },
+  {
+    id: 13,
+    title: quiz_14.topic,
+    totalTest: quiz_14.questions.length,
+    path: "/test/quiz_14",
+    keyValue: "quiz_14",
+    favouriteColor: "#0D6EFD",
+    db: quiz_14,
+  },
+  {
+    id: 13,
+    title: quiz_15.topic,
+    totalTest: quiz_15.questions.length,
+    path: "/test/quiz_15",
+    keyValue: "quiz_15",
+    favouriteColor: "#0D6EFD",
+    db: quiz_15,
+  },
+  {
+    id: 13,
+    title: quiz_16.topic,
+    totalTest: quiz_16.questions.length,
+    path: "/test/quiz_16",
+    keyValue: "quiz_16",
+    favouriteColor: "#0D6EFD",
+    db: quiz_16,
+  },
+  {
+    id: 13,
+    title: quiz_17.topic,
+    totalTest: quiz_17.questions.length,
+    path: "/test/quiz_17",
+    keyValue: "quiz_17",
+    favouriteColor: "#0D6EFD",
+    db: quiz_17,
+  },
+  {
+    id: 13,
+    title: quiz_18.topic,
+    totalTest: quiz_18.questions.length,
+    path: "/test/quiz_18",
+    keyValue: "quiz_18",
+    favouriteColor: "#0D6EFD",
+    db: quiz_18,
   },
 ];

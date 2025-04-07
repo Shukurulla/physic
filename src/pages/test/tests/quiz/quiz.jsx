@@ -8,6 +8,7 @@ import wrong from "../../../../assets/sounds/wrong.mp3";
 import "./quiz.scss";
 import Result from "../../../../components/result/result";
 import { Link, useParams } from "react-router-dom";
+import KaTeXTextParser from "../../../../components/katex/parser";
 
 const Quiz = () => {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -50,9 +51,6 @@ const Quiz = () => {
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
-    } else {
-      setActiveQuestion(0);
-      setShowResult(true);
     }
   };
 
@@ -73,7 +71,21 @@ const Quiz = () => {
     .keyValue;
 
   const quizPostScore = () => {
+    // Avval oxirgi javobni hisobga olamiz
+    const finalResult = selectedAnswer
+      ? {
+          ...result,
+          score: result.score + quiz.perQuestionScore,
+          correctAnswers: result.correctAnswers + 1,
+        }
+      : {
+          ...result,
+          wrongAnswers: result.wrongAnswers + 1,
+        };
+
+    setResult(finalResult);
     win.play();
+
     const val = {
       userId: user._id,
       ...user,
@@ -81,14 +93,14 @@ const Quiz = () => {
         ...user.userScore,
         [keyValue]: {
           quizName: quiz.topic,
-          score: result.score,
-          correctAnswer: result.correctAnswers,
-          wrong: result.wrongAnswers + 1,
+          score: finalResult.score,
+          correctAnswer: finalResult.correctAnswers,
+          wrong: finalResult.wrongAnswers,
         },
       },
     };
     UserService.test(dispatch, val);
-    onClickNext();
+    setShowResult(true);
   };
 
   return (
@@ -99,7 +111,7 @@ const Quiz = () => {
             to={"/tests"}
             className="btn btn-primary absolute top-10 left-10 "
           >
-            <i className="bi bi-arrow-left"></i> Testlerge Qaytiw
+            <i className="bi bi-arrow-left"></i> Testlarga qaytish
           </Link>
         ) : (
           ""
@@ -127,8 +139,10 @@ const Quiz = () => {
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
-              <p className="sm:mb-10 mb-2">Durıs juwaptı belgileń</p>
-              <p className="text-lg font-[600]">{question}</p>
+              <p className="sm:mb-10 mb-2">Tog'ri javobni belgilang</p>
+              <p className="text-lg font-[600]">
+                <KaTeXTextParser>{question}</KaTeXTextParser>
+              </p>
               <div className="space-y-2 mb-10 mt-6">
                 {choices.map((answer, index) => (
                   <div
@@ -168,7 +182,7 @@ const Quiz = () => {
                           : ""
                       }`}
                     >
-                      {answer}
+                      <KaTeXTextParser>{answer}</KaTeXTextParser>
                     </span>
                   </div>
                 ))}
@@ -193,7 +207,7 @@ const Quiz = () => {
                     disabled={selectedAnswerIndex === null}
                     onClick={quizPostScore}
                   >
-                    Jumaqlaw
+                    Yakunlash
                   </button>
                 ) : (
                   <button
@@ -201,7 +215,7 @@ const Quiz = () => {
                     disabled={selectedAnswerIndex === null}
                     onClick={onClickNext}
                   >
-                    Kiyingi
+                    Keyingisi
                   </button>
                 )}
               </div>

@@ -5,22 +5,22 @@ const Result = ({ questions, result }) => {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-2 bg-white rounded p-4">
-      <h3 className="font-bold text-lg">Nátiyje</h3>
+      <h3 className="font-bold text-lg">Natija:</h3>
       <div className="border-b border-stone-500 pb-2">
         <p className="flex justify-between gap-10">
-          Barlıq sorawlar: <span className="font-bold">{questions.length}</span>
+          Barcha savollar: <span className="font-bold">{questions.length}</span>
         </p>
         <p className="flex justify-between gap-10">
-          Ulıwma ball: <span className="font-bold">{result.score}</span>
+          Umumiy ball: <span className="font-bold">{result.score}</span>
         </p>
         <p className="flex justify-between gap-10">
-          Durıs juwaplar:{" "}
+          Tog'ri javoblar:{" "}
           <span className="font-bold text-green-500">
             {result.correctAnswers}
           </span>
         </p>
         <p className="flex justify-between gap-10">
-          Qáte juwaplar:{" "}
+          Xato javoblar:{" "}
           <span className="font-bold text-red-500">{result.wrongAnswers}</span>
         </p>
       </div>
@@ -32,7 +32,7 @@ const Result = ({ questions, result }) => {
           className="self-end bg-gray-500 px-4 py-2 rounded text-white"
           onClick={() => location.reload()}
         >
-          Qayta baslaw
+          Qayta boshlash
         </button>
       </div>
     </div>

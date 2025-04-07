@@ -1,14 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { trueFalseQuiz } from "../../../../service/db";
+import { Link, useParams } from "react-router-dom";
+import { infoTests } from "../../../../service/db";
 import UserService from "../../../../service/user.service";
 import trueSound from "../../../../assets/sounds/true.wav";
 import success from "../../../../assets/sounds/success.wav";
 import wrong from "../../../../assets/sounds/wrong.mp3";
 import "../quiz/quiz.scss";
 import Result from "../../../../components/result/result";
+import KaTeXTextParser from "../../../../components/katex/parser";
 
 const TrueFalseQuiz = () => {
+  const { slug } = useParams();
+  const [testData, setTestData] = useState(null);
+
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [result, setResult] = useState({
@@ -23,7 +28,23 @@ const TrueFalseQuiz = () => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.user);
 
-  const { questions } = trueFalseQuiz;
+  // slug asosida testni topish
+  useEffect(() => {
+    const foundTest = infoTests.find((item) => item.keyValue === slug);
+    if (foundTest) {
+      setTestData(foundTest.db);
+    }
+  }, [slug]);
+
+  if (!testData) {
+    return (
+      <div className="text-center mt-10 text-red-600 font-bold">
+        Test topilmadi yoki mavjud emas 😥
+      </div>
+    );
+  }
+
+  const { questions } = testData;
   const { question, choices, correctAnswer } = questions[activeQuestion];
 
   let wrongAudio = new Audio(wrong);
@@ -37,7 +58,7 @@ const TrueFalseQuiz = () => {
       selectedAnswer
         ? {
             ...prev,
-            score: prev.score + trueFalseQuiz.perQuestionScore,
+            score: prev.score + testData.perQuestionScore,
             correctAnswers: prev.correctAnswers + 1,
           }
         : {
@@ -47,29 +68,40 @@ const TrueFalseQuiz = () => {
     );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
-    } else {
-      setActiveQuestion(0);
-      setShowResult(true);
     }
   };
 
   const quizPostScore = () => {
+    // Avval oxirgi javobni hisobga olamiz
+    const finalResult = selectedAnswer
+      ? {
+          ...result,
+          score: result.score + testData.perQuestionScore,
+          correctAnswers: result.correctAnswers + 1,
+        }
+      : {
+          ...result,
+          wrongAnswers: result.wrongAnswers + 1,
+        };
+
+    setResult(finalResult);
     win.play();
+
     const val = {
       userId: user._id,
       ...user,
       userScore: {
         ...user.userScore,
-        truFalseQuiz: {
-          quizName: trueFalseQuiz.topic,
-          score: result.score,
-          correctAnswer: result.correctAnswers,
-          wrong: result.wrongAnswers + 1,
+        [slug]: {
+          quizName: testData.topic,
+          score: finalResult.score,
+          correctAnswer: finalResult.correctAnswers,
+          wrong: finalResult.wrongAnswers,
         },
       },
     };
     UserService.test(dispatch, val);
-    onClickNext();
+    setShowResult(true);
   };
 
   const onAnswerSelected = (answer, index) => {
@@ -88,6 +120,16 @@ const TrueFalseQuiz = () => {
   return (
     <div className="bg-[#F6F9FF] quiz w-screen min-h-screen flex justify-center items-center">
       <div className="w-[90%] sm:w-3/4 my-10">
+        {!showResult ? (
+          <Link
+            to={"/tests"}
+            className="btn btn-primary absolute top-10 left-10 "
+          >
+            <i className="bi bi-arrow-left"></i> Testlarga qaytish
+          </Link>
+        ) : (
+          ""
+        )}
         {!showResult && (
           <div className="border h-4 rounded-full bg-gray-300 mb-10 w-3/4 mx-auto">
             <div
@@ -105,14 +147,16 @@ const TrueFalseQuiz = () => {
             <>
               <div className="flex justify-between items-center mb-4">
                 <span className="text-[#79C142] font-semibold text-2xl sm:text-3xl">
-                  Test
+                  {testData.topic}
                 </span>
                 <span className="bg-[#79C142] text-white sm:text-sm sm:py-2 sm:px-4 text-sm py-1 px-2 rounded-full ">
                   {activeQuestion + 1}/{questions.length}
                 </span>
               </div>
-              <p className="sm:mb-10 mb-2">Durıs juwaptı belgileń</p>
-              <p className="text-lg font-[600]">{question}</p>
+              <p className="sm:mb-10 mb-2">Tog'ri javobni belgilang</p>
+              <p className="text-lg font-[600]">
+                <KaTeXTextParser>{question}</KaTeXTextParser>
+              </p>
               <div className="flex justify-center items-center gap-2 mb-10 mt-6">
                 {choices.map((answer, index) => (
                   <button
@@ -137,7 +181,7 @@ const TrueFalseQuiz = () => {
                     key={index}
                     onClick={() => onAnswerSelected(answer, index)}
                   >
-                    {answer}
+                    <KaTeXTextParser>{answer}</KaTeXTextParser>
                   </button>
                 ))}
               </div>
@@ -160,7 +204,7 @@ const TrueFalseQuiz = () => {
                     disabled={selectedAnswerIndex === null}
                     onClick={quizPostScore}
                   >
-                    Jumaqlaw
+                    Yakunlash
                   </button>
                 ) : (
                   <button
@@ -168,7 +212,7 @@ const TrueFalseQuiz = () => {
                     disabled={selectedAnswerIndex === null}
                     onClick={onClickNext}
                   >
-                    Kiyingi
+                    Keyingi
                   </button>
                 )}
               </div>

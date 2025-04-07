@@ -1,4 +1,6 @@
-import React, { useEffect } from "react";
+"use client";
+
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Toast from "./components/toast/toast";
@@ -73,7 +75,7 @@ const App = () => {
         <Route path="/" element={<Redirect />} />
         <Route path="/register" element={<Register />} />
         <Route path="/test/:slug" element={<Quiz />} />
-        <Route path="/test/true-false" element={<TrueFalseQuiz />} />
+        <Route path="/test/quiz/:slug" element={<TrueFalseQuiz />} />
         <Route path="/test/more-buttons" element={<MoreButtonsQuiz />} />
         <Route path="/test/image-quiz" element={<ImageQuiz />} />
         <Route
