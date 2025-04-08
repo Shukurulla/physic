@@ -74,58 +74,58 @@ export const quiz_2 = {
   questions: [
     {
       question:
-        "Vodorod atomidagi elektron birinchi kvant orbitasida harakatlanmoqda. Agar orbitaning radiusi ( r_1 = 5{,}29 cdot 10^{-11} , \text{m} ) bo‘lsa, elektronning tezligini aniqlang. (Elektronning zaryadi ( e_1 = 1{,}6 cdot 10^{-19} , \text{C} ), massasi ( m_e = 9{,}11 cdot 10^{-31} , \text{kg} ), va Kulon doimiysi ( k = 9 cdot 10^9 , \text{N} cdot \text{m}^2 / \text{C}^2 ))",
+        "Vodorod atomidagi elektron birinchi kvant orbitasida harakatlanmoqda. Agar orbitaning radiusi \\( r_1 = 5,29 * 10^{-11}{m} \\) bo‘lsa, elektronning tezligini aniqlang. (Elektronning zaryadi \\( e_1 = 1,6 * 10^{-19} \t{C} \\), massasi \\( m_e = 9,11 * 10^{-31}  {kg} \\), va Kulon doimiysi \\( k = 9 * 10^9 {N}{m}^2 / {C}^2 \\))",
       choices: [
-        "( 1{,}09 cdot 10^6 , \text{m/s} )",
-        "( 2{,}18 cdot 10^6 , \text{m/s} )",
-        "( 3{,}27 cdot 10^6 , \text{m/s} )",
-        "( 4{,}36 cdot 10^6 , \text{m/s} )",
+        "\\( 1,09 * 10^6 \t{m/s} \\)",
+        "\\( 2,18 * 10^6 \t{m/s} \\)",
+        "\\( 3,27 * 10^6 {m/s} \\)",
+        "\\( 4,36 * 10^6 {m/s} \\)",
       ],
-      correctAnswer: "( 2{,}18 cdot 10^6 , \text{m/s} )",
+      correctAnswer: "\\( 2,18 * 10^6 , \text{m/s} \\)",
     },
     {
       question:
-        "Vodorod atomida elektron uchinchi orbitadan birinchi orbitaga o‘tmoqda. Agar birinchi orbitadagi energiya ( E_1 = -13{,}6 , \text{eV} ), uchinchi orbitadagi energiya ( E_3 = -1{,}51 , \text{eV} ) bo‘lsa, chiqadigan fotonning chastotasini aniqlang. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ))",
+        "Vodorod atomida elektron uchinchi orbitadan birinchi orbitaga o‘tmoqda. Agar birinchi orbitadagi energiya \\( E_1 = -13,6  \t{eV} \\), uchinchi orbitadagi energiya \\( E_3 = -1,51 {eV} \\) bo‘lsa, chiqadigan fotonning chastotasini aniqlang. (Plank doimiysi \\( h = 6,626 * 10^{-34}  \t{Js} \\))",
       choices: [
-        "( 2{,}47 cdot 10^{14} , \text{Hz} )",
-        "( 1{,}03 cdot 10^{15} , \text{Hz} )",
-        "( 4{,}17 cdot 10^{15} , \text{Hz} )",
-        "( 3{,}29 cdot 10^{15} , \text{Hz} )",
+        "\\( 2,47 * 10^{14} {Hz} \\)",
+        "\\( 1,03 * 10^{15} {Hz} \\)",
+        "\\( 4,17 * 10^{15} {Hz} \\)",
+        "\\( 3,29 * 10^{15} {Hz} \\)",
       ],
-      correctAnswer: "( 4{,}17 cdot 10^{15} , \text{Hz} )",
+      correctAnswer: "\\( 4,17 * 10^{15} {Hz} \\)",
     },
     {
       question:
-        "Elektron uchinchi kvant orbitada harakatlanmoqda. Bor modeliga ko‘ra, uchinchi orbitadagi burchak momentini toping. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ))",
+        "Elektron uchinchi kvant orbitada harakatlanmoqda. Bor modeliga ko‘ra, uchinchi orbitadagi burchak momentini toping. (Plank doimiysi \\( h = 6,626 * 10^{-34} , {Js} \\))",
       choices: [
-        "( 3{,}5 cdot 10^{-34} , \text{Js} )",
-        "( 6{,}0 cdot 10^{-34} , \text{Js} )",
-        "( 3{,}16 cdot 10^{-34} , \text{Js} )",
-        "( 9{,}94 cdot 10^{-34} , \text{Js} )",
+        "\\( 3,5 * 10^{-34} {Js} \\)",
+        "\\( 6,0 * 10^{-34} {Js} \\)",
+        "\\( 3,16 * 10^{-34} {Js} \\)",
+        "\\( 9,94 * 10^{-34} {Js} \\)",
       ],
-      correctAnswer: "( 9{,}94 cdot 10^{-34} , \text{Js} )",
+      correctAnswer: "\\( 9,94 * 10^{-34} {Js} \\)",
     },
     {
       question:
-        "Bor modeliga ko‘ra, ikkinchi orbitaning radiusi qanday? Agar birinchi orbitaning radiusi ( r_1 = 5{,}29 cdot 10^{-11} , \text{m} ) bo‘lsa.",
+        "Bor modeliga ko‘ra, ikkinchi orbitaning radiusi qanday? Agar birinchi orbitaning radiusi \\( r_1 = 5,29 * 10^{-11} , {m} \\) bo‘lsa.",
       choices: [
-        "( 1{,}06 cdot 10^{-10} , \text{m} )",
-        "( 2{,}12 cdot 10^{-10} , \text{m} )",
-        "( 1{,}59 cdot 10^{-10} , \text{m} )",
-        "( 5{,}29 cdot 10^{-11} , \text{m} )",
+        "\\( 1,06 * 10^{-10} {m} \\)",
+        "\\( 2,12 * 10^{-10} {m} \\)",
+        "\\( 1,59 * 10^{-10} {m} \\)",
+        "\\( 5,29 * 10^{-11} {m} \\)",
       ],
-      correctAnswer: "( 2{,}12 cdot 10^{-10} , \text{m} )",
+      correctAnswer: "\\( 2,12 * 10^{-10} {m} \\)",
     },
     {
       question:
-        "Elektron ikkinchi orbitadan uchinchi orbitaga o‘tmoqda. Agar ushbu o‘tish davomida chiqqan fotonning energiyasi ( 10{,}2 , \text{eV} ) bo‘lsa, fotonning to‘lqin uzunligini toping. (Plank doimiysi ( h = 6{,}626 cdot 10^{-34} , \text{Js} ), yorug‘lik tezligi ( c = 3 cdot 10^8 , \text{m/s} ))",
+        "Elektron ikkinchi orbitadan uchinchi orbitaga o‘tmoqda. Agar ushbu o‘tish davomida chiqqan fotonning energiyasi \\( 10,2{eV} \\) bo‘lsa, fotonning to‘lqin uzunligini toping. (Plank doimiysi \\( h = 6,626 * 10^{-34}{Js} \\), yorug‘lik tezligi \\( c = 3 * 10^8 {m/s} \\))",
       choices: [
-        "( 122 , \text{nm} )",
-        "( 488 , \text{nm} )",
-        "( 250 , \text{nm} )",
-        "( 50 , \text{nm} )",
+        "\\( 122 {nm} \\)",
+        "\\( 488 {nm} \\)",
+        "\\( 250 {nm} \\)",
+        "\\( 50 {nm} \\)",
       ],
-      correctAnswer: "( 122 , \text{nm} )",
+      correctAnswer: "\\( 122 {nm} \\)",
     },
   ],
 };
@@ -323,7 +323,7 @@ export const quiz_7 = {
     },
     {
       question:
-        "…-nurlari chastotasi juda katta \\( (10^{20} \\text{ Hz}) \\), to‘lqin uzunligi esa juda qisqa \\( (10^{-12} \\text{ m}) \\) bo‘lgan elektromagnit to‘lqinlar.",
+        "…-nurlari chastotasi juda katta \\( (10^{20} \\{ Hz}) \\), to‘lqin uzunligi esa juda qisqa \\( (10^{-12} \\{ m}) \\) bo‘lgan elektromagnit to‘lqinlar.",
       choices: [
         "\\( \\alpha \\)-nurlardir",
         "\\( \\beta \\)-nurlardir",
@@ -334,7 +334,7 @@ export const quiz_7 = {
     },
     {
       question:
-        "Bu qanday radioaktiv nurlanish? \n\\[ ^{210}_{84}\\text{Po} \\rightarrow ^{206}_{82}\\text{Pb} + ^{4}_{2}\\text{He} \\]",
+        "Bu qanday radioaktiv nurlanish? \n\\[ ^{210}_{84}\\{Po} \\rightarrow ^{206}_{82}\\{Pb} + ^{4}_{2}\\{He} \\]",
       choices: [
         "\\( \\alpha \\)-nurlanish",
         "\\( \\beta \\)-nurlanish",
@@ -413,12 +413,12 @@ export const quiz_8 = {
       question:
         "Radon atom soni 1 sutkada 18.2% kamayса, radonning yemirilish doimiysini toping.",
       choices: [
-        "\\( 2{,}33 \\cdot 10^{-6} \\)",
-        "\\( 3{,}33 \\cdot 10^{-6} \\)",
-        "\\( 4{,}33 \\cdot 10^{-6} \\)",
-        "\\( 5{,}33 \\cdot 10^{-6} \\)",
+        "\\( 2,33 \\* 10^{-6} \\)",
+        "\\( 3,33 \\* 10^{-6} \\)",
+        "\\( 4,33 \\* 10^{-6} \\)",
+        "\\( 5,33 \\* 10^{-6} \\)",
       ],
-      correctAnswer: "\\( 3{,}33 \\cdot 10^{-6} \\)",
+      correctAnswer: "\\( 3,33 \\* 10^{-6} \\)",
     },
   ],
 };
@@ -516,14 +516,17 @@ export const quiz_10 = {
     },
     {
       question:
-        "Quyidagi yadro reaksiyalarini to‘ldiring: \n\\[ ^{12}_{6}C + ^{1}_{1}H \\rightarrow \\gamma + ^{13}_{7}N \\quad ^{2}_{1}H + ^{2}_{1}H \\rightarrow ^{3}_{1}H + ? \\quad ^{56}_{26}Fe + ? \\rightarrow ^{58}_{26}Fe + ^{1}_{0}n \\]",
+        "Quyidagi yadro reaksiyalarini to‘ldiring:\n" +
+        "1) \\( ^{12}_{6}\\text{C} + ^{1}_{1}\\text{H} \\rightarrow \\text{?} + ^{4}_{2}\\text{He} \\) \n" +
+        "\\(\\quad\\)    2) \\( ^{55}_{25}\\text{Mn} + \\text{?} \\rightarrow ^{24}_{56} \\text{Fe} +  ^{0}_{1}\\text{n} \\quad \\)",
       choices: [
-        "A) 1) \\( ^{3}_{2}He \\), 2) \\( ^{1}_{0}n \\)",
+        "A) 1) \\( ^{3}_{2}\\text{He} \\), 2) \\( ^{1}_{0}\\text{n} \\)",
         "B) 1) \\( \\beta^- \\), 2) \\( -1e \\)",
-        "C) 1) \\( \\beta \\), 2) \\( ^{1}_{1}p \\)",
-        "D) 1) \\( \\beta \\), 2) \\( ^{2}_{1}n \\)",
+        "C) 1) \\( \\beta \\), 2) \\( ^{1}_{1}\\text{p} \\)",
+        "D) 1) \\( \\beta \\), 2) \\( ^{2}_{1}\\text{n} \\)",
       ],
-      correctAnswer: "A) 1) \\( ^{3}_{2}He \\), 2) \\( ^{1}_{0}n \\)",
+      correctAnswer:
+        "A) \\( ^{3}_{2}\\text{He} \\), 2) \\( ^{1}_{0}\\text{n} \\)",
     },
   ],
 };
@@ -653,8 +656,13 @@ export const quiz_13 = {
     {
       question:
         "Atom yadrolari orasida kichik masofa qanchaga yaqinlashganda ikki yadro o‘zaro qo‘shilishi mumkin.",
-      choices: ["~10^{-15} m", "~10^{-10} m", "~10^{-5} m", "~10^{-11} m"],
-      correctAnswer: "~10^{-15} m",
+      choices: [
+        "\\(~10^{-15} m \\)",
+        "\\(~10^{-10} m \\)",
+        "\\(~10^{-5} m \\)",
+        "\\(~10^{-11} m \\)",
+      ],
+      correctAnswer: "\\(~10^{-15} m \\)",
     },
     {
       question:
@@ -724,8 +732,8 @@ export const quiz_15 = {
   questions: [
     {
       question: "Elektronning yashash vaqti kamida qancha?",
-      choices: ["10^{22} yil", "10^{10} yil", "10 yil", "1 yil"],
-      correctAnswer: "10^{22} yil",
+      choices: ["\\(10^{22}\\) yil", "\\(10^{10}\\) yil", "10 yil", "1 yil"],
+      correctAnswer: "\\(10^{22}\\) yil",
     },
     {
       question: "Atom yadrolari tarkibiga kiruvchi zarrachalar qaysi?",
@@ -827,12 +835,12 @@ export const quiz_17 = {
       question:
         "5. Juftlarning aniqlashtirilishiga, masalan, proton va antiprotonning pi-nol-mezonga aylanishi qaysi?",
       choices: [
-        "$$p + \\bar{p} \\rightarrow 2\\pi$$",
-        "$$p + \\bar{p} \\rightarrow \\bar{\\pi} + \\bar{n}$$",
-        "$$e^+ + e^- \\rightarrow 2\\gamma$$",
-        "$$e^- + \\gamma \\rightarrow e^- + e^- + e^+$$",
+        "\\(p + \\bar{p} \\rightarrow 2\\pi\\)",
+        "\\(p + \\bar{p} \\rightarrow \\bar{\\pi} + \\bar{n}\\)",
+        "\\(e^+ + e^- \\rightarrow 2\\gamma\\)",
+        "\\(e^- + \\gamma \\rightarrow e^- + e^- + e^+\\)",
       ],
-      correctAnswer: "$$p + \\bar{p} \\rightarrow 2\\pi$$",
+      correctAnswer: "\\(p + \\bar{p} \\rightarrow 2\\pi\\)",
     },
   ],
 };
@@ -843,22 +851,23 @@ export const quiz_18 = {
       question:
         "1. Yer atmosferasi chegarasida birlamchi kosmik nurlar turli massa soniga ega va bitta nuklonga taxminan qanday tartibda energiya mos keladi?",
       choices: [
-        "$$10^9 - 10^{20}$$ eV",
-        "$$10^{29} - 10^{32}$$ eV",
-        "$$10^{25} - 10^{30}$$ eV",
-        "$$10^6 - 10^8$$ eV",
+        "\\(10^9 - 10^{20} eV \\)",
+        "\\(10^{29} - 10^{32} eV\\)",
+        "\\(10^{25} - 10^{30} eV\\)",
+        "\\(10^6 - 10^8 eV\\)",
       ],
-      correctAnswer: "$$10^9 - 10^{20}$$ eV",
+      correctAnswer: "\\(10^9 - 10^{20} eV\\)",
     },
     {
       question:
-        "2. $$10^{13}$$ eV dan kichik energiyali birlamchi kosmik nurlardagi protonlar ulushi qancha?",
+        "2. \\(10^{13}\\) eV dan kichik energiyali birlamchi kosmik nurlardagi protonlar ulushi qancha?",
       choices: ["90%", "50%", "20%", "60%"],
       correctAnswer: "90%",
     },
+
     {
       question:
-        "3. $$10^{13}$$ eV dan kichik energiyali birlamchi kosmik nurlardagi geliy atomlari ulushi qancha?",
+        "3. \\(10^{13} \\) eV dan kichik energiyali birlamchi kosmik nurlardagi geliy atomlari ulushi qancha?",
       choices: ["9%", "4%", "1%", "5%"],
       correctAnswer: "9%",
     },
@@ -1855,8 +1864,8 @@ export const infoTests = [
     id: 6,
     title: quiz.topic,
     totalTest: quiz.questions.length,
-    path: "/test/quiz_1",
-    keyValue: "quiz_1",
+    path: "/test/quiz",
+    keyValue: "quiz",
     favouriteColor: "#0D6EFD",
     db: quiz,
   },
